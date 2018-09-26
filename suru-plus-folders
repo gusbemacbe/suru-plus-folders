@@ -255,7 +255,7 @@ change_color() {
 	local file target symlink
 
 	# verbose "Changing color of folders to '$color' ..."
-	find -L "$THEME_DIR" -regextype posix-extended \
+	find -L -E "$THEME_DIR" \
 		-regex ".*/places/${sizes_regex}/${icons_regex}.*" \
 		-print0 | while read -r -d $'\0' file; do
 
