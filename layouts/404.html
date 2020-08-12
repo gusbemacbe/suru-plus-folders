@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language | default "en" }}">
+{{ partial "head.html" . }}
+
+	<body>
+		{{- partial "sidebars.html" . }}
+		{{- partial "header.html" . }}
+
+    {{ define "main"}}
+        <h1 class="title">Page not found!</h1>
+        <h1 class="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+    {{ end }}
+		
+		{{- partial "footer.html" . -}}
+		{{- partial "scripts.html" . -}}
+	</body>
+
+</html>

@@ -1,0 +1,554 @@
+@font-face
+{
+  font-family: "Suru++";
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  src: url("../fonts/Suru++ Icons.woff") format("woff");
+}
+
+[class^="suru-"], [class*=" suru-"]
+{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Suru++" !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  /* Better Font Rendering */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: never;
+}
+
+.suru-accept:before
+{
+  content: "\e900";
+}
+
+.suru-affinity:before
+{
+  content: "\e901";
+}
+
+.suru-alert:before
+{
+  content: "\e902";
+}
+
+.suru-alert-box:before
+{
+  content: "\e903";
+}
+
+.suru-alert-circle:before
+{
+  content: "\e904";
+}
+
+.suru-alert-decagram:before
+{
+  content: "\e905";
+}
+
+.suru-alert-octagon:before
+{
+  content: "\e906";
+}
+
+.suru-alert-octagram:before
+{
+  content: "\e907";
+}
+
+.suru-apple:before
+{
+  content: "\e908";
+}
+
+.suru-apple-finder:before
+{
+  content: "\e909";
+}
+
+.suru-apple-keyboard-command:before
+{
+  content: "\e90a";
+}
+
+.suru-apple-keyboard-control:before
+{
+  content: "\e90b";
+}
+
+.suru-apple-keyboard-option:before
+{
+  content: "\e90c";
+}
+
+.suru-apple-keyboard-shift:before
+{
+  content: "\e90d";
+}
+
+.suru-apps:before
+{
+  content: "\e90e";
+}
+
+.suru-apps-box:before
+{
+  content: "\e90f";
+}
+
+.suru-arch:before
+{
+  content: "\e910";
+}
+
+.suru-archive:before
+{
+  content: "\e911";
+}
+
+.suru-arrow-down:before
+{
+  content: "\e912";
+}
+
+.suru-arrow-down-bold:before
+{
+  content: "\e913";
+}
+
+.suru-arrow-down-bold-box:before
+{
+  content: "\e914";
+}
+
+.suru-arrow-down-bold-circle:before
+{
+  content: "\e915";
+}
+
+.suru-arrow-down-thick:before
+{
+  content: "\e916";
+}
+
+.suru-arrow-left:before
+{
+  content: "\e917";
+}
+
+.suru-arrow-left-bold:before
+{
+  content: "\e918";
+}
+
+.suru-arrow-left-right:before
+{
+  content: "\e919";
+}
+
+.suru-arrow-left-right-bold:before
+{
+  content: "\e91a";
+}
+
+.suru-arrow-left-thick:before
+{
+  content: "\e91b";
+}
+
+.suru-arrow-right:before
+{
+  content: "\e91c";
+}
+
+.suru-arrow-right-bold:before
+{
+  content: "\e91d";
+}
+
+.suru-arrow-right-thick:before
+{
+  content: "\e91e";
+}
+
+.suru-arrow-up:before
+{
+  content: "\e91f";
+}
+
+.suru-arrow-up-bold:before
+{
+  content: "\e920";
+}
+
+.suru-arrow-up-thick:before
+{
+  content: "\e921";
+}
+
+.suru-asterisk:before
+{
+  content: "\e922";
+}
+
+.suru-auto-fix:before
+{
+  content: "\e923";
+}
+
+.suru-autorenew:before
+{
+  content: "\e924";
+}
+
+.suru-book:before
+{
+  content: "\e925";
+}
+
+.suru-brightness-full:before
+{
+  content: "\e926";
+}
+
+.suru-brightness-mode:before
+{
+  content: "\e927";
+}
+
+.suru-brightness-mon:before
+{
+  content: "\e928";
+}
+
+.suru-brightness-sun:before
+{
+  content: "\e929";
+}
+
+.suru-cancel:before
+{
+  content: "\e92a";
+}
+
+.suru-cards-heart:before
+{
+  content: "\e92b";
+}
+
+.suru-chevron-double-left:before
+{
+  content: "\e92c";
+}
+
+.suru-chevron-double-right:before
+{
+  content: "\e92d";
+}
+
+.suru-chevron-down:before
+{
+  content: "\e92e";
+}
+
+.suru-chevron-down-circle:before
+{
+  content: "\e92f";
+}
+
+.suru-chevron-left:before
+{
+  content: "\e930";
+}
+
+.suru-chevron-left-circle:before
+{
+  content: "\e931";
+}
+
+.suru-chevron-right:before
+{
+  content: "\e932";
+}
+
+.suru-chevron-right-circle:before
+{
+  content: "\e933";
+}
+
+.suru-chevron-up:before
+{
+  content: "\e934";
+}
+
+.suru-chevron-up-circle:before
+{
+  content: "\e935";
+}
+
+.suru-clippy:before
+{
+  content: "\e936";
+}
+
+.suru-code-array:before
+{
+  content: "\e937";
+}
+
+.suru-code-braces-box:before
+{
+  content: "\e938";
+}
+
+.suru-codepen:before
+{
+  content: "\e939";
+}
+
+.suru-code-tags:before
+{
+  content: "\e93a";
+}
+
+.suru-cog:before
+{
+  content: "\e93b";
+}
+
+.suru-customisation:before
+{
+  content: "\e93c";
+}
+
+.suru-debian:before
+{
+  content: "\e93d";
+}
+
+.suru-deviantart:before
+{
+  content: "\e93e";
+}
+
+.suru-discord:before
+{
+  content: "\e93f";
+}
+
+.suru-donation:before
+{
+  content: "\e940";
+}
+
+.suru-earth:before
+{
+  content: "\e941";
+}
+
+.suru-eiffel-tower:before
+{
+  content: "\e942";
+}
+
+.suru-e-mail:before
+{
+  content: "\e943";
+}
+
+.suru-email-letter:before
+{
+  content: "\e944";
+}
+
+.suru-facebook:before
+{
+  content: "\e945";
+}
+
+.suru-fedora:before
+{
+  content: "\e946";
+}
+
+.suru-file:before
+{
+  content: "\e947";
+}
+
+.suru-firefox:before
+{
+  content: "\e948";
+}
+
+.suru-floppy:before
+{
+  content: "\e949";
+}
+
+.suru-folder:before
+{
+  content: "\e94a";
+}
+
+.suru-folder-open:before
+{
+  content: "\e94b";
+}
+
+.suru-gatsby:before
+{
+  content: "\e94c";
+}
+
+.suru-gentoo:before
+{
+  content: "\e94d";
+}
+
+.suru-github:before
+{
+  content: "\e94e";
+}
+
+.suru-gitlab:before
+{
+  content: "\e94f";
+}
+
+.suru-gnome:before
+{
+  content: "\e950";
+}
+
+.suru-google-play:before
+{
+  content: "\e951";
+}
+
+.suru-google-translate:before
+{
+  content: "\e952";
+}
+
+.suru-idea:before
+{
+  content: "\e953";
+}
+
+.suru-instagram:before
+{
+  content: "\e954";
+}
+
+.suru-languages:before
+{
+  content: "\e955";
+}
+
+.suru-link:before
+{
+  content: "\e956";
+}
+
+.suru-linux:before
+{
+  content: "\e957";
+}
+
+.suru-linux-mint:before
+{
+  content: "\e958";
+}
+
+.suru-map-marker:before
+{
+  content: "\e959";
+}
+
+.suru-mastodon:before
+{
+  content: "\e95a";
+}
+
+.suru-menu:before
+{
+  content: "\e95b";
+}
+
+.suru-microsoft-visual-studio-code:before
+{
+  content: "\e95c";
+}
+
+.suru-microsoft-windows:before
+{
+  content: "\e95d";
+}
+
+.suru-palette:before
+{
+  content: "\e95e";
+}
+
+.suru-reddit:before
+{
+  content: "\e95f";
+}
+
+.suru-sass:before
+{
+  content: "\e960";
+}
+
+.suru-skype:before
+{
+  content: "\e961";
+}
+
+.suru-tailwind:before
+{
+  content: "\e962";
+}
+
+.suru-telegram:before
+{
+  content: "\e963";
+}
+
+.suru-theme:before
+{
+  content: "\e964";
+}
+
+.suru-thumb-down:before
+{
+  content: "\e965";
+}
+
+.suru-thumb-up:before
+{
+  content: "\e966";
+}
+
+.suru-translate:before
+{
+  content: "\e967";
+}
+
+.suru-twitter:before
+{
+  content: "\e968";
+}
+
+.suru-ubuntu:before
+{
+  content: "\e969";
+}

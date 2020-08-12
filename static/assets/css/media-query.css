@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px)
+{
+  .topnav a:not(:first-child), .dropdown .dropbtn
+  {
+    display: none;
+  }
+
+  .topnav a.icon
+  {
+    display: block;
+    float: right;
+  }
+
+  .sidebar { padding-top: 15px; }
+  .sidebar a { font-size: 18px; }
+
+  .sidebar.bottom
+  {
+    bottom: -15px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    top: auto;
+    width: 100%;
+  }
+
+  .sidebar a, .sidebar.bottom a
+  {
+    color: #818181;
+    display: block;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  #footer > p
+  {
+    hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    line-height: 24px;
+  }
+
+  #footer-menu li 
+  {
+    line-height: 24px;
+  } 
+}

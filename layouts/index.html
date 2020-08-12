@@ -1,0 +1,17 @@
+{{define "main"}}
+
+	{{ if .IsTranslated }}
+
+		{{- partial "md/index/1.html" . | markdownify -}}
+
+	<div id="tables-container"></div>
+
+	<p>
+		If it works…
+	</p>
+	
+			{{- partial "js/table-of-themes.html" . -}}
+			
+	{{ end }}
+
+{{ end }}

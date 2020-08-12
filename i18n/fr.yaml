@@ -1,0 +1,18 @@
+# Table
+- id: preTtitle
+  translation: "Couleurs disponibles en "
+- id: theme_name
+  translation: "Nom"
+- id: theme_preview
+  translation: "Aperçu"
+  
+  # Bas de page
+
+- id: footer_copyright
+  translation: "© 2019-{{ .currentYear  }} Suru++ Dossiers par Gustavo Costa et Andrea Bonanni. Tous les droits sont réservés."
+- id: powered
+  translation: "Alimenté par"
+- id: original_author
+  translation: "Thème <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> créé par <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
+- id: made
+  translation: "Fait avec <span role=\"img\" aria-label=\"Cœur\">❤</span> et <span role=\"img\" aria-label=\"Café\">☕</span> au <span role=\"img\" aria-label=\"Brésil\">🇧🇷</span> :-)"

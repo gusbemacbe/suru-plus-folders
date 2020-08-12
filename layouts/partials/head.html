@@ -1,0 +1,26 @@
+<head>
+    {{ if .IsTranslated }}
+        {{- range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Site.BaseURL }}" title="{{ .Language.LanguageName }}">
+        {{- end -}}
+    {{ end }}
+
+    <meta charset="utf-8">
+    <meta name="viewport"     content="initial-scale=1, width=device-width">
+    {{ hugo.Generator -}}
+    
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    <meta name="robots"       content="index, follow">
+    {{ else }}
+    <meta name="robots"       content="noindex, nofollow">
+    {{ end -}}
+    <meta name="description"  content="{{ .Param "description" }}">
+
+    {{- range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ relURL (printf "%s%s" "assets/" .) }}" />
+    {{- end }}
+
+    <link rel="stylesheet" href="../assets/css/syntax-highlighting/suru-plus.css" id="theme_css" />
+    
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+</head> 

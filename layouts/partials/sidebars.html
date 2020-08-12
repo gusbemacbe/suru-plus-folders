@@ -1,0 +1,21 @@
+<div id="SidebarLeft" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <div style="margin-bottom: 40px;"></div>
+  
+  {{- $currentPage := . -}}
+  {{ range .Site.Menus.main -}}
+    {{ $menu_item_url := .URL | relLangURL -}}
+    {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+  <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+  {{- end }}
+</div>
+
+
+<div id="SidebarBottom" class="sidebar bottom">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavBottom()">&times;</a>
+  
+  {{ range .Translations -}}
+    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+  {{ end }}
+</div>

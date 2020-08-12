@@ -1,0 +1,18 @@
+# Tabela
+- id: preTtitle
+  translation: "Cores disponíveis em "
+- id: theme_name
+  translation: "Nome"
+- id: theme_preview
+  translation: "Previsão"
+  
+  # Rodapé
+
+- id: footer_copyright
+  translation: "© 2019-{{ .currentYear }} Suru++ Pastas por Gustavo Costa e Andrea Bonanni. Todos os direitos reservados."
+- id: powered
+  translation: "Distribuído por"
+- id: original_author
+  translation: "Tema <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> criado por <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
+- id: made
+  translation: "Feito com <span role=\"img\" aria-label=\"coração\">❤</span> e <span role=\"img\" aria-label=\"café\">☕</span> no <span role=\"img\" aria-label=\"Brasil\">🇧🇷</span> :-)"

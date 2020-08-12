@@ -1,0 +1,22 @@
+{{ if .IsTranslated }}
+
+<div id="footer">
+
+  <h4>{{.Site.Title}}</h4>
+  <p>{{ T "footer_copyright" (dict "currentYear" now.Year) }}</p>
+
+  <ul id="footer-menu">
+    {{- $currentPage := . -}}
+    {{ range .Site.Menus.footer -}}
+      {{ $menu_item_url := .URL | relLangURL -}}
+      {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+      <li><a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+    {{- end }}
+  </ul>
+
+  <p>{{ T "powered" }} <a href="https://gohugo.io">Hugo</a>.</p>
+  <p>{{ T "original_author" | safeHTML }}</p>
+  <p>{{ T "made" | safeHTML }}</p>
+</div>
+
+{{ end }}

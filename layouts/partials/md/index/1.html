@@ -1,0 +1,167 @@
+# Description
+
+```java
+import java.util.*;
+ 
+class Palindrome
+{
+   public static void main(String args[])
+   {
+      String original, reverse = "";
+      Scanner in = new Scanner(System.in);
+ 
+      System.out.println("Enter a string to check if it is a palindrome");
+      original = in.nextLine();
+ 
+      int length = original.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         reverse = reverse + original.charAt(i);
+ 
+      if (original.equals(reverse))
+         System.out.println("Entered string is a palindrome.");
+      else
+         System.out.println("Entered string is not a palindrome.");
+ 
+   }
+}
+```
+
+```js
+/**
+ * Does a thing
+ */
+function helloWorld(param1, param2) {
+  var something = 0;
+
+  // Do something
+  if (2.0 % 2 == something) {
+    console.log('Hello, world!');
+  } else {
+    return null;
+  }
+
+  // @TODO comment
+}
+```
+
+```css
+/* Error */
+.highlight .err
+{
+  background: var(--suru-plus-pink-2);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Base Style */
+.highlight .n
+{
+  background: var(--suru-plus-fitdance-1-left);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+```
+
+```ruby
+def bubble_sort(list)
+  return list if list.size <= 1 # already sorted
+  swapped = true
+  while swapped do
+    swapped = false
+    0.upto(list.size-2) do |i|
+      if list[i] > list[i+1]
+        list[i], list[i+1] = list[i+1], list[i] # swap values
+        swapped = true
+      end
+    end
+  end
+
+  list
+end
+```
+
+```python
+def bubble_sort(items):
+    """ Implementation of bubble sort """
+    for i in range(len(items)):
+        for j in range(len(items)-1-i):
+            if items[j] > items[j+1]:
+                # Swap!
+                items[j], items[j+1] = items[j+1], items[j]
+```
+
+The file `suru-plus-folders` is a bash script that allows changing the color of folders in [Suru++ 25 icons](https://github.com/gusbemacbe/suru-plus) and [Suru++ Ubuntu icons](https://github.com/Bonandry/suru-plus-ubuntu) themes, based on the forks of icons of folders of Papirus.
+
+At the moment `suru-plus-folders` doesn't have a GUI, but it is a fully functional command-line application. Before seeing the examples of use, please install firstly:
+
+# Installation
+
+## Independent distribution
+
+Use the script to install the latest version directly from this repository (independently on your distro):
+
+### Installing
+
+```bash
+wget -qO- https://git.io/fhQdI | sh
+```
+
+To install `suru-plus-folders` on **BSD systems** using the following command:
+
+```bash
+wget -qO- https://git.io/fhQdI | env PREFIX=/usr/local sh
+```
+
+### Uninstalling
+
+```bash
+wget -qO- https://git.io/fhQdI | env uninstall=true sh
+```
+
+## Arch-based distributions
+
+Soon
+
+## Debian-based distributions
+
+Soon
+
+# Changing the colour of folders
+
+Some examples of use:
+
+- Showing the current color and available colors for Suru++ 25 or Suru++ Ubuntu:
+  ```sh
+  # Suru++ 25
+  suru-plus-folders -l --theme Suru++
+  # Suru++ Ubuntu
+  suru-plus-folders -l --theme Suru++-Ubuntu
+  ```
+- Changing colour of folders to brown for Suru++ 25 or Suru++ Ubuntu:
+  ```sh
+  # Suru++ 25
+  suru-plus-folders -C brown --theme Suru++
+  # Suru++ Ubuntu
+  suru-plus-folders -l --theme Suru++-Ubuntu
+  ```
+- Revert to default color of folders for places of Suru++ 25 or Suru++ Ubuntu:
+  ```sh
+  # Suru++ 25
+  suru-plus-folders -D --theme Suru++
+  # Suru++ Ubuntu
+  suru-plus-folders -l --theme Suru++-Ubuntu
+  ```
+- Restore the last used color from a config file:
+  ```sh
+  suru-plus-folders -Ru
+  ```
+
+## Important advice!
+
+This is extremely useful for restoring colour after each icons theme upgrade (official installers of [Suru++](https://github.com/gusbemacbe/suru-plus) and some third-party packages do this automatically).
+
+**NOTE:** To change the colour of an individual folder you can use [Folder Color](http://foldercolor.tuxfamily.org) or [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color).

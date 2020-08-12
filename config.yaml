@@ -1,0 +1,332 @@
+baseURL: 'https://gusbemacbe.github.io/suru-plus-folders/'
+# baseURL: '/'
+languageCode: en
+
+canonifyURLs: true
+relativeURLs: true
+uglyURLs: false
+
+title: Suru++ Folders
+description: List of Suru++, Adwaita++ and Yaru++ icons tables.
+author:
+  homepage: 'https://gusbemacbe.pt'
+  name: Gustavo Costa
+copyright: '© 2019-{{ now.Format "2006" }}, All Rights Reserved'
+
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage: en
+
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir: true
+
+# Enable robots.txt generation
+enableRobotsTXT: true
+
+enableEmoji: true
+
+enableInlineShortcodes: true
+
+disableKinds:
+- taxonomy
+- taxonomyTerm
+
+markup:
+  asciidocExt:
+    backend: html5
+    docType: article
+    failureLevel: fatal
+    safeMode: unsafe
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: true
+      unsafe: true
+      xhtml: true
+
+pygmentsCodefences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClassic: true
+pygmentsUseClasses: true
+
+assetDir: "static/assets"
+layoutDir: layouts
+publishDir: docs
+theme: ''
+
+params:
+  custom_css:
+    - css/colours.css
+    - css/fonts.css
+    - css/icons.css
+    - css/global.css
+    - css/header.css
+    - css/footer.css
+    - css/table.css
+    - css/schemes.css
+    - css/media-query.css
+  custom_js:
+    - javascript/header.js
+    - javascript/sidebars.js
+    - javascript/themes.js
+  custom_js_table: javascript/table-of-themes.js
+  custom_js_languages: javascript/languages-switcher.js
+  description: List of Suru++, Adwaita++ and Yaru++ icons tables.
+  home: Home
+  themes:
+    - data: theme-light
+      name: Default
+      weight: 1
+    - data: theme-dark
+      name: Dark
+      weight: 2
+    - data: theme-synthwave-84
+      name: Synthwave ‘84
+      weight: 3
+    - data: theme-cyberpunk
+      name: Cyberpunk
+      weight: 4
+    - data: theme-tron
+      name: TRON Legacy
+      weight: 5
+  title: Suru++ Folders
+
+output: "html"
+
+languages:
+  en:
+    languageName: English
+    contentDir: "content/en"
+    weight: 1
+    menu:
+      main:
+        - url: /
+          name: Home
+          weight: 1
+        - url: /projects/
+          name: Projects
+          weight: 2
+        - url: /contact/
+          name: Contact
+          weight: 3
+      footer:
+        - url: /about/
+          name: About
+          weight: 1
+        - url: /licence/
+          name: Licence
+          weight: 2
+        - url: /privacy/
+          name: Privacy
+          weight: 3
+        - url: /colophon/
+          name: Colophon
+          weight: 4
+
+  fr:
+    languageName: Français
+    contentDir: "content/fr"
+    weight: 2
+    description:  Liste des tables d’icônes Suru++, Adwaita++ et Yaru++.
+    home: Accueil
+    title: Suru++ Dossiers
+    menu:
+      main:
+        - url: /
+          name: Accueil
+          weight: 1
+        - url: /projets/
+          name: Projets
+          weight: 2
+        - url: /contact/
+          name: Contact
+          weight: 3
+      footer:
+        - url: /a-propos/
+          name: À Propos
+          weight: 1
+        - url: /licence/
+          name: Licence
+          weight: 2
+        - url: /confidentialite/
+          name: Confidentialité
+          weight: 3
+        - url: /colophon/
+          name: Colophon
+          weight: 4
+    themes:
+      - data: "theme-light"
+        name: Défaut
+        weight: 1
+      - data: theme-dark
+        name: Sombre
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: TRON – L’Héritage
+        weight: 5
+
+  it:
+    languageName: Italiano
+    contentDir: "content/it"
+    weight: 3
+    description: Elenco delle tabelle di icone dei temi Suru++, Adwaita++ e Yaru++.
+    home: Inizio
+    title: Suru++ Cartelle
+    menu:
+      main:
+        - url: /
+          name: Inizio
+          weight: 1
+        - url: /progetti/
+          name: Progetti
+          weight: 2
+        - url: /contatto/
+          name: Contatto
+          weight: 3
+      footer:
+        - url: /a-proposito-di/
+          name: A proposito di
+          weight: 1
+        - url: /licenza/
+          name: Licenza
+          weight: 2
+        - url: /privacy/
+          name: Privacy
+          weight: 3
+        - url: /colophon/
+          name: Colophon
+          weight: 4
+    themes:
+      - data: "theme-light"
+        name: Standard
+        weight: 1
+      - data: theme-dark
+        name: Scuro
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave ‘84
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: "Tron: Legacy"
+        weight: 5
+
+  pt:
+    languageName: Português Europeu
+    contentDir: "content/pt"
+    weight: 3
+    description: Lista de tabelas de ícones de temas Suru++, Adwaita++ e Yaru++.
+    home: Início
+    title: Suru++ Diretórios
+    menu:
+      main:
+        - url: /
+          name: Início
+          weight: 1
+        - url: /projetos/
+          name: Projetos
+          weight: 2
+        - url: /contato/
+          name: Contato
+          weight: 3
+      footer:
+        - url: /acerca/
+          name: Acerca
+          weight: 1
+        - url: /licenca/
+          name: Licença
+          weight: 2
+        - url: /privacidade/
+          name: Privacidade
+          weight: 3
+        - url: /colofao/
+          name: Colofão
+          weight: 4
+    themes:
+      - data: "theme-light"
+        name: Padrão
+        weight: 1
+      - data: theme-dark
+        name: Escuro
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: "TRON: O Legado"
+        weight: 5
+
+  pt-BR:
+    languageName: Português Brasileiro
+    contentDir: "content/pt-br"
+    weight: 3
+    description: Lista de tabelas de ícones de temas Suru++, Adwaita++ e Yaru++.
+    home: Início
+    title: Suru++ Pastas
+    menu:
+      main:
+        - url: /
+          name: Início
+          weight: 1
+        - url: /projetos/
+          name: Projetos
+          weight: 2
+        - url: /contato/
+          name: Contato
+          weight: 3
+      footer:
+        - url: /sobre/
+          name: Sobre
+          weight: 1
+        - url: /licenca/
+          name: Licença
+          weight: 2
+        - url: /privacidade/
+          name: Privacidade
+          weight: 3
+        - url: /colofao/
+          name: Colofão
+          weight: 4
+    themes:
+      - data: "theme-light"
+        name: Padrão
+        weight: 1
+      - data: theme-dark
+        name: Escuro
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: TRON – O Legado
+        weight: 5
+
+mediaTypes:
+  application/javascript:
+    suffixex: 
+    - js

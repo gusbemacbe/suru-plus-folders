@@ -1,0 +1,41 @@
+{{range .Resources.Match "images/*"}} {{end}}
+
+{{ if .IsTranslated }}
+  <div class="topnav">
+
+        <a style="pointer-events: none; cursor: default;">{{.Site.Title}}</a>
+
+        {{- $currentPage := . -}}
+        {{ range .Site.Menus.main -}}
+          {{ $menu_item_url := .URL | relLangURL -}}
+          {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+        <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        {{- end }}
+
+        <div class="dropdown">
+          <button class="dropbtn"><span class="suru-theme"></span></button>
+          
+          <div class="dropdown-content">
+            {{/*  {{ range .Site.Params.Themes }}
+              <a class="button" data-body-class="{{ .data }}">{{ .name }}</a>
+            {{ end }}  */}}
+            {{ range .Site.Params.Themes }}
+              <a class="button theme-switch" id="{{ .data }}">{{ .name }}</a>
+            {{ end }}
+          </div>
+        </div>
+
+      <div class="dropdown" id="language-switcher">
+        <button class="dropbtn"><span class="suru-languages"></span></button>
+        
+        <div class="dropdown-content">
+          {{ range .Translations -}}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        </div>
+      </div>
+
+      <a href="javascript: void(0)" class="icon" onclick="openNav()"><span class="suru-menu"></span></i></a>
+      <a href="javascript: void(0)" class="icon" onclick="openNavBottom()"><span class="suru-languages"></span></a>
+  </div>
+{{ end }}

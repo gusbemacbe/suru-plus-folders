@@ -1,0 +1,78 @@
+table 
+{
+  background: white;
+  border-collapse: collapse;
+  border-radius: 6px;
+  border-spacing: 1;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+
+table td, table th 
+{
+  padding-left: 8px;
+}
+
+table thead tr 
+{
+  background: var(--suru-plus-fitdance-1);
+	color: var(--suru-plus-papirus-light-solid);
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
+}
+
+table tbody tr 
+{
+  border-bottom: 1px solid #E3F1D5;
+  height: 48px;
+}
+
+table tbody tr td:first-child 
+{
+	background-image: var(--suru-plus-sunrise-1-top);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+table tbody tr:last-child 
+{
+  border: 0;
+}
+
+table td, table th 
+{
+  text-align: left;
+}
+
+table td.l, table th.l 
+{
+  text-align: right;
+}
+
+table td.c, table th.c 
+{
+  text-align: center;
+  font-weight: bolder;
+}
+
+table td.r, table th.r 
+{
+  text-align: center;
+}
+
+table td img 
+{
+  margin: 10px;
+  padding: 0px;
+}
+
+tbody th
+{
+  background-image: var(--suru-plus-sunrise-1-top);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

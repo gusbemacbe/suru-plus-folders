@@ -1,0 +1,13 @@
+{{define "main"}}
+
+	{{ if .IsTranslated }}
+
+	<!--Title-->
+	<h2>{{.Title}}</h2>
+
+	<!--Content-->
+	{{.Content}}
+		
+	{{ end }}
+
+{{ end }}

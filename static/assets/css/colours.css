@@ -1,0 +1,442 @@
+:root
+{
+  /* 🇧🇷 Cores Sólidas */
+  /* 🇬🇧 Solid Colours */
+  /* 🇮🇹 Colori Solidi */
+  /* 🇫🇷 Couleurs Unies */
+
+  /** Suru++ **/
+  --suru-plus-css-tricks-solid:        #FF0056;
+  --suru-plus-fitdance-solid:          #B9F4FF;
+  --suru-plus-papirus-dark-solid:      #5C616C;
+  --suru-plus-papirus-light-solid:     #ECECEC;
+
+  /** Synthware ‘84 **/
+  --suru-plus-synthwave-84-solid-1:    #FFFFFF;
+	--suru-plus-synthwave-84-solid-2:    #FEDE5D;
+	--suru-plus-synthwave-84-solid-3:    #72F1B8;
+	--suru-plus-synthwave-84-solid-4:    #36F9F6;
+	--suru-plus-synthwave-84-solid-5:    #B6B1B1;
+	--suru-plus-synthwave-84-solid-6:    #FF7EDB;
+	--suru-plus-synthwave-84-solid-7:    #2EE2FA;
+	--suru-plus-synthwave-84-solid-8:    #03EDF9;
+	--suru-plus-synthwave-84-solid-9:    #B893CE;
+	--suru-plus-synthwave-84-solid-10:   #FF8B39;
+	--suru-plus-synthwave-84-solid-11:   #F97E72;
+	--suru-plus-synthwave-84-solid-12:   #848BBD;
+	--suru-plus-synthwave-84-solid-13:   #FE4450;
+	--suru-plus-synthwave-84-solid-14:   #DD5500;
+	--suru-plus-synthwave-84-solid-15:   #614D85;
+	--suru-plus-synthwave-84-solid-16:   #495495;
+	--suru-plus-synthwave-84-solid-17:   #444251;
+	--suru-plus-synthwave-84-solid-18:   #463465;
+	--suru-plus-synthwave-84-solid-19:   #880088;
+	--suru-plus-synthwave-84-solid-20:   #34294F;
+	--suru-plus-synthwave-84-solid-21:   #2A2139;
+	--suru-plus-synthwave-84-solid-22:   #262335;
+	--suru-plus-synthwave-84-solid-23:   #232530;
+	--suru-plus-synthwave-84-solid-24:   #1F212B;
+	--suru-plus-synthwave-84-solid-25:   #241B2F;
+	--suru-plus-synthwave-84-solid-26:   #171520;
+	--suru-plus-synthwave-84-solid-27:   #08080F;
+
+  /** Tokyo Hack **/
+  --suru-plus-tokyo-hack-1:            #fa6771;
+  --suru-plus-tokyo-hack-2:            #afff8a;
+  --suru-plus-tokyo-hack-3:            #f08df0;
+  --suru-plus-tokyo-hack-4:            #a762a7;
+  --suru-plus-tokyo-hack-5:            #7c5f7c;
+  --suru-plus-tokyo-hack-6:            #230a35;
+  --suru-plus-tokyo-hack-7:            #292752;
+  --suru-plus-tokyo-hack-8:            #18173E;
+
+  /** Altered Carbon **/
+	--suru-plus-altered-carbon-solid-1:  #F8FAFA;
+	--suru-plus-altered-carbon-solid-2:  #F9F9F9;
+	--suru-plus-altered-carbon-solid-3:  #EDEEEE;
+	--suru-plus-altered-carbon-solid-4:  #E9EFEF;
+	--suru-plus-altered-carbon-solid-5:  #E0E1E1;
+	--suru-plus-altered-carbon-solid-6:  #D8E3E3;
+	--suru-plus-altered-carbon-solid-7:  #D2D3D3;
+	--suru-plus-altered-carbon-solid-8:  #C7D6D6;
+	--suru-plus-altered-carbon-solid-9:  #C2C4C4;
+	--suru-plus-altered-carbon-solid-10: #B4C8C8;
+	--suru-plus-altered-carbon-solid-11: #B1B3B3;
+	--suru-plus-altered-carbon-solid-12: #9EB8B8;
+	--suru-plus-altered-carbon-solid-13: #A9A79E;
+	--suru-plus-altered-carbon-solid-14: #9DA0A0;
+	--suru-plus-altered-carbon-solid-15: #85A6A6;
+	--suru-plus-altered-carbon-solid-16: #1CCB83;
+	--suru-plus-altered-carbon-solid-17: #45A4B3;
+	--suru-plus-altered-carbon-solid-18: #868A8A;
+	--suru-plus-altered-carbon-solid-19: #689090;
+	--suru-plus-altered-carbon-solid-20: #74796D;
+	--suru-plus-altered-carbon-solid-21: #686D6D;
+	--suru-plus-altered-carbon-solid-22: #427474;
+	--suru-plus-altered-carbon-solid-23: #A53520;
+	--suru-plus-altered-carbon-solid-24: #1A676C;
+	--suru-plus-altered-carbon-solid-25: #A0311E;
+	--suru-plus-altered-carbon-solid-26: #035D67;
+	--suru-plus-altered-carbon-solid-27: #3A4141;
+	--suru-plus-altered-carbon-solid-28: #553229;
+	--suru-plus-altered-carbon-solid-29: #004853;
+	--suru-plus-altered-carbon-solid-30: #044747;
+	--suru-plus-altered-carbon-solid-31: #014445;
+	--suru-plus-altered-carbon-solid-32: #013839;
+	--suru-plus-altered-carbon-solid-33: #0F3228;
+	--suru-plus-altered-carbon-solid-34: #342218;
+	--suru-plus-altered-carbon-solid-35: #03333D;
+	--suru-plus-altered-carbon-solid-36: #0D2C33;
+	--suru-plus-altered-carbon-solid-37: #002F32;
+	--suru-plus-altered-carbon-solid-38: #012B2E;
+	--suru-plus-altered-carbon-solid-39: #011E21;
+	--suru-plus-altered-carbon-solid-40: #021D22;
+	--suru-plus-altered-carbon-solid-41: #001C23;
+	--suru-plus-altered-carbon-solid-42: #051417;
+	--suru-plus-altered-carbon-solid-43: #0E0E0F;
+  
+  /** TRON Legacy **/
+  --suru-plus-tron-solid-01: #fef9f4;
+	--suru-plus-tron-solid-02: #f4fafd;
+	--suru-plus-tron-solid-03: #fffadf;
+	--suru-plus-tron-solid-04: #E6FFFF;
+	--suru-plus-tron-solid-05: #fbf8ab;
+	--suru-plus-tron-solid-06: #def6fc;
+	--suru-plus-tron-solid-07: #faebdc;
+	--suru-plus-tron-solid-08: #ddf1f7;
+	--suru-plus-tron-solid-09: #ffef94;
+	--suru-plus-tron-solid-10: #faea98;
+	--suru-plus-tron-solid-11: #c6edfb;
+	--suru-plus-tron-solid-12: #f7dcc3;
+	--suru-plus-tron-solid-13: #c4e6f2;
+	--suru-plus-tron-solid-14: #f6dc9a;
+	--suru-plus-tron-solid-15: #FFE64D;
+	--suru-plus-tron-solid-16: #f4dc91;
+	--suru-plus-tron-solid-17: #c9dfe0;
+	--suru-plus-tron-solid-18: #fce14c;
+	--suru-plus-tron-solid-19: #b3e3f3;
+	--suru-plus-tron-solid-20: #f3cca7;
+	--suru-plus-tron-solid-21: #f5d07d;
+	--suru-plus-tron-solid-22: #a8dbec;
+	--suru-plus-tron-solid-23: #ecd347;
+	--suru-plus-tron-solid-24: #a4d5ea;
+	--suru-plus-tron-solid-25: #97d6eb;
+	--suru-plus-tron-solid-26: #efb987;
+	--suru-plus-tron-solid-27: #fabe45;
+	--suru-plus-tron-solid-28: #dbc442;
+	--suru-plus-tron-solid-29: #89cee5;
+	--suru-plus-tron-solid-30: #ddb676;
+	--suru-plus-tron-solid-31: #8bc7e2;
+	--suru-plus-tron-solid-32: #efab3f;
+	--suru-plus-tron-solid-33: #eaa462;
+	--suru-plus-tron-solid-34: #6FC3DF;
+	--suru-plus-tron-solid-35: #c8b33d;
+	--suru-plus-tron-solid-36: #7cb9db;
+	--suru-plus-tron-solid-37: #6cbed9;
+	--suru-plus-tron-solid-38: #e48a35;
+	--suru-plus-tron-solid-39: #e38c2d;
+	--suru-plus-tron-solid-40: #b3a036;
+	--suru-plus-tron-solid-41: #6ca4cb;
+	--suru-plus-tron-solid-42: #61aac2;
+	--suru-plus-tron-solid-43: #7b9aa2;
+	--suru-plus-tron-solid-44: #bc8753;
+	--suru-plus-tron-solid-45: #6a95ac;
+	--suru-plus-tron-solid-46: #6194c1;
+	--suru-plus-tron-solid-47: #DF740C;
+	--suru-plus-tron-solid-48: #be7342;
+	--suru-plus-tron-solid-49: #9a892e;
+	--suru-plus-tron-solid-50: #d56d0b;
+	--suru-plus-tron-solid-51: #5391a6;
+	--suru-plus-tron-solid-52: #6089a9;
+	--suru-plus-tron-solid-53: #5f8aa0;
+	--suru-plus-tron-solid-54: #557d8a;
+	--suru-plus-tron-solid-55: #bc5921;
+	--suru-plus-tron-solid-56: #4a79a0;
+	--suru-plus-tron-solid-57: #52778e;
+	--suru-plus-tron-solid-58: #796c25;
+	--suru-plus-tron-solid-59: #417383;
+	--suru-plus-tron-solid-60: #a85609;
+	--suru-plus-tron-solid-61: #486a81;
+	--suru-plus-tron-solid-62: #3f6177;
+	--suru-plus-tron-solid-63: #8d4427;
+	--suru-plus-tron-solid-64: #345468;
+	--suru-plus-tron-solid-65: #2b4d6c;
+	--suru-plus-tron-solid-66: #2a465a;
+	--suru-plus-tron-solid-67: #473f15;
+	--suru-plus-tron-solid-68: #633305;
+	--suru-plus-tron-solid-69: #26434d;
+	--suru-plus-tron-solid-70: #213d50;
+	--suru-plus-tron-solid-71: #1e3850;
+	--suru-plus-tron-solid-72: #442822;
+	--suru-plus-tron-solid-73: #172e3f;
+	--suru-plus-tron-solid-74: #0C141F;
+  --suru-plus-tron-solid-75: #1b232c;
+  --suru-plus-tron-solid-76: #FF410D;
+  --suru-plus-tron-solid-77: #eb9a5f;
+  --suru-plus-tron-solid-78: #5af259;
+  
+  /* #00a8ff #00eaff #26b4ca #59b4c7 #18cae6 */
+
+  /* 🇧🇷 Cores do Arco-íris */
+  /* 🇬🇧 Rainbow Colours */
+  /* 🇮🇹 Colori dell’Arcobaleno */
+  /* 🇫🇷 Couleurs Arc-en-ciel */
+
+  /** Normal – Normale – Ordinaire **/
+  --suru-plus-red-1:                  linear-gradient(180deg, #FF7B57 0%, #FF5151 50%, #F50F0F 100%);
+  --suru-plus-orange-1:               linear-gradient(180deg, #FF9757 0%, #FF6E51 50%, #F5350F 100%);
+  --suru-plus-orange-2:               linear-gradient(180deg, #FFB357 0%, #FF8B51 50%, #F55C0F 100%);
+  --suru-plus-orange-3:               linear-gradient(180deg, #FFD057 0%, #FFA851 50%, #F5820F 100%);
+  --suru-plus-golden:                 linear-gradient(180deg, #FFEC57 0%, #FFC551 50%, #F5A90F 100%);
+  --suru-plus-yellow:                 linear-gradient(180deg, #F7FF57 0%, #FFE251 50%, #F5CF0F 100%);
+  --suru-plus-lemon:                  linear-gradient(180deg, #A3FF57 0%, #C5FF51 50%, #A9F50F 100%);
+  --suru-plus-green-1:                linear-gradient(180deg, #6AFF57 0%, #8BFF51 50%, #5CF50F 100%);
+  --suru-plus-green-2:                linear-gradient(180deg, #57FF7B 0%, #51FF51 50%, #0FF50F 100%);
+  --suru-plus-turquoise:              linear-gradient(180deg, #57FFB3 0%, #51FF8B 50%, #0FF55C 100%);
+  --suru-plus-cyan-1:                 linear-gradient(180deg, #57FFEC 0%, #51FFC5 50%, #0FF5A9 100%);
+  --suru-plus-cyan-2:                 linear-gradient(180deg, #57DBFF 0%, #51FFFF 50%, #0FF5F5 100%);
+  --suru-plus-blue:                   linear-gradient(180deg, #5786FF 0%, #51A8FF 50%, #0F82F5 100%);
+  --suru-plus-purple:                 linear-gradient(180deg, #EC57FF 0%, #C551FF 50%, #A90FF5 100%);
+  --suru-plus-magenta:                linear-gradient(180deg, #FF57DB 0%, #FF51FF 50%, #F50FF5 100%);
+  --suru-plus-pink-1:                 linear-gradient(180deg, #FF57A3 0%, #FF51C5 50%, #F50FA9 100%);
+  --suru-plus-pink-2:                 linear-gradient(180deg, #FF576A 0%, #FF518B 50%, #F50F5C 100%);
+  --suru-plus-pink-red:               linear-gradient(180deg, #FF6D57 0%, #FF5160 50%, #F50F22 100%);
+
+  /** Médio – Medium – Medio – Moyen **/
+  --suru-plus-red-medium:             linear-gradient(180deg, #FF4400 0%, #DC1414 100%);
+  --suru-plus-orange-medium-1:        linear-gradient(180deg, #FF6E00 0%, #DC3514 100%);
+  --suru-plus-orange-medium-2:        linear-gradient(180deg, #FF9900 0%, #DC5714 100%);
+  --suru-plus-golden-medium-1:        linear-gradient(180deg, #FFC400 0%, #DC7814 100%);
+  --suru-plus-golden-medium-2:        linear-gradient(180deg, #FFEE00 0%, #DC9914 100%);
+  --suru-plus-yellow-medium:          linear-gradient(180deg, #E6FF00 0%, #DCBA14 100%);
+  --suru-plus-lemon-medium:           linear-gradient(180deg, #66FF00 0%, #99DC14 100%);
+  --suru-plus-green-medium-1:         linear-gradient(180deg, #11FF00 0%, #57DC14 100%);
+  --suru-plus-green-medium-2:         linear-gradient(180deg, #00FF44 0%, #14DC14 100%);
+  --suru-plus-turquoise-medium:       linear-gradient(180deg, #00FF99 0%, #14DC57 100%);
+  --suru-plus-cyan-medium-1:          linear-gradient(180deg, #00FFEE 0%, #14DC99 100%);
+  --suru-plus-cyan-medium-2:          linear-gradient(180deg, #00BBFF 0%, #14DCDC 100%);
+  --suru-plus-blue-medium:            linear-gradient(180deg, #003BFF 0%, #1478DC 100%);
+  --suru-plus-purple-medium:          linear-gradient(180deg, #EE00FF 0%, #9914DC 100%);
+  --suru-plus-magenta-medium:         linear-gradient(180deg, #FF00BB 0%, #DC14DC 100%);
+  --suru-plus-pink-medium-1:          linear-gradient(180deg, #FF0066 0%, #DC1499 100%);
+  --suru-plus-pink-medium-2:          linear-gradient(180deg, #FF0011 0%, #DC1457 100%);
+  --suru-plus-pink-red-meidum:        linear-gradient(180deg, #FF2E00 0%, #DC1425 100%);
+
+  /** Brilhante – Bright – Luminoso – Brillant **/
+  --suru-plus-red-bright:             linear-gradient(180deg, #D1391F 0%, #FF0000 100%);
+  --suru-plus-orange-bright-1:        linear-gradient(180deg, #D1571F 0%, #FF2A00 100%);
+  --suru-plus-orange-bright-2:        linear-gradient(180deg, #D1751F 0%, #FF5500 100%);
+  --suru-plus-golden-bright-1:        linear-gradient(180deg, #D1931F 0%, #FF7F00 100%);
+  --suru-plus-golden-bright-2:        linear-gradient(180deg, #D1B01F 0%, #FFAA00 100%);
+  --suru-plus-yellow-bright:          linear-gradient(180deg, #D1CE1F 0%, #FFD500 100%);
+  --suru-plus-lemon-bright:           linear-gradient(180deg, #7BD11F 0%, #AAFF00 100%);
+  --suru-plus-green-bright-1:         linear-gradient(180deg, #3FD11F 0%, #55FF00 100%);
+  --suru-plus-green-bright-2:         linear-gradient(180deg, #1FD139 0%, #00FF00 100%);
+  --suru-plus-turquoise-bright:       linear-gradient(180deg, #1FD175 0%, #00FF55 100%);
+  --suru-plus-cyan-bright-1:          linear-gradient(180deg, #1FD1B0 0%, #00FFAA 100%);
+  --suru-plus-cyan-bright-2:          linear-gradient(180deg, #1FB6D1 0%, #00FFFF 100%);
+  --suru-plus-blue-bright:            linear-gradient(180deg, #1F5DD1 0%, #007FFF 100%);
+  --suru-plus-purple-bright:          linear-gradient(180deg, #B01FD1 0%, #AA00FF 100%);
+  --suru-plus-magenta-bright:         linear-gradient(180deg, #D11FB6 0%, #FF00FF 100%);
+  --suru-plus-pink-bright-1:          linear-gradient(180deg, #D11F7B 0%, #FF00AA 100%);
+  --suru-plus-pink-bright-2:          linear-gradient(180deg, #D11F3F 0%, #FF0055 100%);
+  --suru-plus-pink-red-bright:        linear-gradient(180deg, #D12B1F 0%, #FF0015 100%);
+  --suru-plus-red-dark:               linear-gradient(180deg, #4B4343 0%, #332D2D 100%);
+
+  /** Escuro – Dark – Scuro – Sombre **/
+  --suru-plus-orange-dark-1:          linear-gradient(180deg, #4B4643 0%, #332F2D 100%);
+  --suru-plus-orange-dark-2:          linear-gradient(180deg, #4B4743 0%, #33302D 100%);
+  --suru-plus-golden-dark:            linear-gradient(180deg, #4B4943 0%, #33312D 100%);
+  --suru-plus-yellow-dark-5:          linear-gradient(180deg, #4B4A43 0%, #33322D 100%);
+  --suru-plus-lemon-dark:             linear-gradient(180deg, #494B43 0%, #31332D 100%);
+  --suru-plus-green-dark-1:           linear-gradient(180deg, #464B43 0%, #2F332D 100%);
+  --suru-plus-green-dark-2:           linear-gradient(180deg, #434B43 0%, #2D332D 100%);
+  --suru-plus-turquoise-dark:         linear-gradient(180deg, #434B46 0%, #2D332F 100%);
+  --suru-plus-cyan-1-dark:            linear-gradient(180deg, #434B49 0%, #2D3331 100%);
+  --suru-plus-cyan-2-dark:            linear-gradient(180deg, #434B4B 0%, #2D3333 100%);
+  --suru-plus-blue-medium-dark:       linear-gradient(180deg, #43474B 0%, #2D3033 100%);
+  --suru-plus-purple-medium-dark-1:   linear-gradient(180deg, #49434B 0%, #312D33 100%);
+  --suru-plus-purple-medium-dark-2:   linear-gradient(180deg, #4B434B 0%, #332D33 100%);
+  --suru-plus-purple-medium-dark-3:   linear-gradient(180deg, #4B4349 0%, #332D31 100%);
+  --suru-plus-pink-medium-dark-1:     linear-gradient(180deg, #4B4346 0%, #332D2F 100%);
+  --suru-plus--pink-medium-dark-2:    linear-gradient(180deg, #4B4344 0%, #332D2E 100%);
+  --suru-plus-pink-red-meidum-dark:   linear-gradient(180deg, #665252 0%, #4E3636 100%);
+  --suru-plus-orange-bright-dark-1:   linear-gradient(180deg, #665852 0%, #4E3E36 100%);
+  --suru-plus-orange-bright-dark-1:   linear-gradient(180deg, #665C52 0%, #4E4236 100%);
+  --suru-plus-golden-bright-1-dark:   linear-gradient(180deg, #665F52 0%, #4E4636 100%);
+  --suru-plus-golden-bright-2-dark:   linear-gradient(180deg, #666252 0%, #4E4A36 100%);
+  --suru-plus-lemon-bright-dark:      linear-gradient(180deg, #5F6652 0%, #464E36 100%);
+  --suru-plus-green-bright-1-dark:    linear-gradient(180deg, #586652 0%, #3E4E36 100%);
+  --suru-plus-green-bright-2-dark:    linear-gradient(180deg, #526652 0%, #364E36 100%);
+  --suru-plus-turquoise-bright-dark:  linear-gradient(180deg, #526655 0%, #364E3A 100%);
+  --suru-plus-cyan-bright-1-dark:     linear-gradient(180deg, #526658 0%, #364E3E 100%);
+  --suru-plus-cyan-bright-2-dark:     linear-gradient(180deg, #52665F 0%, #364E46 100%);
+  --suru-plus-cyan-bright-3-dark:     linear-gradient(180deg, #526666 0%, #364E4E 100%);
+  --suru-plus-blue-bright-dark:       linear-gradient(180deg, #525C66 0%, #36424E 100%);
+  --suru-plus-purple-bright-dark:     linear-gradient(180deg, #5F5266 0%, #46364E 100%);
+  --suru-plus-magenta-bright-dark:    linear-gradient(180deg, #665266 0%, #4E364E 100%);
+  --suru-plus-pink-bright-1-dark:     linear-gradient(180deg, #66525F 0%, #4E3646 100%);
+  --suru-plus-pink-bright-2-dark:     linear-gradient(180deg, #665258 0%, #4E363E 100%);
+  --suru-plus-pink-red-bright-dark:   linear-gradient(180deg, #665253 0%, #4E3638 100%);
+  --suru-plus-cyan-medium-2-dark:     linear-gradient(180deg, #526060 0%, #4C4C4C 100%);
+
+  /* Branco e preto – White and black – Bianco e nero – Blanch et noir */
+  --suru-plus-dark-2:                 linear-gradient(180deg, #545E63 0%, #343B40 100%);
+  --suru-plus-dark-3:                 linear-gradient(180deg, #4C5561 0%, #2E3842 100%);
+  --suru-plus-dark-4:                 linear-gradient(180deg, #2B2E30 0%, #1E1F1F 100%);
+  --suru-plus-white-1:                linear-gradient(180deg, #BDC3C7 0%, #AEAFB3 100%);
+  --suru-plus-white-2:                linear-gradient(180deg, #E0E5E7 0%, #C7CED2 100%);
+  --suru-plus-white-3:                linear-gradient(180deg, #DEDEDE 0%, #A1A1A1 100%);
+  --suru-plus-white-4:                linear-gradient(180deg, #C8C4B7 0%, #ADA694 100%);
+  --suru-plus-white-5:                linear-gradient(359.24deg, #A0A0A0 0.54%, #DFDFDF 99.25%);
+  --suru-plus-white-6:                linear-gradient(358.48deg, #BFC1C1 2.21%, #F1F2F3 97.09%);
+
+  /* 🇧🇷  Cores dos Gradientes dos Estilos	*/
+  /* 🇬🇧  Gradient Colours of Styles */
+  /* 🇮🇹  Colori degli Sfumati degli Stili */
+  /* 🇫🇷  Couleurs des Dégradés des Styles	*/
+  --suru-plus-art-deco:               linear-gradient(180deg, #EDC268 0%, #9B7424 100%);
+  --suru-plus-aurora-1:               linear-gradient(180deg, #00CCDA 0%, #0083FF 14.29%, #007AF9 28.57%, #0060E8 42.86%, #005FE7 57.14%, #2639AD 71.43%, #401E84 85.71%, #4A1475 100%);
+  --suru-plus-aurora-2:               linear-gradient(180deg, #00A7FD 0%, #9914DC 100%);
+  --suru-plus-aurora-3:               linear-gradient(180deg, #AD4F8D 0%, #6B8CCB 100%);
+  --suru-plus-aurora-4:               linear-gradient(180deg, #01BCC7 0%, #2954EF 100%);
+  --suru-plus-eccentric:              linear-gradient(180deg, #79DD00 0%, #6DDB0A 10%, #61D915 20%, #55D620 30%, #49D42B 40%, #3CD235 50%, #30CF40 60%, #24CD4B 70%, #18CA56 80%, #0CC861 90%, #00C66B 100%);
+  --suru-plus-energy:                 linear-gradient(180.45deg, #FFEB00 0.55%, #FFA100 100.55%);
+  --suru-plus-fitdance-1:             linear-gradient(180.85deg, #1AD6AB 0.10%, #329DB6 100%);
+  --suru-plus-fitdance-2:             linear-gradient(180deg, #D0391F 0%, #FF005D 100%);
+  --suru-plus-haguichi:               linear-gradient(180deg, #E6548B 0%, #F76363 100%);
+  --suru-plus-japanese-1:             linear-gradient(360deg, #957552 0%, #B29373 100%);
+  --suru-plus-japanese-2:             linear-gradient(360deg, rgba(197, 141, 103, 0.95) 0%, rgba(230, 170, 129, 0.95) 100%);
+  --suru-plus-kamera:                 linear-gradient(180deg, #16A085 0%, #663579 100%);
+  --suru-plus-kde:                    linear-gradient(180.85deg, #07B3FF 0.50%, #007DE8 95%);
+  --suru-plus-manjaro:                linear-gradient(180deg, #46A926 0%, #009A56 100%);
+  --suru-plus-mavericks:              linear-gradient(180deg, #00F260 0%, #0575E6 100%);
+  --suru-plus-mint:                   linear-gradient(180deg, #A6D74F 0%, #76C22B 100%);
+  --suru-plus-papirus:                linear-gradient(180deg, #49535E 0%, #2F3943 100%);
+  --suru-plus-russia-princess:        linear-gradient(360deg, #5B2F00 0%, #FF8000 100%);
+  --suru-plus-sunrise-1:              linear-gradient(0deg, #FF0056 0%, #FF0C4E 10%, #FF1845 20%, #FF243D 30%, #FF3034 40%, #FF3C2B 50%, #FF4823 60%, #FF541A 70%, #FF6012 80%, #FF6C09 90%, #FF7901 100%);
+  --suru-plus-sunrise-2:              linear-gradient(180deg, #FF6E00 0%, #EF002B 100%);
+  --suru-plus-sunrise-3:              linear-gradient(180deg, #FF4500 0%, #DC153B 100%);
+  --suru-plus-technotronic-1:         linear-gradient(0deg, #037164 0%, #00AC98 100%);
+  --suru-plus-technotronic-2:         linear-gradient(180deg, #31C6B7 0%, #2B898F 100%);
+  --suru-plus-ubuntu:                 linear-gradient(180deg, #D1313E 0%, #A9344F 50%, #6B3274 100%);
+
+  /* 🇧🇷  Cyberpunk e Synthware retrofuturistas da década dos anos 1980: Altered Carbon, Battlestar Galactica, Blade Runner, Star Trek, Star Wars e TRON*/
+  /* 🇬🇧  1980s Retrofuturistic Cyberpunk and Synthware: Altered Carbon, Battlestar Galactica, Blade Runner, Star Trek, Star Wars, and TRON */
+  /* 🇮🇹  Cyberpunk e Synthware retrofuturistici degli anni ‘80: Altered Carbon, Battlestar Galactica, Blade Runner, Star Trek, Star Wars e TRON*/
+  /* 🇫🇷  Cyberpunk et Synthware retrofuturistes des années 1980 : Altered Carbon, Battlestar Galactica, Blade Runner, Star Trek, Star Wars et TRON */
+  
+  --suru-plus-altered-carbon-01: linear-gradient(180deg, #002F32 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-02: linear-gradient(180deg, #004853 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-03: linear-gradient(180deg, #013839 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-04: linear-gradient(180deg, #014445 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-05: linear-gradient(180deg, #035D67 0%, #002F32 100%);
+  --suru-plus-altered-carbon-06: linear-gradient(180deg, #035D67 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-07: linear-gradient(180deg, #1A676C 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-08: linear-gradient(180deg, #342218 0%, #002F32 100%);
+  --suru-plus-altered-carbon-09: linear-gradient(180deg, #342218 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-10: linear-gradient(180deg, #3A4141 0%, #002F32 100%);
+  --suru-plus-altered-carbon-11: linear-gradient(180deg, #3A4141 0%, #342218 100%);
+  --suru-plus-altered-carbon-12: linear-gradient(180deg, #3A4141 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-13: linear-gradient(180deg, #427474 0%, #342218 100%);
+  --suru-plus-altered-carbon-14: linear-gradient(180deg, #427474 0%, #002F32 100%);
+  --suru-plus-altered-carbon-15: linear-gradient(180deg, #45A4B3 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-16: linear-gradient(180deg, #45A4B3 0%, #342218 100%);
+  --suru-plus-altered-carbon-17: linear-gradient(180deg, #553229 0%, #002F32 100%);
+  --suru-plus-altered-carbon-18: linear-gradient(180deg, #553229 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-19: linear-gradient(180deg, #A0311E 0%, #342218 100%);
+  --suru-plus-altered-carbon-20: linear-gradient(180deg, #A0311E 0%, #0E0E0F 100%);
+  --suru-plus-altered-carbon-21: linear-gradient(180deg, #A0311E 0%, #002F32 100%);
+  
+  --suru-plus-cyberblue:              linear-gradient(360deg, #000828 0%, #040F38 100%);
+  --suru-plus-cybergray:              linear-gradient(180deg, #494B43 0%, #31332D 100%);
+  --suru-plus-cybergreen:             linear-gradient(180deg, #141414 0%, #003C21 100%);
+  --suru-plus-cyberorange:            linear-gradient(180deg, #280007 0%, #3C000A 100%);
+  --suru-plus-cyberpurple:            linear-gradient(180deg, #230028 0%, #5C0F7D 100%);
+  --suru-plus-cybered:                linear-gradient(180deg, #141414 0%, #28000E 100%);
+
+  --suru-plus-synthwave-84-1:         linear-gradient(to bottom, #2A2139 75%, #34294F);
+  --suru-plus-synthwave-84-2:         linear-gradient(to bottom, #FFF951 25%, #FC28A8);
+  --suru-plus-synthwave-84-3:         linear-gradient(to right, #FC28A8 0%, #03EDF9 100%);
+  
+  --suru-plus-tron-01: linear-gradient(180deg, #1E3850 0%, #0C141F 100%);
+  --suru-plus-tron-02: linear-gradient(180deg, #2B4D6C 0%, #0C141F 100%);
+  --suru-plus-tron-03: linear-gradient(180deg, #4A79A0 0%, #0C141F 100%);
+  --suru-plus-tron-04: linear-gradient(180deg, #5391A6 0%, #0C141F 100%);
+  --suru-plus-tron-05: linear-gradient(180deg, #6194C1 0%, #0C141F 100%);
+  --suru-plus-tron-06: linear-gradient(180deg, #633305 0%, #442822 100%);
+  --suru-plus-tron-07: linear-gradient(180deg, #6CBED9 0%, #486A81 100%);
+  --suru-plus-tron-08: linear-gradient(180deg, #6CBED9 0%, #0C141F 100%);
+  --suru-plus-tron-09: linear-gradient(180deg, #89CEE5 0%, #0C141F 100%);
+  --suru-plus-tron-10: linear-gradient(180deg, #8D4427 0%, #442822 100%);
+  --suru-plus-tron-11: linear-gradient(180deg, #97D6EB 0%, #0C141F 100%);
+  --suru-plus-tron-12: linear-gradient(180deg, #97D6EB 0%, #486A81 100%);
+  --suru-plus-tron-13: linear-gradient(180deg, #A85609 0%, #442822 100%);
+  --suru-plus-tron-14: linear-gradient(180deg, #B3E3F3 0%, #0C141F 100%);
+  --suru-plus-tron-15: linear-gradient(180deg, #BC5921 0%, #633305 100%);
+  --suru-plus-tron-16: linear-gradient(180deg, #C4E6F2 0%, #0C141F 100%);
+  --suru-plus-tron-17: linear-gradient(180deg, #C4E6F2 0%, #486A81 100%);
+  --suru-plus-tron-18: linear-gradient(180deg, #C6EDFB 0%, #486A81 100%);
+  --suru-plus-tron-19: linear-gradient(180deg, #D56D0B 0%, #442822 100%);
+  --suru-plus-tron-20: linear-gradient(180deg, #D56D0B 0%, #633305 100%);
+  --suru-plus-tron-21: linear-gradient(180deg, #DDF1F7 0%, #486A81 100%);
+  --suru-plus-tron-22: linear-gradient(180deg, #DDF1F7 0%, #0C141F 100%);
+  --suru-plus-tron-23: linear-gradient(180deg, #E48A35 0%, #633305 100%);
+  --suru-plus-tron-24: linear-gradient(180deg, #E48A35 0%, #442822 100%);
+  --suru-plus-tron-25: linear-gradient(180deg, #E6FFFF 0%, #486A81 100%);
+  --suru-plus-tron-26: linear-gradient(180deg, #E6FFFF 0%, #6FC3DF 100%);
+  --suru-plus-tron-27: linear-gradient(180deg, #E6FFFF 0%, #0C141F 100%);
+  --suru-plus-tron-28: linear-gradient(180deg, #ECD347 0%, #E38C2D 100%);
+  --suru-plus-tron-29: linear-gradient(180deg, #EFAB3F 0%, #442822 100%);
+  --suru-plus-tron-30: linear-gradient(180deg, #EFAB3F 0%, #633305 100%);
+  --suru-plus-tron-31: linear-gradient(180deg, #F4FAFD 0%, #486A81 100%);
+  --suru-plus-tron-32: linear-gradient(180deg, #F4FAFD 0%, #5391A6 100%);
+  --suru-plus-tron-33: linear-gradient(180deg, #F4FAFD 0%, #DEF6FC 100%);
+  --suru-plus-tron-34: linear-gradient(180deg, #F4FAFD 0%, #97D6EB 100%);
+  --suru-plus-tron-35: linear-gradient(180deg, #F4FAFD 0%, #6CBED9 100%);
+  --suru-plus-tron-36: linear-gradient(180deg, #F4FAFD 0%, #C6EDFB 100%);
+  --suru-plus-tron-37: linear-gradient(180deg, #F6DC9A 0%, #633305 100%);
+  --suru-plus-tron-38: linear-gradient(180deg, #F7DCC3 0%, #442822 100%);
+  --suru-plus-tron-39: linear-gradient(180deg, #FABE45 0%, #633305 100%);
+  --suru-plus-tron-40: linear-gradient(180deg, #FABE45 0%, #442822 100%);
+  --suru-plus-tron-41: linear-gradient(180deg, #FAEBDC 0%, #E38C2D 100%);
+  --suru-plus-tron-42: linear-gradient(180deg, #FAEBDC 0%, #633305 100%);
+  --suru-plus-tron-43: linear-gradient(180deg, #FFFADF 0%, #F3CCA7 100%);
+  --suru-plus-tron-44: linear-gradient(180deg, #FFFADF 0%, #F7DCC3 100%);
+  --suru-plus-tron-45: linear-gradient(180deg, #FFFADF 0%, #E38C2D 100%);
+  --suru-plus-tron-46: linear-gradient(180deg, #FFFADF 0%, #F5D07D 100%);
+
+  /* 🇧🇷  Gradientes Transparentes */
+  /* 🇬🇧  Transparent Gradients 		*/
+  /* 🇮🇹  Sfumati Transparenti 		*/
+  /* 🇫🇷  Dégradés Transparents 		*/
+  --suru-plus-papirus-transparent80: linear-gradient(rgba(73, 83, 94, 0.80), rgba(47, 57, 67, 0.80));
+  --suru-plus-papirus-transparent85: linear-gradient(rgba(73, 83, 94, 0.85), rgba(47, 57, 67, 0.85));
+  --suru-plus-papirus-transparent90: linear-gradient(rgba(73, 83, 94, 0.90), rgba(47, 57, 67, 0.90));
+
+  /* 🇧🇷  Posição das Cores 			*/
+  /* 🇬🇧  Colours Position 			*/
+  /* 🇮🇹  Posizione dei Colori 	*/
+  /* 🇫🇷  Position des Couleurs 	*/
+  --suru-plus-eccentric-bottom:      linear-gradient(to bottom, #79DD00 0%, #6DDB0A 10%, #61D915 20%, #55D620 30%, #49D42B 40%, #3CD235 50%, #30CF40 60%, #24CD4B 70%, #18CA56 80%, #0CC861 90%, #00C66B 100%);
+  --suru-plus-eccentric-top:         linear-gradient(to top, #79DD00 0%, #6DDB0A 10%, #61D915 20%, #55D620 30%, #49D42B 40%, #3CD235 50%, #30CF40 60%, #24CD4B 70%, #18CA56 80%, #0CC861 90%, #00C66B 100%);
+  --suru-plus-fitdance-1-bottom:     linear-gradient(to bottom, #1AD6AB, #00C9B7, #00BBBD, #00ACBC, #329DB6);
+  --suru-plus-fitdance-1-top:        linear-gradient(to top, #1AD6AB, #00C9B7, #00BBBD, #00ACBC, #329DB6);
+  --suru-plus-fitdance-1-left:       linear-gradient(to left, #1AD6AB, #00C9B7, #00BBBD, #00ACBC, #329DB6);
+  --suru-plus-mavericks-right:       linear-gradient(to right, #00F260 0%, #0575E6 100%);
+  --suru-plus-mavericks-bottom:      linear-gradient(to bottom, #00F260 0%, #0575E6 100%);
+  --suru-plus-mavericks-top:         linear-gradient(to bottom, #00F260 0%, #0575E6 100%);
+  --suru-plus-sunrise-1-left:        linear-gradient(to left, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
+  --suru-plus-sunrise-1-right:       linear-gradient(to right, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
+  --suru-plus-sunrise-1-top:         linear-gradient(to top, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
+  --suru-plus-synthwave-84-1-top:    linear-gradient(to top, #FFF951 0%, #FC28A8 100%);
+  --suru-plus-synthwave-84-3-top:    linear-gradient(to bottom, #03edf9 25%, #fc28a7);
+  --suru-plus-tron-26-top:           linear-gradient(to bottom, #E6FFFF 0%, #6FC3DF 100%);
+  
+  /* 🇧🇷  Cores dos Códigos */
+  /* 🇬🇧  Code colours */
+  /* 🇮🇹  Colori del Codice */
+  /* 🇫🇷  Couleurs de Code */
+  --suru-plus-fitdance-1-light-webkit: -webkit-gradient(linear, left top, right top, from(#B9FFEE), to(#B9F4FF));
+  --suru-plus-fitdance-1-light: linear-gradient(to right, #B9FFEE, #B9F4FF);
+}
