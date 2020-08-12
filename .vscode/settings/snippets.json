@@ -1,0 +1,16 @@
+{
+  "html": {
+    "snippets": {
+      "ull": "ul>li[id=${1} class=${2}]*2{ Will work with html, pug, haml and slim }",
+      "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
+      "ran": "{ Wrap plain text in curly braces }"
+    }
+  },
+  "css": {
+    "snippets": {
+      "cb": "color: black",
+      "bsd": "border: 1px solid ${1:red}",
+      "ls": "list-style: ${1}"
+    }
+  }
+}

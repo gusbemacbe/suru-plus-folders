@@ -1,0 +1,15 @@
+# Ficheiros sujos da Apple
+.DS_Store
+
+# Hugo
+docs
+public
+
+# Logs
+logs
+*.log
+
+# Nodejs e NPM
+node_hugo
+node_modules
+node_modules*

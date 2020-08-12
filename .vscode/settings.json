@@ -1,0 +1,78 @@
+{
+  "colorize.include": 
+  [
+    "*.txt"
+  ],
+  "colorize.colorized_colors": 
+  [
+    "HEXA",
+    "RGB"
+  ],
+  "colorize.colorized_variables": 
+  [
+    "LESS"
+  ],
+  "csscomb.preset": ".vscode/settings/csscomb.json",
+  "customizeUI.activityBar": "bottom",
+  "customizeUI.listRowHeight": 26,
+  "customizeUI.stylesheet": 
+  {
+    ".explorer-viewlet": "font-size: 16px !important; overflow: auto; border-left: none !important",
+    ".monaco-icon-label:before": "background-size: 20px; height: 32px; width: 20px;",
+    ".monaco-tl-twistie": "padding-top: 6px"
+  },
+  "editor.tokenColorCustomizations": 
+  {
+    "textMateRules": 
+    [
+      {
+        "scope": 
+        [
+            "comment",
+            "log.error"
+        ],
+        "settings": 
+        {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "log.warning",
+        "settings": 
+        {
+          "foreground": "#f4ad42",
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "git.ignoreLimitWarning": true,
+  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.port": 1990,
+  "material-icon-theme.folders.color": "#ef5350",
+  "search.exclude": 
+  {
+    "public/**": true,
+    "node_modules/**": true
+  },
+  "spellright.language": 
+  [
+    "en_GB",
+    "pt_PT"
+  ],
+  "spellright.documentTypes": 
+  [
+    "css",
+    "latex",
+    "php",
+    "python"
+  ],
+  "workbench.colorCustomizations": 
+  {
+    "tab.activeBorder": "#67af7c",
+    "titleBar.activeBackground": "#67af7c",
+    "titleBar.activeForeground": "#ffffff",
+    "statusBar.background": "#67af7c",
+    "statusBar.foreground": "#ffffff"
+  }
+}
