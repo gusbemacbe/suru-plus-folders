@@ -1,0 +1,527 @@
+/* Suru++ Light 16px */
+
+background: #5C616C;
+
+/* Suru++ Dark 16px */
+
+background: #ECECEC;
+
+/* Suru++ Orange 1 */
+
+background: linear-gradient(180deg, #FF9757 0%, #FF6E51 50%, #F5350F 100%);
+
+/* Suru++ Red 1 */
+
+background: linear-gradient(180deg, #FF7B57 0%, #FF5151 50%, #F50F0F 100%);
+
+/* Suru++ Orange 2 */
+
+background: linear-gradient(180deg, #FFB357 0%, #FF8B51 50%, #F55C0F 100%);
+
+/* Suru++ Orange 3 */
+
+background: linear-gradient(180deg, #FFD057 0%, #FFA851 50%, #F5820F 100%);
+
+/* Suru++ Golden */
+
+background: linear-gradient(180deg, #FFEC57 0%, #FFC551 50%, #F5A90F 100%);
+
+/* Suru++ Yellow */
+
+background: linear-gradient(180deg, #F7FF57 0%, #FFE251 50%, #F5CF0F 100%);
+
+/* Suru++ Lemon */
+
+background: linear-gradient(180deg, #A3FF57 0%, #C5FF51 50%, #A9F50F 100%);
+
+/* Suru++ Green 1 */
+
+background: linear-gradient(180deg, #6AFF57 0%, #8BFF51 50%, #5CF50F 100%);
+
+/* Suru++ Green 2 */
+
+background: linear-gradient(180deg, #57FF7B 0%, #51FF51 50%, #0FF50F 100%);
+
+/* Suru++ Turquoise */
+
+background: linear-gradient(180deg, #57FFB3 0%, #51FF8B 50%, #0FF55C 100%);
+
+/* Suru++ Cyan 1 */
+
+background: linear-gradient(180deg, #57FFEC 0%, #51FFC5 50%, #0FF5A9 100%);
+
+/* Suru++ Cyan 2 */
+
+background: linear-gradient(180deg, #57DBFF 0%, #51FFFF 50%, #0FF5F5 100%);
+
+/* Suru++ Blue */
+
+background: linear-gradient(180deg, #5786FF 0%, #51A8FF 50%, #0F82F5 100%);
+
+/* Suru++ Purple */
+
+background: linear-gradient(180deg, #EC57FF 0%, #C551FF 50%, #A90FF5 100%);
+
+/* Suru++ Magenta */
+
+background: linear-gradient(180deg, #FF57DB 0%, #FF51FF 50%, #F50FF5 100%);
+
+/* Suru++ Pink 1 */
+
+background: linear-gradient(180deg, #FF57A3 0%, #FF51C5 50%, #F50FA9 100%);
+
+/* Suru++ Pink 2 */
+
+background: linear-gradient(180deg, #FF576A 0%, #FF518B 50%, #F50F5C 100%);
+
+/* Suru++ Pink Red */
+
+background: linear-gradient(180deg, #FF6D57 0%, #FF5160 50%, #F50F22 100%);
+
+/* Suru++ Red Medium */
+
+background: linear-gradient(180deg, #FF4400 0%, #DC1414 100%);
+
+/* Suru++ Orange Medium 1 */
+
+background: linear-gradient(180deg, #FF6E00 0%, #DC3514 100%);
+
+/* Suru++ Orange Medium 2 */
+
+background: linear-gradient(180deg, #FF9900 0%, #DC5714 100%);
+
+/* Suru++ Golden Medium 1 */
+
+background: linear-gradient(180deg, #FFC400 0%, #DC7814 100%);
+
+/* Suru++ Golden Medium 2 */
+
+background: linear-gradient(180deg, #FFEE00 0%, #DC9914 100%);
+
+/* Suru++ Yellow Medium */
+
+background: linear-gradient(180deg, #E6FF00 0%, #DCBA14 100%);
+
+/* Suru++ Lemon Medium */
+
+background: linear-gradient(180deg, #66FF00 0%, #99DC14 100%);
+
+/* Suru++ Green Medium 1 */
+
+background: linear-gradient(180deg, #11FF00 0%, #57DC14 100%);
+
+/* Suru++ Green Medium 2 */
+
+background: linear-gradient(180deg, #00FF44 0%, #14DC14 100%);
+
+/* Suru++ Turquoise Medium */
+
+background: linear-gradient(180deg, #00FF99 0%, #14DC57 100%);
+
+/* Suru++ Cyan Medium 1 */
+
+background: linear-gradient(180deg, #00FFEE 0%, #14DC99 100%);
+
+/* Suru++ Cyan Medium 2 */
+
+background: linear-gradient(180deg, #00BBFF 0%, #14DCDC 100%);
+
+/* Suru++ Blue Medium */
+
+background: linear-gradient(180deg, #003BFF 0%, #1478DC 100%);
+
+/* Suru++ Purple Medium */
+
+background: linear-gradient(180deg, #EE00FF 0%, #9914DC 100%);
+
+/* Suru++ Magenta Medium */
+
+background: linear-gradient(180deg, #FF00BB 0%, #DC14DC 100%);
+
+/* Suru++ Pink Medium 1 */
+
+background: linear-gradient(180deg, #FF0066 0%, #DC1499 100%);
+
+/* Suru++ Pink Medium 2 */
+
+background: linear-gradient(180deg, #FF0011 0%, #DC1457 100%);
+
+/* Suru++ Pink Red Meidum */
+
+background: linear-gradient(180deg, #FF2E00 0%, #DC1425 100%);
+
+/* Suru++ Red Bright */
+
+background: linear-gradient(180deg, #D1391F 0%, #FF0000 100%);
+
+/* Suru++ Orange Bright 1 */
+
+background: linear-gradient(180deg, #D1571F 0%, #FF2A00 100%);
+
+/* Suru++ Orange Bright 2 */
+
+background: linear-gradient(180deg, #D1751F 0%, #FF5500 100%);
+
+/* Suru++ Golden Bright 1 */
+
+background: linear-gradient(180deg, #D1931F 0%, #FF7F00 100%);
+
+/* Suru++ Golden Bright 2 */
+
+background: linear-gradient(180deg, #D1B01F 0%, #FFAA00 100%);
+
+/* Suru++ Yellow Bright */
+
+background: linear-gradient(180deg, #D1CE1F 0%, #FFD500 100%);
+
+/* Suru++ Lemon Bright */
+
+background: linear-gradient(180deg, #7BD11F 0%, #AAFF00 100%);
+
+/* Suru++ Green Bright 1 */
+
+background: linear-gradient(180deg, #3FD11F 0%, #55FF00 100%);
+
+/* Suru++ Green Bright 2 */
+
+background: linear-gradient(180deg, #1FD139 0%, #00FF00 100%);
+
+/* Suru++ Turquoise Bright */
+
+background: linear-gradient(180deg, #1FD175 0%, #00FF55 100%);
+
+/* Suru++ Cyan Bright 1 */
+
+background: linear-gradient(180deg, #1FD1B0 0%, #00FFAA 100%);
+
+/* Suru++ Cyan Bright 2 */
+
+background: linear-gradient(180deg, #1FB6D1 0%, #00FFFF 100%);
+
+/* Suru++ Blue Bright */
+
+background: linear-gradient(180deg, #1F5DD1 0%, #007FFF 100%);
+
+/* Suru++ Purple Bright */
+
+background: linear-gradient(180deg, #B01FD1 0%, #AA00FF 100%);
+
+/* Suru++ Magenta Bright */
+
+background: linear-gradient(180deg, #D11FB6 0%, #FF00FF 100%);
+
+/* Suru++ Pink Bright 1 */
+
+background: linear-gradient(180deg, #D11F7B 0%, #FF00AA 100%);
+
+/* Suru++ Pink Bright 2 */
+
+background: linear-gradient(180deg, #D11F3F 0%, #FF0055 100%);
+
+/* Suru++ Pink Red Bright */
+
+background: linear-gradient(180deg, #D12B1F 0%, #FF0015 100%);
+
+/* Suru++ Red Dark */
+
+background: linear-gradient(180deg, #4B4343 0%, #332D2D 100%);
+
+/* Suru++ Orange Dark 1 */
+
+background: linear-gradient(180deg, #4B4643 0%, #332F2D 100%);
+
+/* Suru++ Orange Dark 2 */
+
+background: linear-gradient(180deg, #4B4743 0%, #33302D 100%);
+
+/* Suru++ Golden Dark */
+
+background: linear-gradient(180deg, #4B4943 0%, #33312D 100%);
+
+/* Suru++ Yellow Dark 5 */
+
+background: linear-gradient(180deg, #4B4A43 0%, #33322D 100%);
+
+/* Suru++ Lemon Dark */
+
+background: linear-gradient(180deg, #494B43 0%, #31332D 100%);
+
+/* Suru++ Green Dark 1 */
+
+background: linear-gradient(180deg, #464B43 0%, #2F332D 100%);
+
+/* Suru++ Green Dark 2 */
+
+background: linear-gradient(180deg, #434B43 0%, #2D332D 100%);
+
+/* Suru++ Turquoise Dark */
+
+background: linear-gradient(180deg, #434B46 0%, #2D332F 100%);
+
+/* Suru++ Cyan 1 Dark */
+
+background: linear-gradient(180deg, #434B49 0%, #2D3331 100%);
+
+/* Suru++ Cyan 2 Dark */
+
+background: linear-gradient(180deg, #434B4B 0%, #2D3333 100%);
+
+/* Suru++ Blue Medium Dark */
+
+background: linear-gradient(180deg, #43474B 0%, #2D3033 100%);
+
+/* Suru++ Purple Medium Dark 1 */
+
+background: linear-gradient(180deg, #49434B 0%, #312D33 100%);
+
+/* Suru++ Purple Medium Dark 2 */
+
+background: linear-gradient(180deg, #4B434B 0%, #332D33 100%);
+
+/* Suru++ Purple Medium Dark 3 */
+
+background: linear-gradient(180deg, #4B4349 0%, #332D31 100%);
+
+/* Suru++ Pink Medium Dark 1 */
+
+background: linear-gradient(180deg, #4B4346 0%, #332D2F 100%);
+
+/* Suru++  Pink Medium Dark 2 */
+
+background: linear-gradient(180deg, #4B4344 0%, #332D2E 100%);
+
+/* Suru++ Pink Red Meidum Dark */
+
+background: linear-gradient(180deg, #665252 0%, #4E3636 100%);
+
+/* Suru++ Orange Bright Dark 1 */
+
+background: linear-gradient(180deg, #665852 0%, #4E3E36 100%);
+
+/* Suru++ Orange Bright Dark 1 */
+
+background: linear-gradient(180deg, #665C52 0%, #4E4236 100%);
+
+/* Suru++ Golden Bright 1 Dark */
+
+background: linear-gradient(180deg, #665F52 0%, #4E4636 100%);
+
+/* Suru++ Golden Bright 2 Dark */
+
+background: linear-gradient(180deg, #666252 0%, #4E4A36 100%);
+
+/* Suru++ Lemon Bright Dark */
+
+background: linear-gradient(180deg, #5F6652 0%, #464E36 100%);
+
+/* Suru++ Green Bright 1 Dark */
+
+background: linear-gradient(180deg, #586652 0%, #3E4E36 100%);
+
+/* Suru++ Green Bright 2 Dark */
+
+background: linear-gradient(180deg, #526652 0%, #364E36 100%);
+
+/* Suru++ Turquoise Bright Dark */
+
+background: linear-gradient(180deg, #526655 0%, #364E3A 100%);
+
+/* Suru++ Cyan Bright 1 Dark */
+
+background: linear-gradient(180deg, #526658 0%, #364E3E 100%);
+
+/* Suru++ Cyan Bright 2 Dark */
+
+background: linear-gradient(180deg, #52665F 0%, #364E46 100%);
+
+/* Suru++ Cyan Bright 3 Dark */
+
+background: linear-gradient(180deg, #526666 0%, #364E4E 100%);
+
+/* Suru++ Blue Bright Dark */
+
+background: linear-gradient(180deg, #525C66 0%, #36424E 100%);
+
+/* Suru++ Purple Bright Dark */
+
+background: linear-gradient(180deg, #5F5266 0%, #46364E 100%);
+
+/* Suru++ Magenta Bright Dark */
+
+background: linear-gradient(180deg, #665266 0%, #4E364E 100%);
+
+/* Suru++ PInk Bright 1 Dark */
+
+background: linear-gradient(180deg, #66525F 0%, #4E3646 100%);
+
+/* Suru++ PInk Bright 2 Dark */
+
+background: linear-gradient(180deg, #665258 0%, #4E363E 100%);
+
+/* Suru++ Pink Red Bright Dark */
+
+background: linear-gradient(180deg, #665253 0%, #4E3638 100%);
+
+/* Suru++ Cyan Medium 2 Dark */
+
+background: linear-gradient(180deg, #526060 0%, #4C4C4C 100%);
+
+/* Suru++ Dark 2 */
+
+background: linear-gradient(180deg, #545E63 0%, #343B40 100%);
+
+/* Suru++ Dark 3 */
+
+background: linear-gradient(180deg, #4C5561 0%, #2E3842 100%);
+
+/* Suru++ Dark 4 */
+
+background: linear-gradient(180deg, #2B2E30 0%, #1E1F1F 100%);
+
+/* Suru++ White 1 */
+
+background: linear-gradient(180deg, #BDC3C7 0%, #AEAFB3 100%);
+
+/* Suru++ White 2 */
+
+background: linear-gradient(180deg, #E0E5E7 0%, #C7CED2 100%);
+
+/* Suru++ White 3 */
+
+background: linear-gradient(180deg, #DEDEDE 0%, #A1A1A1 100%);
+
+/* Suru++ White 4 */
+
+background: linear-gradient(180deg, #C8C4B7 0%, #ADA694 100%);
+
+/* Suru++ White 5 */
+
+background: linear-gradient(359.24deg, #A0A0A0 0.54%, #DFDFDF 99.25%);
+
+/* Suru++ White 6 */
+
+background: linear-gradient(358.48deg, #BFC1C1 2.21%, #F1F2F3 97.09%);
+
+/* Suru++ Art Deco */
+
+background: linear-gradient(180deg, #EDC268 0%, #9B7424 100%);
+
+/* Suru++ Aurora 1 */
+
+background: linear-gradient(180deg, #00CCDA 0%, #0083FF 14.29%, #007AF9 28.57%, #0060E8 42.86%, #005FE7 57.14%, #2639AD 71.43%, #401E84 85.71%, #4A1475 100%);
+
+/* Suru++ Aurora 2 */
+
+background: linear-gradient(180deg, #00A7FD 0%, #9914DC 100%);
+
+/* Suru++ Aurora 3 */
+
+background: linear-gradient(180deg, #AD4F8D 0%, #6B8CCB 100%);
+
+/* Suru++ Aurora 4 */
+
+background: linear-gradient(180deg, #01BCC7 0%, #2954EF 100%);
+
+/* Suru++ Eccentric */
+
+background: linear-gradient(180deg, #79DD00 0%, #6DDB0A 10%, #61D915 20%, #55D620 30%, #49D42B 40%, #3CD235 50%, #30CF40 60%, #24CD4B 70%, #18CA56 80%, #0CC861 90%, #00C66B 100%);
+
+/* Suru++ Energy */
+
+background: linear-gradient(179.43deg, #FFEB00 0.56%, #FFA100 100.58%);
+
+/* Suru++ FitDance 1 */
+
+background: linear-gradient(179.85deg, #1AD6AB 0.08%, #329DB6 100.2%);
+
+/* Suru++ FitDance 2 */
+
+background: linear-gradient(180deg, #D0391F 0%, #FF005D 100%);
+
+/* Suru++ Haguichi */
+
+background: linear-gradient(180deg, #E6548B 0%, #F76363 100%);
+
+/* Suru++ Japanese 1 */
+
+background: linear-gradient(360deg, #957552 0%, #B29373 100%);
+
+/* Suru++ Japanese 2 */
+
+background: linear-gradient(360deg, rgba(197, 141, 103, 0.95) 0%, rgba(230, 170, 129, 0.95) 100%);
+
+/* Suru++ Kamera */
+
+background: linear-gradient(180deg, #16A085 0%, #663579 100%);
+
+/* Suru++ KDE */
+
+background: linear-gradient(179.83deg, #07B3FF 0.51%, #007DE8 99.64%);
+
+/* Suru++ Manjaro */
+
+background: linear-gradient(180deg, #46A926 0%, #009A56 100%);
+
+/* Suru++ Mint */
+
+background: linear-gradient(180deg, #A6D74F 0%, #76C22B 100%);
+
+/* Suru++ Papirus */
+
+background: linear-gradient(180deg, #49535E 0%, #2F3943 100%);
+
+/* Suru++ Rainbow */
+
+background: linear-gradient(180deg, #00F260 0%, #0575E6 100%);
+
+/* Suru++ Russia Princess */
+
+background: linear-gradient(360deg, #5B2F00 0%, #FF8000 100%);
+
+/* Suru++ Sunrise 1 */
+
+background: linear-gradient(0deg, #FF0056 0%, #FF0C4E 10%, #FF1845 20%, #FF243D 30%, #FF3034 40%, #FF3C2B 50%, #FF4823 60%, #FF541A 70%, #FF6012 80%, #FF6C09 90%, #FF7901 100%);
+
+/* Suru++ Sunrise 2 */
+
+background: linear-gradient(180deg, #FF6E00 0%, #EF002B 100%);
+
+/* Suru++ Sunrise 3 */
+
+background: linear-gradient(180deg, #FF4500 0%, #DC153B 100%);
+
+/* Suru++ Technotronic 1 */
+
+background: linear-gradient(0deg, #037164 0%, #00AC98 100%);
+
+/* Suru++ Technotronic 2 */
+
+background: linear-gradient(180deg, #31C6B7 0%, #2B898F 100%);
+
+/* Suru++ Ubuntu */
+
+background: linear-gradient(180deg, #D1313E 0%, #A9344F 50%, #6B3274 100%);
+
+/* Suru++ Cyberblue */
+
+background: linear-gradient(360deg, #000828 0%, #040F38 100%);
+
+/* Suru++ Cybergray */
+
+background: linear-gradient(180deg, #494B43 0%, #31332D 100%);
+
+/* Suru++ Cybergreen */
+
+background: linear-gradient(180deg, #141414 0%, #003C21 100%);
+
+/* Suru++ Cyberorange */
+
+background: linear-gradient(180deg, #280007 0%, #3C000A 100%);
+
+/* Suru++ Cyberpurple */
+
+background: linear-gradient(180deg, #230028 0%, #5C0F7D 100%);
+
+/* Suru++ Cybered */
+
+background: linear-gradient(180deg, #141414 0%, #28000E 100%);
