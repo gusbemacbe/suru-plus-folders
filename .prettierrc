@@ -1,0 +1,15 @@
+{
+  "arrowParens": "avoid",
+  "overrides": 
+  [
+    {
+      "files": ["*.html"],
+      "options": 
+      {
+        "parser": "go-template"
+      }
+    }
+  ],
+  "proseWrap": "always",
+  "semi": false
+}

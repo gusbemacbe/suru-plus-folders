@@ -1,0 +1,112 @@
+{
+  "name": "suru-plus-folders",
+  "private": true,
+  "description": "Suru++ Folder is a bash script that allows changing the color of folders in the families Adwaita, Suru and Yaru",
+  "version": "4.0.0",
+  "author": "Gustavo Reis",
+  "keywords": [
+    "adwaita",
+    "adwaita-plus",
+    "color",
+    "colors",
+    "colour",
+    "colours",
+    "customisation",
+    "customization",
+    "folder",
+    "folders",
+    "gatsby",
+    "golang",
+    "hugo",
+    "linux",
+    "suru",
+    "suru-plus",
+    "ubuntu",
+    "yaru",
+    "yaru-plus"
+  ],
+  "license": "MIT+",
+  "browserslist": "> 1%",
+  "scripts": 
+  {
+    "start:assets": "NODE_ENV=development webpack-dev-server --open --content-base public/ --config webpack.config.js",
+    "start:hugo": "hugo -w --config config.yaml",
+    "start:datocms": "dato dump --watch",
+    "start:livereload": "livereload public -e 'html' -p 1990",
+    "start": "mkdir -p content && dato check && concurrently -p \"[{name}]\" -c \"blue,red,green,yellow\" -k -n hugo,webpack,livereload,dato \"yarn run start:hugo\" \"yarn run start:assets\" \"yarn run start:livereload\" \"yarn run start:datocms\"",
+
+    "build": "run-s build:webpack build:webpack-dev-server build:hugo",
+    "build:hugo": "hugo",
+    "build:webpack": "webpack --mode=production --watch",
+    "build:webpack-dev-server": "webpack-dev-server --port 1989 --open firefox --watch",
+    
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"**/*.{html,md}\"",
+    "testj": "jest"
+  },
+  "jest": 
+  {
+    "testPathIgnorePatterns": 
+    [
+      "/.cache/",
+      "/node_modules/",
+      "/public/"
+    ]
+  },
+  "dependencies": 
+  {
+    "@mdx-js/react": "1.6.16",
+    "@types/autoprefixer": "^9.7.2",
+    "gh-pages": "3.1.0",
+    "imagesloaded": "^4.1.4",
+    "intl": "1.2.5",
+    "livereload": "^0.9.1",
+    "prismjs": "1.21.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.1.0",
+    "react-intl": "2.7.0",
+    "react-live": "2.2.2",
+    "react-router-dom": "5.2.0",
+    "sematable": "^2.7.0",
+    "theme-ui": "0.3.1"
+  },
+  "devDependencies": 
+  {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@mdx-js/loader": "^1.6.16",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "^8.1.0",
+    "codecov": "3.7.2",
+    "concurrently": "^5.3.0",
+    "core-js": "^3.6.5",
+    "css": "3.0.0",
+    "css-loader": "^4.2.2",
+    "csscomb": "^4.3.0",
+    "datocms-client": "^3.0.38",
+    "eslint": "7.8.1",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "7.20.6",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.1.0",
+    "html-tag": "^2.0.0",
+    "jest": "26.4.2",
+    "mini-css-extract-plugin": "^0.11.0",
+    "npm-run-all": "4.1.5",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.1.2",
+    "prettier-plugin-go-template": "0.0.10",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "typescript": "4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
