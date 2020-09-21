@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Teste de Códigos em JavaScript</title>
+</head>
+<body>
+  
+  <script type="text/javascript">
+
+  let titles = ["Adwaita++", "Suru++", "Suru++ Ubuntu"];
+  let styles = ["adwaita", "suru", "suru-plus"];
+  let categories = ["apps", "desktop", "documents", "downloads", "dropbox", "gitlab", "icons", "music", "open", "pictures", "visiting"];
+  let colours = ["90ssummer", "adwaita", "aubergine", "aurora", "berriez", "black", "blue", "bluegrey", "bordeaux", "brown", "canonical", "cyan", "cyberneon", "darkblue", "discodingo", "fitdance", "green", "grey", "indigo", "magenta", "manjaro", "mint", "orange", "pink", "purple", "red", "teal", "vermillion", "violet", "white", "yaru", "yellow"];
+  let Set_html = new Set();
+
+  for (let a = 0; a < titles.length; a++) 
+  {
+    const tt = titles[a];
+    
+    for (let i = 0; i < styles.length; i++) 
+    {
+      const style = styles[i];
+
+      if (style == "adwaita") 
+      {
+        // Adwaita++
+        Set_html.add(`<h1>${titles[0]}</h1>`)
+        
+        let fake_colours = JSON.parse(JSON.stringify(colours))
+        fake_colours.splice(fake_colours.indexOf('90ssummer'), 1)
+        fake_colours.splice(fake_colours.indexOf('aurora'), 1)
+        fake_colours.splice(fake_colours.indexOf('berriez'), 1)
+        fake_colours.splice(fake_colours.indexOf('black'), 1)
+        fake_colours.splice(fake_colours.indexOf('blue'), 1)
+        fake_colours.splice(fake_colours.indexOf('cyan'), 1)
+        fake_colours.splice(fake_colours.indexOf('cyberneon'), 1)
+        fake_colours.splice(fake_colours.indexOf('darkblue'), 1)
+        fake_colours.splice(fake_colours.indexOf('discodingo'), 1)
+        fake_colours.splice(fake_colours.indexOf('fitdance'), 1)
+        fake_colours.splice(fake_colours.indexOf('magenta'), 1)
+        fake_colours.splice(fake_colours.indexOf('pink'), 1)
+        fake_colours.splice(fake_colours.indexOf('teal'), 1)
+        fake_colours.splice(fake_colours.indexOf('vermillion'), 1)
+        fake_colours.splice(fake_colours.indexOf('violet'), 1)
+
+        let fake_categories = JSON.parse(JSON.stringify(categories))
+        fake_categories.splice(fake_categories.indexOf('desktop'), 1)
+        fake_categories.splice(fake_categories.indexOf('icons'), 1)
+
+        for (let j = 0; j < fake_categories.length; j++) 
+        {
+          const category = fake_categories[j];
+
+          for (let k = 0; k < fake_colours.length; k++) 
+          {
+            const colour = fake_colours[k];
+
+            Set_html.add(`<img src="../images/${styles[0]}-plus/folder-${colour}-${category}.svg?sanitize=true" height="48px" width="48px" alt="folder-${colour}-${category}">`);
+          }
+        }
+      } 
+
+
+      else if (style == "suru") 
+      {
+        // Suru++
+        Set_html.add(`<h1>${titles[1]}</h1>`)
+
+        let fake_colours = JSON.parse(JSON.stringify(colours))
+        fake_colours.splice(fake_colours.indexOf('adwaita'), 1)
+        fake_colours.splice(fake_colours.indexOf('aubergine'), 1)
+        fake_colours.splice(fake_colours.indexOf('darkblue'), 1)
+        fake_colours.splice(fake_colours.indexOf('purple'), 1)
+        fake_colours.splice(fake_colours.indexOf('yaru'), 1)
+
+        for (let j = 0; j < categories.length; j++) 
+        {
+          const category = categories[j];
+
+          for (let k = 0; k < fake_colours.length; k++) 
+          {
+            const colour = fake_colours[k];
+
+            Set_html.add(`<img src="../images/${styles[1]}-plus/folder-${colour}-${category}.svg?sanitize=true" height="48px" width="48px" alt="folder-${colour}-${category}">`);
+          }
+        }
+      } 
+
+      else 
+      {
+        // Suru++ Ubuntu
+        Set_html.add(`<h1>${titles[2]}</h1>`)
+
+        let fake_colours = JSON.parse(JSON.stringify(colours))
+        fake_colours.splice(fake_colours.indexOf('90ssummer'), 1)
+        fake_colours.splice(fake_colours.indexOf('adwaita'), 1)
+        fake_colours.splice(fake_colours.indexOf('aurora'), 1)
+        fake_colours.splice(fake_colours.indexOf('berriez'), 1)
+        fake_colours.splice(fake_colours.indexOf('black'), 1)
+        fake_colours.splice(fake_colours.indexOf('bluegrey'), 1)
+        fake_colours.splice(fake_colours.indexOf('brown'), 1)
+        fake_colours.splice(fake_colours.indexOf('cyberneon'), 1)
+        fake_colours.splice(fake_colours.indexOf('desktop'), 1)
+        fake_colours.splice(fake_colours.indexOf('discodingo'), 1)
+        fake_colours.splice(fake_colours.indexOf('fitdance'), 1)
+        fake_colours.splice(fake_colours.indexOf('grey'), 1)
+        fake_colours.splice(fake_colours.indexOf('indigo'), 1)
+        fake_colours.splice(fake_colours.indexOf('magenta'), 1)
+        fake_colours.splice(fake_colours.indexOf('manjaro'), 1)
+        fake_colours.splice(fake_colours.indexOf('mint'), 1)
+        fake_colours.splice(fake_colours.indexOf('pink'), 1)
+        fake_colours.splice(fake_colours.indexOf('teal'), 1)
+        fake_colours.splice(fake_colours.indexOf('violet'), 1)
+        fake_colours.splice(fake_colours.indexOf('white'), 1)
+        fake_colours.splice(fake_colours.indexOf('yaru'), 1)
+
+        let fake_categories = JSON.parse(JSON.stringify(categories))
+        fake_categories.splice(fake_categories.indexOf('desktop'), 1)
+        fake_categories.splice(fake_categories.indexOf('icons'), 1)
+        fake_categories.splice(fake_categories.indexOf('visiting'), 1)
+
+        for (let j = 0; j < fake_categories.length; j++) 
+        {
+          const category = fake_categories[j];
+
+          for (let k = 0; k < fake_colours.length; k++) 
+          {
+            const colour = fake_colours[k];
+
+            Set_html.add(`<img src="../images/${styles[2]}-ubuntu/folder-${colour}-${category}.svg?sanitize=true" height="48px" width="48px" alt="folder-${colour}-${category}">`);
+          }
+        }
+      }
+    }
+  }
+  
+  let newArray = Array.from(Set_html).join('')
+  document.write(newArray)
+  </script>
+</body>
+</html>
