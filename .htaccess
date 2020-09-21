@@ -1,0 +1,145 @@
+# Autor: Gustavo Benedito dos Reis Costa 
+# Data: 19 de agosto de 202
+# Email: gusbemacbe at gmail dot com
+
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} Off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# 🇧🇷 Se um diretório existente for solicitado, vai para ele como ele é
+# 🇬🇧 If an existing directory is requested, go to it as it is
+# 🇮🇹 Se è richiesta una directory esistente, andateci così com'è
+# 🇬🇧 Si un répertoire existant est demandé, accédez-y tel quel
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# 🇧🇷 Se o recurso solicitado não existir, use index.html
+# 🇬🇧 If the requested resource does not exist, use index.html
+# 🇮🇹 Se la risorsa richiesta non esiste, utilizzare index.html
+# 🇫🇷 Si la ressource demandée n'existe pas, utilisez index.html
+RewriteRule ^ /index.html
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+    
+    # 🇧🇷 Não reescrever ficheiros ou diretórios
+    # 🇬🇧 Do not rewrite files or directories
+    # 🇮🇹 Non riscrivere file o directory
+    # 🇫🇷 Ne réécrivez pas les fichiers ou répertoires
+    # RewriteCond %{REQUEST_FILENAME} -f [OR]
+    # RewriteCond %{REQUEST_FILENAME} -d
+    # RewriteRule ^ - [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]
+
+    # 🇧🇷 Reescrever todo o resto em index.html para permitir ligações de estado HTML5
+    # 🇬🇧 Rewrite everything else in index.html to allow HTML5 status links
+    # 🇮🇹 Riscrivi tutto il resto in index.html per consentire i link di stato HTML5
+    # 🇫🇷 Réécrivez tout le reste dans index.html pour autoriser les liens d'état HTML5
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# 🇧🇷 TORNAR COMPATÍVEL COM AS LIGAÇÕES SIMBÓLICAS
+# 🇬🇧 MAKE IT COMPATIBLE WITH SYMBOLIC LINKS
+# 🇮🇹 RENDILO COMPATIBILE CON COLLEGAMENTI SIMBOLICHE
+# 🇫🇷 RENDRE-LE COMPATIBLE AVEC LES CONNEXIONS SYMBOLIQUES
+
+Options +FollowSymLinks
+
+# 🇧🇷 COMEÇO EXIGIDO PARA WEBFONTS E IMAGENS
+# 🇬🇧 START REQUIRED FOR WEBFONTS AND IMAGES
+# 🇮🇹 INIZIO NECESSARIO PER WEBFONTS E IMMAGINI
+# 🇫🇷 DEMARRAGE REQUIS POUR LES WEBFONTS ET LES IMAGES
+
+AddType application/vnd.ms-fontobject    eot
+AddType application/x-font-woff          woff
+AddType font/eot                        .eot
+AddType font/otf                        .otf
+AddType font/opentype                    otf
+AddType font/truetype                    ttf
+AddType font/ttf                        .ttf
+AddType font/woff                       .woff
+
+AddType image/gif                       .gif .GIF
+AddType image/jpeg                      .jpeg .jpg .jpe .JPG
+AddType image/png                       .png .PNG
+AddType image/svg+xml                    svg
+AddType image/svg+xml                    svgz
+AddType image/tiff                      .tiff .tif
+
+<IfModule mod_mime.c>
+    AddType application/manifest+json   webmanifest
+    AddType image/svg+xml               svg
+</IfModule>
+
+<FilesMatch ".(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|svg|ttf|webp|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin “*”
+    Header always set Cache-Control "no-cache, public"
+    Header always set X-Content-Type-Options nosniff
+  </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(css|js|ttf|otf|eot|woff|jpeg|jpg|png|svg|webp)$" >
+  SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|svg|ttf|webp|woff)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set Cache-Control "no-cache, public"
+    Header always set X-Content-Type-Options nosniff
+    Header unset Expires
+    Header unset Host
+    Header unset P3P
+    Header unset Pragma
+    Header unset Public-Key-Pins
+    Header unset Public-Key-Pins-Report-Only
+    Header unset Via
+    Header unset X-AspNet-Version
+    Header unset X-AspNetMvc-version
+    Header unset X-Frame-Options
+    Header unset X-Powered-By
+    Header unset X-Runtime
+    Header unset X-Version
+</IfModule>
+
+<IfModule mod_filter.c>
+  # Comprimir texto, CSS, HTML, JavaScript, PHP, XML:
+  # Compress text, CSS, HTML, JavaScript, PHP, XML:
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/php
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/php
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Ou, comprimir certos tipos de ficheiros por extensão:
+  # Or, compress certain file types by extension:
+  <files *.html>
+    SetOutputFilter DEFLATE
+  </files>
+  
+  <files *.php>
+    SetOutputFilter DEFLATE
+  </files>
+</IfModule>
+
+# 🇧🇷 FIM EXIGIDO PARA WEBFONTS
+# 🇬🇧 END REQUIRED FOR WEBFONTS
+# 🇮🇹 FINE RICHIESTA PER WEBFONTS
+# 🇫🇷 FIN REQUISE POUR LES WEBFONTS
