@@ -1,0 +1,73 @@
+{{ $path := "/assets/images/icons/"}}
+{{ $data := (index .Site.Data.themes .Site.Language.Lang) }}
+
+{{ range $data.themes.icons }}
+  {{ $iconi := . }} 
+  {{/*  $iconi = $data[icons][i]  */}}
+
+  {{/*  {{ $iconi.name }}  */}}
+  <h1>{{ $iconi.title }}</h1>
+
+  {{ $table := $iconi.table }}
+  
+  {{ $thead := $table.thead }}
+  {{ $tbody := $table.tbody }}
+  
+  <table>
+  <thead>
+  {{/* begin range $thead */}}
+  {{ range $thead }}
+    {{ $theadi := . }} 
+    {{/*  begin range $theadi */}}
+    {{ range $theadi }}
+    {{ $tr := . }}
+    {{/*  begin range $tr */}}
+      <tr>
+        {{ range $tr }}
+          {{ $tri := . }}
+          {{ $th := $tri.th }}
+          <th class="c">
+            {{ $th }}
+          </th>
+        {{ end }}
+      </tr>
+    {{/* end range $tr */}}
+    {{ end }}
+    {{/*  end range $theadi */}}
+  {{ end }}
+  {{/* end range $thead */}}
+  </thead>
+
+  {{/*  begin range $tbody */}}
+  <tbody>
+    {{ range $tbody }}
+      {{ $tbodyi := . }}
+      {{/*  begin range $tbodyi  */}}
+      {{ range $tbodyi }}
+        {{ $tr := . }}
+        {{/*  begin range $tr */}}
+        <tr>
+          {{ range $tr }}
+            {{ $tri := . }}
+    
+            {{ $td := $tri.td }}
+            {{ $th := $tri.th }}
+            
+            <th>
+              {{ $th }}
+            </th>
+            <td>
+              {{ range $td }}
+                <img alt="folder-{{ $th }}-{{ . }}" class="icons" src="{{ $path}}{{ $iconi.name }}/folder-{{ $th }}-{{ . }}.svg">
+              {{ end }}
+            </td>
+    
+          {{ end }} {{/* end range $tr */}}
+        </tr>
+      {{ end }} {{/*  end range $tbodyi */}}
+    {{ end }} {{/*  end range $tbody  */}}
+  </tbody>
+
+  </table>
+
+{{ end }}

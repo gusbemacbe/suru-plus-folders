@@ -1,0 +1,8 @@
+{{ $resource := .Site.Params.custom_js_languages }}
+{{ if $.Site.IsServer }}
+  {{ $jsFile := resources.Get $resource | resources.ExecuteAsTemplate (printf "%s/%s" $.Site.Language $resource) . }}
+  <script src="{{ $jsFile.Permalink }}"></script>
+{{ else }}
+  {{ $jsFile := resources.Get $resource | resources.ExecuteAsTemplate (printf "%s/%s" $.Site.Language $resource) . | minify | fingerprint }}
+  <script src="{{ $jsFile.Permalink }}" integrity="{{ $jsFile.Data.Integrity }}"></script>
+{{ end }}

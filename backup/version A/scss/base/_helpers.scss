@@ -1,0 +1,40 @@
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.hide {
+  display: none;
+}
+
+.grow {
+  @include flex-grow(1);
+}
+
+.basicflex {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.basicflex-column {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
+.px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

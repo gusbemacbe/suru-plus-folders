@@ -1,0 +1,17 @@
+{{define "main"}}
+
+	{{ if .IsTranslated }}
+
+    {{- partial "table-of-themes.html" . -}}
+
+    {{- range .Site.Params.custom_js_index }}
+    <script type="module" src="{{ relURL (printf "%s%s" "assets/" . ) | safeJS }}"></script>
+    {{- end }}
+
+    {{ $tableTemplate := resources.Get "javascript/tabela-de-icones.js" }}
+    {{ $js := $tableTemplate | resources.ExecuteAsTemplate "tabela-de-icones.js" . | resources.Minify }}
+    <script type="module">{{ $js.Content | safeJS }}</script>	
+
+  {{ end }}
+
+{{ end }}

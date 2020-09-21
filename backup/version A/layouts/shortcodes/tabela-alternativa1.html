@@ -1,0 +1,35 @@
+{{ range .Site.Data.themes.icons }}
+<h2>{{ .title }}</h2>
+
+  {{ range .table.thead }}
+  <table>
+
+    <thead>
+      <tr>
+        {{ range .tr }}
+        <th>{{ .th }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+
+    {{ range .table.tbody }}
+    <tbody>
+      {{ range .tr }}
+          {{ range .th }}
+            <tr>
+              <th>{{ . }}</th>
+              <td>
+                {{ range .td }}
+                  <img alt="folder-{{ .th }}-{{ . }}" src="folder-{{ .th }}-{{ . }}.png">
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+      {{ end }}
+    </tbody>
+    {{ end }}
+
+  </table>
+  {{ end }}
+
+{{ end }}

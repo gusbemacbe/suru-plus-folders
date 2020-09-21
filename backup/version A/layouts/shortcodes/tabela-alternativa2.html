@@ -1,0 +1,28 @@
+{{ range .Site.Data.themes.icons }}
+<h2>{{ .title }}</h2>
+
+  {{ with .table.thead }}
+  <table>
+    {{ range . }}
+    <thead>
+      <tr>
+        {{ range .tr }}
+            <th>{{ .th }}</th>
+        {{ end }}        
+      </tr>
+    </thead>
+    {{ end }}
+
+    {{ range . }}
+    <tbody>
+          {{ range .tr }}
+            <tr>
+              <th>{{ .th }}</th>
+            </tr>
+          {{ end }}        
+    </tbody>
+    {{ end }}
+
+  </table>
+  {{ end }}  {{/* .table.thead */}}
+{{ end }} {{/* .Site.Data.themes.icons */}}

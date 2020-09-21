@@ -1,0 +1,54 @@
+icons:
+  - name: adwaita-plus
+    title: Adwaita++
+    table:
+      thead:
+        - tr:
+          - th: Name
+          - th: Preview
+      tbody:
+        - tr:
+          - th: adwaita
+            td:
+              - apps
+              - documents
+              - downloads
+        - tr:
+          - th: aubergine
+            td:
+              - apps
+              - documents
+              - downloads
+        - tr:
+          - th: blue
+            td:
+              - apps
+              - documents
+              - downloads
+
+  - name: suru-plus
+    title: Suru++
+    table:
+      thead:
+        - tr:
+          - th: Name
+          - th: Preview
+      tbody:
+        - tr:
+          - th: "90ssummer"
+            td:
+              - apps
+              - documents
+              - downloads
+        - tr:
+          - th: aubergine
+            td:
+              - apps
+              - documents
+              - downloads
+        - tr:
+          - th: aurora
+            td:
+              - apps
+              - documents
+              - downloads

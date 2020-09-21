@@ -1,0 +1,26 @@
+{{ $arg := .Get 0 }}
+{{ $dataFile := index .Site.Data $arg }}
+{{ $.Scratch.Set "count" 0 }}
+
+<table>
+{{ range $table := $dataFile }}  
+  {{ range $row := $table }}
+    <tr>
+    {{ range $datas := $row }}
+      {{ range $data := $datas }}
+        {{ if eq 0 ($.Scratch.Get "count") }}
+        <th> 
+          {{ . }}
+        </th>
+        {{ else }}
+        <td> 
+          {{ . }}
+        </td>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    </tr>
+    {{ $.Scratch.Add "count" 1 }}
+  {{ end }}
+{{ end }}
+</table>

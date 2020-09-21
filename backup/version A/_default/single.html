@@ -1,0 +1,40 @@
+{{define "main"}}
+
+{{ if .IsTranslated }}
+	<!--Title-->
+	<h2>{{.Title}}</h2>
+
+	<!--Date-->
+	{{.Date.Format "2006-01-30"}}
+
+	<!--TOC-->
+	{{.TableOfContents}}
+
+	<!--Content-->
+	{{.Content}}
+
+	<!--Tag-->
+	<ul>
+		{{range (.GetTerms "tags")}}
+		<li><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></li>
+		{{end}}
+	</ul>
+
+	<!--Prev/Next-->
+	{{with .PrevInSection}}Prev <a href="{{.RelPermalink}}">{{.Title}}</a>{{end}}
+	{{with .NextInSection}}Next <a href="{{.RelPermalink}}">{{.Title}}</a>{{end}}
+
+	<!--Related-->
+	{{$related := .Site.RegularPages.Related . | first 5}}
+		{{with $related}}
+		<h3>See Also</h3>
+		<ul>
+			{{range .}}
+			<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>
+			{{end}}
+		</ul>
+		{{end}}
+
+	{{end}}
+	
+{{ end }}

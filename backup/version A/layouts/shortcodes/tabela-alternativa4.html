@@ -1,0 +1,53 @@
+{{ $data := .Site.Data.icons }}
+
+{{ range $data.icons }}
+  {{ $iconi := . }} 
+  {{/*  $iconi = $data[icons][i]  */}}
+
+  {{ $iconi.name }}
+  {{ $iconi.title }}
+
+  {{ $table := $iconi.table }}
+
+  {{ $thead := $table.thead }}
+  {{ $tbody := $table.tbody }}
+  
+  {{/* begin range $thead */}}
+  {{ range $thead }}
+    {{ $theadi := . }} 
+    {{/*  begin range $theadi */}}
+    {{ range $theadi }}
+    {{ $tr := . }}
+    {{/*  begin range $tr <br> */}}
+      {{ range $tr }}
+        {{ $tri := . }}
+        {{ $th := $tri.th }}
+        {{ $th }}
+      {{ end }}
+    {{/* end range $tr <br> */}}
+    {{ end }}
+    {{/*  end range $theadi */}}
+  {{ end }}
+  {{/* end range $thead */}}
+
+  {{/*  begin range $tbody */}}
+  {{ range $tbody }}
+    {{ $tbodyi := . }}
+    {{/*  begin range $tbodyi  */}}
+    {{ range $tbodyi }}
+      {{ $tr := . }}
+      {{/*  begin range $tr */}}
+      {{ range $tr }}
+        {{ $tri := . }}
+
+        {{ $td := $tri.td }}
+        {{ $th := $tri.th }}
+        
+        {{ $td }}
+        {{ $th }}
+
+      {{ end }} {{/* end range $tr */}}
+    {{ end }} {{/*  end range $tbodyi */}}
+  {{ end }} {{/*  end range $tbody  */}}
+
+{{ end }}
