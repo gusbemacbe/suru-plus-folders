@@ -17,6 +17,8 @@ const tables = [];
 
 styles.forEach((style) => {
   const table = makeElement('table');
+  table.setAttribute('id', style);
+
   const thead = makeElement('thead');
   const tbody = makeElement('tbody');
 
@@ -24,16 +26,12 @@ styles.forEach((style) => {
   const firstHeader = makeElement('th');
   const secondHeader = makeElement('th');
 
-  const h2Title = document.createElement('h2');
-
-  h2Title.textContent = style;
   firstHeader.textContent = 'Name';
   secondHeader.textContent = 'Preview';
 
   trHeader.appendChild(firstHeader);
   trHeader.appendChild(secondHeader);
 
-  thead.prepend(h2Title);
   thead.appendChild(trHeader);
 
   table.appendChild(thead);
@@ -78,4 +76,13 @@ styles.forEach((style) => {
 
 tables.forEach((table) => {
   document.body.appendChild(table);
+});
+
+styles.forEach((style) => {
+  const table = document.querySelector(`table#${style}`)
+
+  const title = document.createElement('h2');
+  title.textContent = style;
+
+  table.insertAdjacentElement('beforebegin', title);
 });
