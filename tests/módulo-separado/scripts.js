@@ -6,14 +6,14 @@ import makeElement from './factory/makeElement.js';
 import makeStyleTableBasedOnStyleName from './factory/makeStyleTableBasedOnStyleName.js';
 import addTitleToTable from './functions/addTitleToTable.js';
 
+const tablesContainer = document.querySelector('#tables-container');
+
 const tables = styles.map(({ name: styleName }) => {
   const table = makeStyleTableBasedOnStyleName(styleName);
   return table;
 });
 
-tables.forEach((table) => {
-  document.body.appendChild(table);
-});
+tables.forEach((table) => tablesContainer.appendChild(table));
 
 styles.forEach(({ name: styleName, title: styleTitle }) => {
   const table = document.querySelector(`table#${styleName}`);
