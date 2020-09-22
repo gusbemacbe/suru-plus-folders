@@ -50,6 +50,9 @@ styles.forEach((style) => {
     tdColorName.textContent = color;
 
     trColor.appendChild(tdColorName);
+
+    const tdImage = makeElement('td');
+
     fakeCategories.forEach((category) => {
       const link = getImageLink(style, color, category);
 
@@ -58,15 +61,14 @@ styles.forEach((style) => {
         height: '48px',
         src: link,
       });
-      const tdImage = makeElement('td');
       tdImage.appendChild(img);
-
-      trColor.appendChild(tdImage);
 
       tbody.appendChild(trColor);
 
       stylesObj[style][color].push(link);
     });
+
+    trColor.appendChild(tdImage);
   });
 
   table.appendChild(tbody);
