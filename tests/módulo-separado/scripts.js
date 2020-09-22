@@ -7,12 +7,6 @@ import { colors, categories, styles } from './static/index.js';
 import getColorsBasedOnTheStyle from './functions/getColorsBasedOnTheStyle.js';
 import getCategoriesBasedOnTheStyle from './functions/getCategoriesBasedOnTheStyle.js';
 
-let stylesObj = {
-  'adwaita-plus': {},
-  'suru-plus': {},
-  'suru-plus-ubuntu': {},
-};
-
 const tables = [];
 
 styles.forEach((style) => {
@@ -40,7 +34,6 @@ styles.forEach((style) => {
   const fakeCategories = getCategoriesBasedOnTheStyle(categories, style);
 
   fakeColors.forEach((color) => {
-    stylesObj[style][color] = [];
 
     const trColor = makeElement('tr');
 
@@ -62,8 +55,6 @@ styles.forEach((style) => {
       tdImage.appendChild(img);
 
       tbody.appendChild(trColor);
-
-      stylesObj[style][color].push(link);
     });
 
     trColor.appendChild(tdImage);
