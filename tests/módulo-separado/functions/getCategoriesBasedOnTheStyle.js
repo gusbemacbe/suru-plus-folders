@@ -1,26 +1,28 @@
 // Author: Felipe Barros <felipetech@tuta.io>
 // 12 August 2020
 
-function getCategoriesBasedOnTheStyle(categories = [], style = '') {
+import getCategoriesCopy from './getCategoriesCopy.js';
+
+function getCategoriesBasedOnTheStyle(style) {
   const styleCategories = {
     'adwaita-plus': () => {
-      let fake_categories = JSON.parse(JSON.stringify(categories));
-      fake_categories.splice(fake_categories.indexOf('desktop'), 1);
-      fake_categories.splice(fake_categories.indexOf('icons'), 1);
+      const fakeCategories = getCategoriesCopy();
+      fakeCategories.splice(fakeCategories.indexOf('desktop'), 1);
+      fakeCategories.splice(fakeCategories.indexOf('icons'), 1);
 
-      return fake_categories;
+      return fakeCategories;
     },
     'suru-plus': () => {
-      let fake_categories = JSON.parse(JSON.stringify(categories));
-      return fake_categories;
+      const fakeCategories = getCategoriesCopy();
+      return fakeCategories;
     },
     'suru-plus-ubuntu': () => {
-      let fake_categories = JSON.parse(JSON.stringify(categories));
-      fake_categories.splice(fake_categories.indexOf('desktop'), 1);
-      fake_categories.splice(fake_categories.indexOf('icons'), 1);
-      fake_categories.splice(fake_categories.indexOf('visiting'), 1);
+      const fakeCategories = getCategoriesCopy();
+      fakeCategories.splice(fakeCategories.indexOf('desktop'), 1);
+      fakeCategories.splice(fakeCategories.indexOf('icons'), 1);
+      fakeCategories.splice(fakeCategories.indexOf('visiting'), 1);
 
-      return fake_categories;
+      return fakeCategories;
     },
   };
 

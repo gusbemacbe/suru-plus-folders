@@ -1,10 +1,12 @@
 // Author: Felipe Barros <felipetech@tuta.io>
 // 12 August 2020
 
-function getColorsBasedOnTheStyle(colors = [], style = '') {
+import getColorsCopy from './getColorsCopy.js';
+
+function getColorsBasedOnTheStyle(style) {
   const styleColors = {
     'adwaita-plus': () => {
-      const fakeColors = JSON.parse(JSON.stringify(colors));
+      const fakeColors = getColorsCopy();
       fakeColors.splice(fakeColors.indexOf('90ssummer'), 1);
       fakeColors.splice(fakeColors.indexOf('aurora'), 1);
       fakeColors.splice(fakeColors.indexOf('berriez'), 1);
@@ -24,7 +26,7 @@ function getColorsBasedOnTheStyle(colors = [], style = '') {
       return fakeColors;
     },
     'suru-plus': () => {
-      let fakeColors = JSON.parse(JSON.stringify(colors));
+      const fakeColors = getColorsCopy();
       fakeColors.splice(fakeColors.indexOf('adwaita'), 1);
       fakeColors.splice(fakeColors.indexOf('aubergine'), 1);
       fakeColors.splice(fakeColors.indexOf('darkblue'), 1);
@@ -34,7 +36,7 @@ function getColorsBasedOnTheStyle(colors = [], style = '') {
       return fakeColors;
     },
     'suru-plus-ubuntu': () => {
-      let fakeColors = JSON.parse(JSON.stringify(colors));
+      const fakeColors = getColorsCopy();
       fakeColors.splice(fakeColors.indexOf('90ssummer'), 1);
       fakeColors.splice(fakeColors.indexOf('adwaita'), 1);
       fakeColors.splice(fakeColors.indexOf('aurora'), 1);
