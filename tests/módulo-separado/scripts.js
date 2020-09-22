@@ -9,9 +9,9 @@ import getCategoriesBasedOnTheStyle from './functions/getCategoriesBasedOnTheSty
 
 const tables = [];
 
-styles.forEach((style) => {
+styles.forEach(({ name: styleName }) => {
   const table = makeElement('table');
-  table.setAttribute('id', style);
+  table.setAttribute('id', styleName);
 
   const thead = makeElement('thead');
   const tbody = makeElement('tbody');
@@ -30,11 +30,10 @@ styles.forEach((style) => {
 
   table.appendChild(thead);
 
-  const fakeColors = getColorsBasedOnTheStyle(colors, style);
-  const fakeCategories = getCategoriesBasedOnTheStyle(categories, style);
+  const fakeColors = getColorsBasedOnTheStyle(colors, styleName);
+  const fakeCategories = getCategoriesBasedOnTheStyle(categories, styleName);
 
   fakeColors.forEach((color) => {
-
     const trColor = makeElement('tr');
 
     const tdColorName = document.createElement('td');
@@ -45,7 +44,7 @@ styles.forEach((style) => {
     const tdImage = makeElement('td');
 
     fakeCategories.forEach((category) => {
-      const link = getImageLink(style, color, category);
+      const link = getImageLink(styleName, color, category);
 
       const img = makeElement('img', {
         width: '48px',
@@ -69,11 +68,11 @@ tables.forEach((table) => {
   document.body.appendChild(table);
 });
 
-styles.forEach((style) => {
-  const table = document.querySelector(`table#${style}`)
+styles.forEach(({ name: styleName, title: styleTitle }) => {
+  const table = document.querySelector(`table#${styleName}`)
 
   const title = document.createElement('h2');
-  title.textContent = style;
+  title.textContent = styleTitle;
 
   table.insertAdjacentElement('beforebegin', title);
 });
