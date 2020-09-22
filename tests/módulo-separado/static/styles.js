@@ -1,1 +1,5 @@
-export default ['adwaita-plus', 'suru-plus', 'suru-plus-ubuntu'];
+export default [
+  { name: 'adwaita-plus', title: 'Adwaita++' },
+  { name: 'suru-plus', title: 'Suru++' },
+  { name: 'suru-plus-ubuntu', title: 'Ubuntu++' }
+];

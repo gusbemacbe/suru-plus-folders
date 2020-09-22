@@ -4,7 +4,6 @@
 /**
  * @param {string} name
  * @param {object} attributes
- * @return {HTMLElement}
  */
 function makeElement(name, attributes = {}) {
   const element = document.createElement(name);
