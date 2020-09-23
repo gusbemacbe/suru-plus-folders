@@ -17,8 +17,8 @@ function makeStyleTableBasedOnStyleName(styleName) {
   const tbody = makeElement('tbody');
 
   const trHeader = makeElement('tr');
-  const firstHeader = makeElement('th');
-  const secondHeader = makeElement('th');
+  const firstHeader = makeElement('th', {class: 'c'});
+  const secondHeader = makeElement('th', {class: 'c'});
 
   firstHeader.textContent = 'Name';
   secondHeader.textContent = 'Preview';
