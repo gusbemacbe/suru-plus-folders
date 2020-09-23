@@ -1,5 +1,5 @@
 GIT_COMMITTER_DATE="2020-08-12T11:43:02" git commit --amend --date="2020-08-12T11:43:02"
-GIT_COMMITTER_DATE="Mon Sept 22 23:08:00 2020 -0300" git commit --amend --no-edit --date="Mon Sept 22 23:08:00 2020 -0300"
+GIT_COMMITTER_DATE="Wed Sept 23 03:48:00 2020 -0300" git commit --amend --no-edit --date="Wed Sept 23 03:48:00 2020 -0300"
 
 GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Mon Sept 22 23:08:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Mon Sept 22 23:08:00 2020 -0300"
 
