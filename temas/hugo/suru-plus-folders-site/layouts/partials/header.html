@@ -20,7 +20,7 @@
               <a class="button" data-body-class="{{ .data }}">{{ .name }}</a>
             {{ end }}  */}}
             {{ range .Site.Params.Themes }}
-              <a class="button" id="{{ .data }}">{{ .name }}</a>
+              <a class="button theme-switch" id="{{ .data }}">{{ .name }}</a>
             {{ end }}
           </div>
         </div>

@@ -9,10 +9,10 @@ module.exports =
     // {
     //   app: ['firefox', '--new-tab', 'gusbemacbe.pt:1989']
     // },
-    open: "firefox",
+    open: "falkon",
     watchContentBase: true,
     // publicPath: '/assets',
-    public: 'http://gusbemacbe.pt:1989',
+    public: 'http://localhost:1989',
   },
   entry: 
   [

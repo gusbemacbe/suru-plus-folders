@@ -29,7 +29,7 @@
   "browserslist": "> 1%",
   "scripts": {
     "start": "run-p start:*",
-    "start:hugo": "hugo server -w --config 'config.yaml' -l 'layouts' -b gusbemacbe.pt -p 1989",
+    "start:hugo": "hugo server -w --config 'config.yaml' -l 'layouts' -b localhost -p 1989",
     "start:webpack": "webpack --mode=production --watch",
     "start:webpack-dev-server": "webpack-dev-server",
     "build": "run-s build:webpack build:webpack-dev-server build:hugo",

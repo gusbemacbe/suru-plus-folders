@@ -84,7 +84,7 @@ params:
   description: List of Suru++, Adwaita++ and Yaru++ icons tables.
   home: Home
   themes:
-    - data: "theme-light"
+    - data: theme-light
       name: Default
       weight: 1
     - data: theme-dark
