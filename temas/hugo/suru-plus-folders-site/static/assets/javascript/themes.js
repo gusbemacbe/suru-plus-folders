@@ -1,9 +1,9 @@
 const themes = {
-  "theme-dark": "../assets/css/syntax-highlighting/suru-plus.css",
   "theme-light": "../assets/css/syntax-highlighting/suru-plus.css",
   "theme-cyberpunk": "../assets/css/syntax-highlighting/cyberpunk.css",
-  "theme-tron": "../assets/css/syntax-highlighting/tron.css",
-  "theme-synthwave-84": "../assets/css/syntax-highlighting/synthwave-84.css"
+  "theme-dark": "../assets/css/syntax-highlighting/suru-plus.css",
+  "theme-synthwave-84": "../assets/css/syntax-highlighting/synthwave-84.css",
+  "theme-tron": "../assets/css/syntax-highlighting/tron.css"
 };
 
 function changeTheme(newTheme) {
