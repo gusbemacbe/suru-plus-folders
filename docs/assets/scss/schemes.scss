@@ -1,0 +1,383 @@
+$back: null;
+$text: null;
+$theme-map: null;
+$tron: true;
+
+$themes: (
+  dark: (
+    // Global
+    anchorColour: var(--suru-plus-mavericks-bottom),
+    anchorColourHover: var(--suru-plus-sunrise-2),
+    backgroundColour: var(--suru-plus-dark-4),
+    textColour: var(--suru-plus-papirus-light-solid),
+
+    // Headings
+    h4Colour: var(--suru-plus-mavericks-bottom),
+
+    // Top Navbar
+    topNavbackground: var(--suru-plus-dark-4),
+    topNavborderImage: var(--suru-plus-mavericks-top),
+
+    // Top Navbar – Dropdowm
+    dropdowmContentBackground: var(--suru-plus-dark-3),
+    dropdowmContentBackgroundHover: var(--suru-plus-mavericks-bottom),
+    dropdowmContentText: var(--suru-plus-papirus-light-solid),
+    dropdowmContentTextHover: var(--suru-plus-synthwave-84-solid-20),
+    dropbtnBackground: var(--suru-plus-mavericks-bottom),
+    dropbtnHoverBackground: var(--suru-plus-synthwave-84-solid-13),
+
+    // Lists
+    liBeforeColour: var(--suru-plus-mavericks-bottom),
+
+    // Table
+    tableBackground: var(--suru-plus-papirus),
+    tableTheadBackground: var(--suru-plus-technotronic-2),
+    tableTheadTextColour: var(--suru-plus-papirus-light-solid),
+    tableTbodyBorder: var(--suru-plus-tokyo-hack-6),
+    tableTbodyTh: var(--suru-plus-mavericks-top),
+
+    // Syntax Highlighting
+    HighlightBg: var(--suru-plus-orange-dark-2),
+    
+    // Footer
+    footerBackground: var(--suru-plus-dark-4),
+    footerBorderImage: var(--suru-plus-mavericks-right),
+
+    // Active Page
+    activeAnchor: var(--suru-plus-mavericks-bottom),
+    activeColor: var(--suru-plus-papirus-light-solid)
+  ),
+
+  synthwave-84: (
+    // Global
+    anchorColour: var(--suru-plus-synthwave-84-2),
+    anchorColourHover: var(--suru-plus-synthwave-84-3-top),
+    backgroundColour: var(--suru-plus-synthwave-84-solid-21),
+    textColour: var(--suru-plus-papirus-light-solid),
+
+    // Headings
+    hsColour: var(--suru-plus-synthwave-84-3-top),
+    h4Colour: var(--suru-plus-synthwave-84-2),
+
+    // Top Navbar
+    topNavbackground: var(--suru-plus-synthwave-84-solid-23),
+    topNavborderImage: var(--suru-plus-synthwave-84-3-top),
+
+    // Top Navbar – Dropdowm
+    dropdowmContentBackground: var(--suru-plus-synthwave-84-solid-20),
+    dropdowmContentBackgroundHover: var(--suru-plus-synthwave-84-2),
+    dropdowmContentText: var(--suru-plus-papirus-light-solid),
+    dropdowmContentTextHover: var(--suru-plus-synthwave-84-solid-20),
+    dropbtnBackground: var(--suru-plus-synthwave-84-2),
+    dropbtnHoverBackground: var(--suru-plus-synthwave-84-3-top),
+
+    // Lists
+    liBeforeColour: var(--suru-plus-synthwave-84-1-top),
+
+    // Table
+    tableBackground: var(--suru-plus-synthwave-84-solid-23),
+    tableTheadBackground: var(--suru-plus-synthwave-84-1-top),
+    tableTheadTextColour: var(--suru-plus-synthwave-84-solid-22),
+    tableTbodyBorder: var(--suru-plus-synthwave-84-solid-18),
+    tableTbodyTh: var(--suru-plus-synthwave-84-2),
+    
+    // Footer
+    footerBackground: var(--suru-plus-dark-4),
+    footerBorderImage: var(--suru-plus-mavericks-right),
+
+    // Active Page
+    activeAnchor: var(--suru-plus-synthwave-84-2),
+    activeColor: var(--suru-plus-synthwave-84-solid-22)
+  ),
+
+  cyberpunk: (
+    // Global
+    anchorColour: var(--suru-plus-fitdance-1-top),
+    anchorColourHover: var(--suru-plus-synthwave-84-1-top),
+    backgroundColour: var(--suru-plus-altered-carbon-solid-43),
+    textColour: var(--suru-plus-synthwave-84-solid-4),
+
+    // Headings
+    hsColour: var(--suru-plus-sunrise-3),
+    h4Colour: var(--suru-plus-fitdance-1-top),
+
+    // Top Navbar
+    topNavbackground: var(--suru-plus-altered-carbon-01),
+    topNavborderImage: var(--suru-plus-altered-carbon-05),
+
+    // Top Navbar – Dropdowm
+    dropdowmContentBackground: var(--suru-plus-altered-carbon-12),
+    dropdowmContentBackgroundHover: var(--suru-plus-altered-carbon-19),
+    dropdowmContentText: var(--suru-plus-altered-carbon-solid-17),
+    dropdowmContentTextHover: var(--suru-plus-altered-carbon-solid-13),
+    dropbtnBackground: var(--suru-plus-fitdance-1-top),
+    dropbtnHoverBackground: var(--suru-plus-synthwave-84-1-top),
+
+    // Lists
+    liBeforeColour: var(--suru-plus-orange-medium-1),
+
+    // Table
+    tableBackground: var(--suru-plus-altered-carbon-solid-41),
+    tableTheadBackground: var(--suru-plus-altered-carbon-05),
+    tableTheadTextColour: var(--suru-plus-altered-carbon-solid-16),
+    tableTbodyBorder: var(--suru-plus-altered-carbon-solid-16),
+    tableTbodyTh: var(--suru-plus-altered-carbon-solid-17),
+    
+    // Footer
+    footerBackground: var(--suru-plus-altered-carbon-01),
+    footerBorderImage: var(--suru-plus-altered-carbon-16),
+
+    // Active Page
+    activeAnchor: var(--suru-plus-altered-carbon-10),
+    activeColor: var(--suru-plus-altered-carbon-solid-17)
+  ),
+
+  tron: (
+    // Global
+    anchorColour: var(--suru-plus-tron-solid-34),
+    anchorColourHover: var(--suru-plus-tron-solid-76),
+    backgroundColour: var(--suru-plus-tron-solid-75),
+    textColour: var(--suru-plus-tron-solid-11),
+
+    // Headings
+    hsColour: var(--suru-plus-tron-solid-34),
+    h4Colour: var(--suru-plus-tron-26),
+
+    // Top Navbar
+    topNavbackground: var(--suru-plus-tron-01),
+    topNavborderImage: var(--suru-plus-tron-26-top),
+
+    // Top Navbar – Dropdowm
+    dropdowmContentBackground: var(--suru-plus-tron-01),
+    dropdowmContentBackgroundHover: var(--suru-plus-tron-36),
+    dropdowmContentText: var(--suru-plus-tron-solid-34),
+    dropdowmContentTextHover: var(--suru-plus-tron-solid-73),
+    dropbtnBackground: var(--suru-plus-tron-solid-34),
+    dropbtnHoverBackground: var(--suru-plus-tron-solid-76),
+
+    // Lists
+    liBeforeColour: var(--suru-plus-tron-solid-77),
+
+    // Table
+    tableBackground: var(--suru-plus-tron-solid-74),
+    tableTheadBackground: var(--suru-plus-tron-solid-71),
+    tableTheadTextColour: var(--suru-plus-tron-solid-37),
+    tableTbodyBorder: var(--suru-plus-tron-solid-42),
+    tableTbodyTh: var(--suru-plus-tron-solid-76),
+    
+    // Footer
+    footerBackground: var(--suru-plus-tron-solid-74),
+    footerBorderImage: var(--suru-plus-tron-26),
+
+    // Active Page
+    activeAnchor: var(--suru-plus-tron-26),
+    activeColor: var(--suru-plus-tron-solid-74),
+
+    // Particular TRON
+    TRONGlowTextGlobal: 0 0 5px rgba(24, 202, 230, 0.7),
+    TRONGlowTableTbodyTh: 0 0 5px rgba(255, 65, 13, 0.7),
+    TRONGlowAnchorColourHover: 0 0 5px rgba(255, 65, 13, 0.7),
+    TRONGlowLiBeforeColour: 0 0 2px rgba(235, 154, 95, 0.7),
+  ),
+);
+
+@mixin themify($themes) 
+{
+  @each $theme, $map in $themes 
+  {
+    .theme-#{$theme} 
+    {
+      $theme-map: () !global;
+      @each $key, $submap in $map 
+      {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) 
+{
+  @return map-get($theme-map, $key);
+}
+
+@mixin themed 
+{
+  @include themify($themes) 
+  {
+    $text: themed("text") !global;
+    $back: themed("back") !global;
+    @content;
+  }
+}
+
+@include themed 
+{
+  background: themed("backgroundColour");
+  color: themed("textColour");
+  text-shadow: themed('TRONGlowTextGlobal');
+}
+
+@include themed 
+{
+  // Global
+  a 
+  {
+    background: themed("anchorColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a:hover 
+  {
+    background: themed("anchorColourHover");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: themed('TRONGlowAnchorColourHover');
+  }
+
+  // Headings
+  h1, h2, h3 
+  {
+    background: themed("hsColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h4 
+  {
+    background: themed("h4Colour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  li::before 
+  {
+    background: themed("liBeforeColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: themed('TRONGlowLiBeforeColour');
+  }
+
+  // Header and top navbar
+
+  .topnav 
+  {
+    background: themed("topNavbackground");
+    border-bottom: 4px solid transparent;
+    border-image: themed("topNavborderImage");
+    border-image-slice: 1;
+  }
+
+  .topnav a.button 
+  {
+    background: transparent;
+    -webkit-text-fill-color: themed("dropdowmContentText");
+  }
+
+  .topnav a.button:hover 
+  {
+    background: themed("dropdowmContentBackgroundHover");
+    color: themed("dropdowmContentTextHover");
+    -webkit-text-fill-color: themed("dropdowmContentTextHover");
+    text-shadow: none;
+  }
+
+  .active 
+  {
+    background: themed("activeAnchor");
+    color: themed("activeColor");
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    -webkit-text-fill-color: themed("activeColor");
+    text-shadow: none;
+  }
+
+  // Header and top navbar – Dropdowm
+
+  .dropdown-content
+  {
+    background: themed("dropdowmContentBackground");
+  }
+
+  .dropdown .dropbtn 
+  {
+    background: themed("dropbtnBackground");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dropdown:hover .dropbtn 
+  {
+    background: themed("dropbtnHoverBackground");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  // Table
+
+  table 
+  {
+    background: themed("tableBackground");
+  }
+
+  table thead tr 
+  {
+    background: themed("tableTheadBackground");
+    color: themed("tableTheadTextColour");
+  }
+
+  table tbody tr 
+  {
+    border-bottom: 1px solid themed("tableTbodyBorder");
+  }
+
+  tbody th 
+  {
+    background: themed("tableTbodyTh");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: themed('TRONGlowTableTbodyTh');
+  }
+
+  table tbody tr td:first-child
+  {
+    text-shadow: themed('TRONGlowTableTbodyTh');
+  }
+
+  // Syntax Highlighting
+  .highlight
+  {
+    background: themed('HighlightBg');
+  }
+
+
+  // Footer
+
+  #footer 
+  {
+    background: themed("footerBackground");
+    border-top: 4px solid transparent;
+    border-image: themed("footerBorderImage");
+    border-image-slice: 1;
+  }
+}

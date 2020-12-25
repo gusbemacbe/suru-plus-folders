@@ -1,0 +1,182 @@
+.topnav
+{
+  background: var(--suru-plus-papirus);
+  border-bottom: 4px solid transparent;
+  border-image: var(--suru-plus-fitdance-1-bottom);
+  border-image-slice: 1;
+  /* overflow: hidden; */
+}
+
+.topnav a
+{
+  display: block;
+  float: left;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.active
+{
+  background: var(--suru-plus-sunrise-1-top);
+  color: var(--suru-plus-papirus-light-solid);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  -webkit-text-fill-color: var(--suru-plus-papirus-light-solid);
+}
+
+.topnav .icon
+{
+  display: none;
+}
+
+/* Menu */
+
+#language-switch .dropdown 
+{
+  min-width: 100%;
+  text-align: right;
+}
+
+#language-switch .dropdown > li > a 
+{
+  padding-right: 15px;
+}
+
+.dropdown
+{
+  float: left;
+  overflow: hidden;
+  padding-top: 14px;
+}
+
+.dropdown .dropbtn
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+  border: none;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  outline: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dropdown-content
+{
+  background: var(--suru-plus-papirus-light-solid);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a
+{
+  color: var(--suru-plus-papirus-dark-solid);
+  display: block;
+  float: none;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.topnav a.button
+{
+  background: transparent;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  color: var(--suru-plus-papirus-dark-solid);
+  cursor: pointer;
+  font-weight: bold;
+  height: 34px;
+  padding: 6px 16px;
+  margin: 12px 0;
+  outline: none;
+  overflow: visible;
+  vertical-align: middle;
+  -webkit-text-fill-color: var(--suru-plus-papirus-dark-solid);
+}
+
+.topnav a.button:hover
+{
+  background: var(--suru-plus-fitdance-1);
+  color: var(--suru-plus-papirus-light-solid);
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  -webkit-text-fill-color: var(--suru-plus-papirus-light-solid);
+}
+
+.dropdown:hover .dropbtn
+{
+  background-image: var(--suru-plus-sunrise-1-top);
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.dropdown-content a:hover
+{
+  background-color: #dddddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content
+{
+  display: block;
+}
+
+.sidebar
+{
+  background: var(--suru-plus-papirus-transparent90);
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 0;
+  z-index: 1;
+}
+
+.sidebar.bottom
+{
+  display: none;
+}
+
+.sidebar a:hover
+{
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn, .sidebar.bottom .closebtn
+{
+  font-size: 36px;
+  margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+#main
+{
+  transition: margin-left .5s;
+}
