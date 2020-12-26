@@ -1,0 +1,13 @@
+%table
+%thead
+    %tr
+        %th Name
+        %th Size
+        %th Compressed size
+%tbody
+    %table
+        - @result.each do |i|
+            %tr
+                %td= i[0]
+                %td= i[1]
+                %td= i[2]
