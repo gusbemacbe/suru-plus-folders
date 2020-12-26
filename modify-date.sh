@@ -3,6 +3,9 @@ GIT_COMMITTER_DATE="Dec 26 12:11:00 2020 -0300" git commit --amend --no-edit --d
 
 GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Mon Sept 22 23:08:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Mon Sept 22 23:08:00 2020 -0300"
 
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Mon Sept 22 23:08:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Mon Sep 21 22:09:00 2020 -0300"
+exec GIT_COMMITTER_DATE="Tue Sep 22 22:07:00 2020 -0300" git commit --amend --no-edit --date="Tue Sep 22 22:07:00 2020 -0300"
+
 git filter-branch --env-filter \
     'if [ $GIT_COMMIT = d3871686b9a46105737068b92062e9b3dd81eaa3 ]
      then
