@@ -1,0 +1,85 @@
+pick 50531c1 Modifying the date
+pick bb0cdf6 Added .vscode, LICENSE and gitignore
+exec GIT_COMMITTER_DATE="Wed Aug 12 10:57:32 2020 -0300" git commit --amend --no-edit --date="Wed Aug 12 10:57:32 2020 -0300"
+pick 7f7f601 Backing up and updating Hugo site
+exec GIT_COMMITTER_DATE="Wed Aug 12 11:34:32 2020 -0300" git commit --amend --no-edit --date="Wed Aug 12 11:34:32 2020 -0300"
+pick 7c6ec05 Added gitmodules
+exec GIT_COMMITTER_DATE="Wed Aug 12 11:38:11 2020 -0300" git commit --amend --no-edit --date="Wed Aug 12 11:38:11 2020 -0300"
+pick 941b99d Updating the submodules
+exec GIT_COMMITTER_DATE="Wed Aug 12 11:43:02 2020 -0300" git commit --amend --no-edit --date="Wed Aug 12 11:43:02 2020 -0300"
+pick 3331b81 Added the folders «notes»
+exec GIT_COMMITTER_DATE="Mon Sep 21 04:41:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 04:41:00 2020 -0300"
+pick 170c9e6 Backing up the old version of Hugo site
+exec GIT_COMMITTER_DATE="Mon Sep 21 05:03:53 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 05:03:53 2020 -0300"
+pick 4650244 Backing up the test of JavaScript code
+exec GIT_COMMITTER_DATE="Mon Sep 21 05:03:53 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 05:03:53 2020 -0300"
+pick 51d112a refactor: Move related images to a single "td" element
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Mon Sept 22 23:08:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Mon Sep 21 22:09:00 2020 -0300"
+pick 7b0ebdd refactor: Move titles out of the tables
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Mon Sep 21 22:42:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Mon Sep 21 22:42:00 2020 -0300"
+pick ade5951 chore: Remove unnecessary code
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 11:12:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 11:12:00 2020 -0300"
+pick b4ffa9d refactor: Set "styles" as an object
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 11:59:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 11:59:00 2020 -0300"
+pick 3a54731 refactor: Add functions for color and category copying
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 12:30:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 12:30:00 2020 -0300"
+pick 6e05454 refactor: Simplify code with functions
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 12:45:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 12:45:00 2020 -0300"
+pick 45d509e refactor: Append tables to a specific element
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 12:52:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 12:52:00 2020 -0300"
+pick d0a9167 Update testes/módulo-separado/factory/makeStyleTableBasedOnStyleName.js
+exec GIT_COMMITTER_DATE="Tue Sep 22 22:07:00 2020 -0300" git commit --amend --no-edit --date="Tue Sep 22 22:07:00 2020 -0300"
+pick 6a36a36 refactor: Update testes/módulo-unificado/scripts.js
+exec GIT_COMMITTER_NAME="Felipe Barros" GIT_COMMITTER_EMAIL="felipetech@tuta.io" GIT_AUTHOR_NAME="Felipe Barros" GIT_AUTHOR_EMAIL="felipetech@tuta.io" GIT_COMMITTER_DATE="Tue Sep 22 23:08:00 2020 -0300" git commit --amend --author="Felipe Barros <felipetech@tuta.io>" --no-edit --date="Tue Sep 22 23:08:00 2020 -0300"
+pick 1e5e74b Added Italian version
+exec GIT_COMMITTER_DATE="Wed Sep 23 03:48:00 2020 -0300" git commit --amend --no-edit --date="Wed Sep 23 03:48:00 2020 -0300"
+pick c26ad84 Added Italian version
+exec GIT_COMMITTER_DATE="Wed Sep 23 03:48:00 2020 -0300" git commit --amend --no-edit --date="Wed Sep 23 03:48:00 2020 -0300"
+pick 908e5fc Check the chores above
+exec GIT_COMMITTER_DATE="Mon Sep 21 04:41:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 04:41:00 2020 -0300"
+pick 8188a94 Added sorters to the «tools» folders
+exec GIT_COMMITTER_DATE="Mon Sep 21 05:04:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 05:04:00 2020 -0300"
+pick 2c7ca79 Added a script to run automatically
+exec GIT_COMMITTER_DATE="Mon Sep 21 05:08:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 05:08:00 2020 -0300"
+pick 31e4667 Added Node and Webpack configurations
+exec GIT_COMMITTER_DATE="Mon Sep 21 05:33:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 05:33:00 2020 -0300"
+pick 5384648 Added templates for listing colours
+exec GIT_COMMITTER_DATE="Mon Sep 21 07:21:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 07:21:00 2020 -0300"
+pick 8ef0581 Added htaccess and robots configurations
+exec GIT_COMMITTER_DATE="Mon Sep 21 07:35:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 07:35:00 2020 -0300"
+pick 109cd2c Backing up Emmet cheatsheet
+exec GIT_COMMITTER_DATE="Mon Sep 21 07:38:00 2020 -0300" git commit --amend --no-edit --date="Mon Sep 21 07:38:00 2020 -0300"
+pick 05c417f Modified Portuguese to English
+exec GIT_COMMITTER_DATE="Fri Dec 25 22:33:00 2020 -0300" git commit --amend --no-edit --date="Fri Dec 25 22:33:00 2020 -0300"
+pick cb86123 Backing up another old version of Hugo site
+exec GIT_COMMITTER_DATE="Fri Dec 25 23:39:00 2020 -0300" git commit --amend --no-edit --date="Fri Dec 25 23:39:00 2020 -0300"
+pick 7af3c73 Added gulpfiles
+exec GIT_COMMITTER_DATE="Fri Dec 26 02:11:00 2020 -0300" git commit --amend --no-edit --date="Fri Dec 26 02:11:00 2020 -0300"
+pick 5d28f4d Updated and backed modify.date.sh
+pick 1e11be9 Created tools folder and added comaprisons
+exec GIT_COMMITTER_DATE="Wed Aug 12 11:08:00 2020 -0300" git commit --amend --no-edit --date="Wed Aug 12 11:08:00 2020 -0300"
+
+# Rebase bb0cdf6..ed5a0ed onto bb0cdf6 (28 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# Se remover uma linha daqui AQUELE COMMIT SERÁ PERDIDO.
+#
+# No entanto, se remover tudo, o rebase será abortado.
+#

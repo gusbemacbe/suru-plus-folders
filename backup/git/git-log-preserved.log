@@ -1,0 +1,276 @@
+commit 1e11be93cac1f9853d4f8989b4e6590860f6b4e8
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 11:08:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 11:08:00 2020 -0300
+
+    Created tools folder and added comaprisons
+
+commit 6da5b13635a75e969748d33fa370ccdef0d4afa6
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Sat Dec 26 05:29:05 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Sat Dec 26 05:29:05 2020 -0300
+
+    Updated modify-date.sh
+
+commit f2987a4cd5ca80485ffe48e34f0a009dfad14540
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Sat Dec 26 04:18:52 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Sat Dec 26 05:27:26 2020 -0300
+
+    Updated and backed modify.date.sh
+
+commit ef71f2bd7147ca426d296eb0ef5c2ef652ee4e49
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Sat Dec 26 02:11:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Sat Dec 26 02:11:00 2020 -0300
+
+    Added gulpfiles
+
+commit 62d1f47c2e83dd0791873a4e1413f17e3260fc1d
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Fri Dec 25 23:39:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Fri Dec 25 23:39:00 2020 -0300
+
+    Backing up another old version of Hugo site
+
+commit be55001c1fb0da49d1867323c8260b897647299c
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Fri Dec 25 22:33:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Fri Dec 25 22:33:00 2020 -0300
+
+    Modified Portuguese to English
+
+commit 8f55272118f3ae750d7912283d79b8a337122a6c
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 07:38:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 07:38:00 2020 -0300
+
+    Backing up Emmet cheatsheet
+
+commit 62730799fb59f354e9e14a919ab5930f63704176
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 07:35:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 07:35:00 2020 -0300
+
+    Added htaccess and robots configurations
+
+commit 74ee163439661e0d8aac2e67727737dbf3110333
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 07:21:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 07:21:00 2020 -0300
+
+    Added templates for listing colours
+
+commit 93f7edaea09e4e520181d5148dd43f4075d38ea6
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 05:33:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 05:33:00 2020 -0300
+
+    Added Node and Webpack configurations
+
+commit 5301fded1281ce7cd7b4029d6810603d1f3db4ba
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 05:08:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 05:08:00 2020 -0300
+
+    Added a script to run automatically
+
+commit 7406cecd222e0b894115087dc44a3347ab3a8a53
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 05:04:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 05:04:00 2020 -0300
+
+    Added sorters to the «tools» folders
+    
+    For generating SCSS and sorting the colours.
+
+commit 2f29a7b9558f57af094d8595a45ffe48c4e8792a
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 04:41:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 04:41:00 2020 -0300
+
+    Check the chores above
+    
+    – Added a script to copy the available icons styles from icons themes to static folder
+    - Created a HTML file to compile JavaScript to convert colours in JSON into SVG for importing into Figma
+
+commit 2202e86d09ce86f94b6d70f0b48776fdb09c1094
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Sep 23 03:48:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Sep 23 03:48:00 2020 -0300
+
+    Added Italian version
+
+commit fdb5669e172f38b66178d5dbacc658954345b8f6
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Sep 23 03:48:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Sep 23 03:48:00 2020 -0300
+
+    Added Italian version
+
+commit 530a55104e405ccf9a642e4ad395a5bb1a6ced22
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 23:08:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 23:08:00 2020 -0300
+
+    refactor: Update testes/módulo-unificado/scripts.js
+    
+    Add the codes from the "módulo-separado" to the "módulo-unificado" folder
+
+commit 74fc504565d7c7bfe500a85be9e4d0422bd0d8e0
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 22:07:00 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Tue Sep 22 22:07:00 2020 -0300
+
+    Update testes/módulo-separado/factory/makeStyleTableBasedOnStyleName.js
+    
+    Co-authored-by: Gustavo Reis <gusbemacbe@gmail.com>
+
+commit 1f5d04532e46f9fd088f94622d8c464dffce9c50
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 12:52:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 12:52:00 2020 -0300
+
+    refactor: Append tables to a specific element
+
+commit 1ad6277381ae0ab577cf4b4fe3f5b242207554de
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 12:45:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 12:45:00 2020 -0300
+
+    refactor: Simplify code with functions
+    
+    Create new functions and rename some existing functions with better names
+
+commit 22aebb5d758acf3e7b96486ba6501434ef7e5d7e
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 12:30:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 12:30:00 2020 -0300
+
+    refactor: Add functions for color and category copying
+
+commit de3a19d19ca6a439d0cf348eb4417b328e72f19d
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 11:59:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 11:59:00 2020 -0300
+
+    refactor: Set "styles" as an object
+    
+    Set "styles" as an object containing "name" and "title"
+
+commit 8446484616a9f8549ae339c94e602149e5eee426
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Tue Sep 22 11:12:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 11:12:00 2020 -0300
+
+    chore: Remove unnecessary code
+
+commit 1f13932d23a4d78ed50d332d1470c028ae064f2f
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Mon Sep 21 22:42:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Mon Sep 21 22:42:00 2020 -0300
+
+    refactor: Move titles out of the tables
+
+commit faaed3326d3d2d17286e476aaa8e2e15daa3c2a7
+Author:     Felipe Barros <felipetech@tuta.io>
+AuthorDate: Mon Sep 21 22:09:00 2020 -0300
+Commit:     Felipe Barros <felipetech@tuta.io>
+CommitDate: Tue Sep 22 23:08:00 2020 -0300
+
+    refactor: Move related images to a single "td" element
+
+commit 4650244174c13feeb2193205bc7f4721493e037c
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 05:03:53 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 05:03:53 2020 -0300
+
+    Backing up the test of JavaScript code
+
+commit 170c9e60dd73d5962ad58c01c49d41710d51f2ec
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 05:03:53 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 05:03:53 2020 -0300
+
+    Backing up the old version of Hugo site
+
+commit 3331b81b5c4e239b7edaf7e0a37fa4bab09ff612
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Mon Sep 21 04:41:00 2020 +0000
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Mon Sep 21 04:41:00 2020 +0000
+
+    Added the folders «notes»
+
+commit 941b99dfbef8b5652fee7d9f64feae946413af64
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 11:43:02 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 11:43:02 2020 -0300
+
+    Updating the submodules
+
+commit 7c6ec058f45dc4b606703cbdd04c9316ac34bd99
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 11:38:11 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 11:38:11 2020 -0300
+
+    Added gitmodules
+
+commit 7f7f60129a496267e05c3d662e5b8cb4ddc4767b
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 11:34:32 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 11:34:32 2020 -0300
+
+    Backing up and updating Hugo site
+
+commit bb0cdf664a6833c66d75079d3b855381b16f5e08
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 10:57:32 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 10:57:32 2020 -0300
+
+    Added .vscode, LICENSE and gitignore
+
+commit 50531c1eea6fcf9c87c8c5f27ef15b54bea6b1e1
+Author:     Gustavo Costa <gusbemacbe@gmail.com>
+AuthorDate: Fri Dec 25 23:39:05 2020 -0300
+Commit:     Gustavo Costa <gusbemacbe@gmail.com>
+CommitDate: Sat Dec 26 04:27:11 2020 -0300
+
+    Modifying the date
+
+commit 86fd01574118468f74b65bc6c34aaaf3cc47f4fd
+Author:     Gustavo Reis <gusbemacbe@gmail.com>
+AuthorDate: Wed Aug 12 10:45:30 2020 -0300
+Commit:     Gustavo Reis <gusbemacbe@gmail.com>
+CommitDate: Wed Aug 12 10:45:30 2020 -0300
+
+    Initializing «site-hugo»  branch

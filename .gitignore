@@ -5,10 +5,6 @@
 docs
 public
 
-# Logs
-logs
-*.log
-
 # Nodejs e NPM
 node_hugo
 node_modules
