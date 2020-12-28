@@ -265,6 +265,7 @@ function makeStyleTableBasedOnStyleName(styleName)
 
       const img = makeElement('img', 
       {
+        alt: `${color} ${category} ${styleName} icon`,
         width: '48px',
         height: '48px',
         src: link,
