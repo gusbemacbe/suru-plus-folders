@@ -1,7 +1,7 @@
 // Author: Felipe Barros <felipetech@tuta.io>
 // 12 August 2020
 
-'{{ $path := "../assets/images/icons/"}}'
+'{{ $path := "../assets/images/icons"}}'
 
 '{{ if .IsTranslated }}'
 
@@ -265,6 +265,7 @@ function makeStyleTableBasedOnStyleName(styleName)
 
       const img = makeElement('img', 
       {
+        alt: `${color} ${category} ${styleName} icon`,
         width: '48px',
         height: '48px',
         src: link,
