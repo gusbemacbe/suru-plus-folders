@@ -3,7 +3,7 @@
 {{ if .IsTranslated }}
   <div class="topnav">
 
-        <a style="pointer-events: none; cursor: default;">{{.Site.Title}}</a>
+        <a style="pointer-events: none; cursor: default;" href="/">{{.Site.Title}}</a>
 
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
