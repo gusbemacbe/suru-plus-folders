@@ -1,7 +1,7 @@
 // Author: Felipe Barros <felipetech@tuta.io>
 // 12 August 2020
 
-'{{ $path := "../assets/images/icons/"}}'
+'{{ $path := "../assets/images/icons"}}'
 
 '{{ if .IsTranslated }}'
 
