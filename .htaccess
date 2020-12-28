@@ -79,7 +79,7 @@ AddType image/tiff                      .tiff .tif
     AddType image/svg+xml               svg
 </IfModule>
 
-<FilesMatch ".(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|svg|ttf|webp|woff)$">
+<FilesMatch ".(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|scss|svg|ttf|webp|woff)$">
   <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin “*”
     Header always set Cache-Control "no-cache, public"
@@ -87,12 +87,12 @@ AddType image/tiff                      .tiff .tif
   </IfModule>
 </FilesMatch>
 
-<FilesMatch "\.(css|js|ttf|otf|eot|woff|jpeg|jpg|png|svg|webp)$" >
+<FilesMatch ".(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|scss|svg|ttf|webp|woff)$" >
   SetOutputFilter DEFLATE
 </FilesMatch>
 
-<FilesMatch "\.(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|svg|ttf|webp|woff)$">
-    Header set Cache-Control "max-age=31536000, public"
+<FilesMatch ".(css|eot|flv|gif|ico|jpeg|jpg|js|json|otf|pdf|png|scss|svg|ttf|webp|woff)$">
+    Header set Cache-Control "max-age=2628000, public"
 </FilesMatch>
 
 <IfModule mod_headers.c>
