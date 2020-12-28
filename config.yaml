@@ -62,7 +62,7 @@ pygmentsUseClasses: true
 
 assetDir: "static/assets"
 layoutDir: layouts
-publishDir: docs
+publishDir: "/home/gusbemacbe/GitHub/Gustavo/suru-plus-folders-gh-pages/"
 theme: ''
 
 params:
@@ -166,7 +166,7 @@ languages:
           name: Colophon
           weight: 4
     themes:
-      - data: "theme-light"
+      - data: theme-light
         name: Défaut
         weight: 1
       - data: theme-dark
@@ -214,7 +214,7 @@ languages:
           name: Colophon
           weight: 4
     themes:
-      - data: "theme-light"
+      - data: theme-light
         name: Standard
         weight: 1
       - data: theme-dark
@@ -262,7 +262,7 @@ languages:
           name: Colofão
           weight: 4
     themes:
-      - data: "theme-light"
+      - data: theme-light
         name: Padrão
         weight: 1
       - data: theme-dark
@@ -310,7 +310,7 @@ languages:
           name: Colofão
           weight: 4
     themes:
-      - data: "theme-light"
+      - data: theme-light
         name: Padrão
         weight: 1
       - data: theme-dark
