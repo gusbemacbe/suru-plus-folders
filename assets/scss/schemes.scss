@@ -52,7 +52,8 @@ $themes: (
     // Global
     anchorColour: var(--suru-plus-synthwave-84-2),
     anchorColourHover: var(--suru-plus-synthwave-84-3-top),
-    backgroundColour: var(--suru-plus-synthwave-84-solid-21),
+    backgroundColour: var(--suru-plus-synthwave-84-1),
+    codeBackground: rgb(38, 35, 53),
     textColour: var(--suru-plus-papirus-light-solid),
 
     // Headings
@@ -229,6 +230,7 @@ $themes: (
 @include themed 
 {
   // Global
+
   a 
   {
     background: themed("anchorColour");
@@ -244,6 +246,20 @@ $themes: (
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: themed('TRONGlowAnchorColourHover');
+  }
+
+  code
+  {
+    background: themed("codeBackground");
+    border-right: 1px solid rgba(36, 27, 47, 0);
+    box-shadow: inset 0 -5px 25px #fc28a825;
+    --tab-border-bottom-color: rgba(136, 0, 136, 0.5);
+  }
+
+  pre > code
+  {
+    background: none;
+    box-shadow: none;
   }
 
   // Headings

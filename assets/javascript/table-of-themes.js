@@ -1,6 +1,10 @@
 // Author: Felipe Barros <felipetech@tuta.io>
 // 12 August 2020
 
+'{{ $path := "../assets/images/icons/"}}'
+
+'{{ if .IsTranslated }}'
+
 const categories = 
 [
   'apps',
@@ -82,7 +86,8 @@ function getColorsCopy()
  */
 function getImageLink(style, color, category) 
 {
-  return `https://raw.githubusercontent.com/gusbemacbe/suru-plus-folders/beta/images/${style}/folder-${color}-${category}.svg?sanitize=true`;
+  // return `https://raw.githubusercontent.com/gusbemacbe/suru-plus-folders/beta/images/${style}/folder-${color}-${category}.svg?sanitize=true`;
+  return `{{ $path }}/${style}/folder-${color}-${category}.svg?sanitize=true`;
 }
 
 /**
@@ -305,3 +310,5 @@ styles.forEach(({ name: styleName, title: styleTitle }) =>
 
   addTitleToTable(title, table);
 });
+
+'{{ end }}'
