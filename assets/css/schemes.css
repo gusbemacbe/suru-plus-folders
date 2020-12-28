@@ -43,10 +43,11 @@
 
 .theme-dark code
 {
-    border-right: 1px solid rgba(36, 27, 47, 0);
-    box-shadow: inset 0 -5px 25px #fc28a825;
+    border-right: none;
+    background: var(--suru-plus-fitdance-1-transparent04);
+    box-shadow: none;
 
-    --tab-border-bottom-color: rgba(136, 0, 136, .5);
+    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
 }
 
 .theme-dark pre > code
@@ -172,7 +173,7 @@
 
 .theme-dark .highlight
 {
-    background: var(--suru-plus-orange-dark-2);
+    background: var(--suru-plus-fitdance-2-transparent04);
 }
 
 .theme-dark #footer
@@ -207,7 +208,7 @@
     background: #262335;
     box-shadow: inset 0 -5px 25px #fc28a825;
 
-    --tab-border-bottom-color: rgba(136, 0, 136, .5);
+    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
 }
 
 .theme-synthwave-84 pre > code
@@ -360,10 +361,7 @@
 
 .theme-cyberpunk code
 {
-    border-right: 1px solid rgba(36, 27, 47, 0);
-    box-shadow: inset 0 -5px 25px #fc28a825;
-
-    --tab-border-bottom-color: rgba(136, 0, 136, .5);
+    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
 }
 
 .theme-cyberpunk pre > code
@@ -517,10 +515,7 @@
 
 .theme-tron code
 {
-    border-right: 1px solid rgba(36, 27, 47, 0);
-    box-shadow: inset 0 -5px 25px #fc28a825;
-
-    --tab-border-bottom-color: rgba(136, 0, 136, .5);
+    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
 }
 
 .theme-tron pre > code

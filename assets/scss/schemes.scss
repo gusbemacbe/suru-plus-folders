@@ -9,6 +9,10 @@ $themes: (
     anchorColour: var(--suru-plus-mavericks-bottom),
     anchorColourHover: var(--suru-plus-sunrise-2),
     backgroundColour: var(--suru-plus-dark-4),
+    codeBackground: var(--suru-plus-fitdance-1-transparent04),
+    codeBorderRight: none,
+    codeBoxShadow: none,
+    codeTabBorderBottomColour: none,
     textColour: var(--suru-plus-papirus-light-solid),
 
     // Headings
@@ -37,7 +41,7 @@ $themes: (
     tableTbodyTh: var(--suru-plus-mavericks-top),
 
     // Syntax Highlighting
-    HighlightBg: var(--suru-plus-orange-dark-2),
+    HighlightBg: var(--suru-plus-fitdance-2-transparent04),
     
     // Footer
     footerBackground: var(--suru-plus-dark-4),
@@ -54,6 +58,9 @@ $themes: (
     anchorColourHover: var(--suru-plus-synthwave-84-3-top),
     backgroundColour: var(--suru-plus-synthwave-84-1),
     codeBackground: rgb(38, 35, 53),
+    codeBorderRight: 1px solid rgba(36, 27, 47, 0),
+    codeBoxShadow: inset 0 -5px 25px #fc28a825,
+    codeTabBorderBottomColour: rgba(136, 0, 136, 0.5),
     textColour: var(--suru-plus-papirus-light-solid),
 
     // Headings
@@ -251,9 +258,9 @@ $themes: (
   code
   {
     background: themed("codeBackground");
-    border-right: 1px solid rgba(36, 27, 47, 0);
-    box-shadow: inset 0 -5px 25px #fc28a825;
-    --tab-border-bottom-color: rgba(136, 0, 136, 0.5);
+    border-right: themed("codeBorderRight");
+    box-shadow: themed("codeBoxShadow");
+    --tab-border-bottom-color: themed("codeTabBorderBottomColour");
   }
 
   pre > code

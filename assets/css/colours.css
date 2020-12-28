@@ -410,9 +410,34 @@
   /* 🇬🇧  Transparent Gradients 		*/
   /* 🇮🇹  Sfumati Transparenti 		*/
   /* 🇫🇷  Dégradés Transparents 		*/
-  --suru-plus-papirus-transparent80: linear-gradient(rgba(73, 83, 94, 0.80), rgba(47, 57, 67, 0.80));
-  --suru-plus-papirus-transparent85: linear-gradient(rgba(73, 83, 94, 0.85), rgba(47, 57, 67, 0.85));
-  --suru-plus-papirus-transparent90: linear-gradient(rgba(73, 83, 94, 0.90), rgba(47, 57, 67, 0.90));
+  --suru-plus-papirus-transparent80:    linear-gradient(rgba(73, 83, 94, 0.80), rgba(47, 57, 67, 0.80));
+  --suru-plus-papirus-transparent85:    linear-gradient(rgba(73, 83, 94, 0.85), rgba(47, 57, 67, 0.85));
+  --suru-plus-papirus-transparent90:    linear-gradient(rgba(73, 83, 94, 0.90), rgba(47, 57, 67, 0.90));
+  --suru-plus-fitdance-1-transparent04: linear-gradient(180deg, rgba(026, 214, 171, 0.04) 0.10%, rgba(50, 157, 182, 0.04) 100%);
+  --suru-plus-fitdance-2-transparent04: linear-gradient(180deg, rgba(208, 57, 031, 0.04) 0%, rgba(255, 00, 93, 0.04) 100%);
+  --suru-plus-haguichi-transparent04:   linear-gradient(180deg, rgba(230, 84, 139, 0.04) 0%, rgba(247, 99, 99, 0.04) 100%);
+  --suru-plus-fitdance-2-transparent10: linear-gradient(180deg, rgba(208, 57, 031, 0.10) 0%, rgba(255, 00, 93, 0.10) 100%);
+  --suru-plus-haguichi-transparent10:   linear-gradient(180deg, rgba(230, 84, 139, 0.10) 0%, rgba(247, 99, 99, 0.10) 100%);
+  --suru-plus-fitdance-2-transparent18: linear-gradient(180deg, rgba(208, 57, 031, 0.18) 0%, rgba(255, 00, 93, 0.18) 100%);
+  --suru-plus-haguichi-transparent18:   linear-gradient(180deg, rgba(230, 84, 139, 0.18) 0%, rgba(247, 99, 99, 0.18) 100%);
+  --suru-plus-fitdance-2-transparent40: linear-gradient(180deg, rgba(208, 57, 031, 0.40) 0%, rgba(255, 00, 93, 0.40) 100%);
+  --suru-plus-haguichi-transparent40:   linear-gradient(180deg, rgba(230, 84, 139, 0.40) 0%, rgba(247, 99, 99, 0.40) 100%);
+  --suru-plus-sunrise-2-transparent18:  linear-gradient(180deg, rgba(255, 110, 0, 0.18) 0%, rgba(239, 00, 43, 0.18) 100%);
+  --suru-plus-sunrise-3-transparent18:  linear-gradient(180deg, rgba(255, 069, 0, 0.18) 0%, rgba(220, 21, 59, 0.18) 100%);
+  --suru-plus-sunrise-2-transparent40:  linear-gradient(180deg, rgba(255, 110, 0, 0.40) 0%, rgba(239, 00, 43, 0.40) 100%);
+  --suru-plus-sunrise-3-transparent40:  linear-gradient(180deg, rgba(255, 069, 0, 0.40) 0%, rgba(220, 21, 59, 0.40) 100%);
+  --suru-plus-sunrise-2-transparent60:  linear-gradient(180deg, rgba(255, 110, 0, 0.60) 0%, rgba(239, 00, 43, 0.60) 100%);
+  --suru-plus-sunrise-3-transparent60:  linear-gradient(180deg, rgba(255, 069, 0, 0.60) 0%, rgba(220, 21, 59, 0.60) 100%);
+  --suru-plus-sunrise-2-transparent70:  linear-gradient(180deg, rgba(255, 110, 0, 0.70) 0%, rgba(239, 00, 43, 0.70) 100%);
+  --suru-plus-sunrise-3-transparent70:  linear-gradient(180deg, rgba(255, 069, 0, 0.70) 0%, rgba(220, 21, 59, 0.70) 100%);
+  --suru-plus-sunrise-2-transparent75:  linear-gradient(180deg, rgba(255, 110, 0, 0.75) 0%, rgba(239, 00, 43, 0.75) 100%);
+  --suru-plus-sunrise-3-transparent75:  linear-gradient(180deg, rgba(255, 069, 0, 0.75) 0%, rgba(220, 21, 59, 0.75) 100%);
+  --suru-plus-sunrise-2-transparent80:  linear-gradient(180deg, rgba(255, 110, 0, 0.80) 0%, rgba(239, 00, 43, 0.80) 100%);
+  --suru-plus-sunrise-3-transparent80:  linear-gradient(180deg, rgba(255, 069, 0, 0.80) 0%, rgba(220, 21, 59, 0.80) 100%);
+  --suru-plus-sunrise-2-transparent85:  linear-gradient(180deg, rgba(255, 110, 0, 0.85) 0%, rgba(239, 00, 43, 0.85) 100%);
+  --suru-plus-sunrise-3-transparent85:  linear-gradient(180deg, rgba(255, 069, 0, 0.85) 0%, rgba(220, 21, 59, 0.85) 100%);
+  --suru-plus-sunrise-2-transparent90:  linear-gradient(180deg, rgba(255, 110, 0, 0.90) 0%, rgba(239, 00, 43, 0.90) 100%);
+  --suru-plus-sunrise-3-transparent90:  linear-gradient(180deg, rgba(255, 069, 0, 0.90) 0%, rgba(220, 21, 59, 0.90) 100%);
 
   /* 🇧🇷  Posição das Cores 			*/
   /* 🇬🇧  Colours Position 			*/
