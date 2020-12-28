@@ -13,7 +13,7 @@
         {{- end }}
 
         <div class="dropdown">
-          <button class="dropbtn"><span class="suru-theme"></span></button>
+          <button class="dropbtn" aria-label="themes list"><span class="suru-theme"></span></button>
           
           <div class="dropdown-content">
             {{/*  {{ range .Site.Params.Themes }}
@@ -26,7 +26,7 @@
         </div>
 
       <div class="dropdown" id="language-switcher">
-        <button class="dropbtn"><span class="suru-languages"></span></button>
+        <button class="dropbtn" aria-label="language switcher"><span class="suru-languages"></span></button>
         
         <div class="dropdown-content">
           {{ range .Translations -}}
