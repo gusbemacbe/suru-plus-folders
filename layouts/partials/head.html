@@ -9,11 +9,7 @@
     <meta name="viewport"     content="initial-scale=1, width=device-width">
     {{ hugo.Generator -}}
     
-    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     <meta name="robots"       content="index, follow">
-    {{ else }}
-    <meta name="robots"       content="noindex, nofollow">
-    {{ end -}}
     <meta name="description"  content="{{ .Param "description" }}">
 
     {{- range .Site.Params.custom_css }}
