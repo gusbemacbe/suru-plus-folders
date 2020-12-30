@@ -12,7 +12,8 @@ Original theme - Suru++ Synthax
  border-radius: 10px; 
  color: white;
  margin-bottom: 10px;
- margin-top: 10px;  
+ margin-top: 10px;
+ overflow-x: scroll;
  padding: 5px;
 
  background-clip: padding-box;

@@ -18,6 +18,7 @@ li .highlight
  border-radius: 10px;
  margin-bottom: 10px;
  margin-top: 10px;
+ overflow-x: scroll;
  padding: 5px;
 }
 
