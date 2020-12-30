@@ -16,3 +16,13 @@ function openNavBottom() {
 function closeNavBottom() {
     document.getElementById("SidebarBottom").style.height = "0";
 }
+
+function openNavRight() {
+  document.getElementById("SidebarRight").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+}
+
+function closeNavRight() {
+  document.getElementById("SidebarRight").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
