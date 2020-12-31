@@ -4,14 +4,22 @@
 
 ErrorDocument 404 /404.html
 
-RewriteEngine On
-RewriteCond %{HTTPS} Off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteEngine on
+
+# 🇧🇷 Forma normal (no caso de você precisar implantar em sites de hospedagem, não-Heroku e não-Git)
+# 🇬🇧 Normal way (in case you need to deploy to host, non-Heroku and non-Git sites)
+# 🇮🇹 Modo normale (nel caso in cui sia necessario distribuire su siti host, non-Heroku e non-Git)
+# 🇫🇷 Mode normale (au cas où vous auriez besoin de déployer sur des sites hôtes, non-Heroku et non-Git)
+RewriteCond %{HTTPS} !=on
+
+# Git, Heroku, Hostgator and Hostinger way
+RewriteRule %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L, R=301]
 
 # 🇧🇷 Se um diretório existente for solicitado, vai para ele como ele é
 # 🇬🇧 If an existing directory is requested, go to it as it is
 # 🇮🇹 Se è richiesta una directory esistente, andateci così com'è
-# 🇬🇧 Si un répertoire existant est demandé, accédez-y tel quel
+# 🇫🇷 Si un répertoire existant est demandé, accédez-y tel quel
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
 RewriteRule ^ - [L]
