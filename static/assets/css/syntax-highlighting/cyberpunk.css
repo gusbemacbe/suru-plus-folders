@@ -1,0 +1,646 @@
+/*
+
+Cyberpunk Syntax (c) Gustavo Costa <gusbemacbe@gmail.com>
+Original theme - Suru++ Synthax
+
+*/
+
+li .highlight
+{ 
+  text-indent: 0;
+}
+
+.highlight
+{
+ background: var(--suru-plus-altered-carbon-solid-41);
+ border-radius: 10px;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ padding: 5px;
+}
+
+/* Base Style */
+.highlight pre
+{
+  background: transparent !important;
+  color: var(--suru-plus-altered-carbon-solid-13);
+  -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-13);
+  font-size: 20px;
+}
+
+/* Punctuation */
+.highlight .p
+{
+  background: var(--suru-plus-altered-carbon-solid-13);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Error */
+.highlight .err
+{
+  background: var(--suru-plus-pink-2);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Base Style */
+.highlight .n
+{
+  background: var(--suru-plus-fitdance-solid);
+  /* background: var(--suru-plus-fitdance-1-bottom); */
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Attribute */
+.highlight .na
+{
+  background: var(--suru-plus-altered-carbon-solid-17C);
+  /* background: var(--suru-plus-synthwave-84-1-top); */
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Builtin */
+.highlight .nb
+{
+  background: var(--suru-plus-orange-2);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Class */
+.highlight .nc
+{
+  background: var(--suru-plus-tron-solid-14);
+  background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Constant */
+.highlight .no
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Decorator */
+.highlight .nd
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Entity */
+.highlight .ni
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Exception */
+.highlight .ne
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Function */
+.highlight .nf
+{
+  background: var(--suru-plus-tokyo-hack-1);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Label */
+.highlight .nl
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Namespace */
+.highlight .nn
+{
+  background: var(--suru-plus-altered-carbon-solid-13);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Other */
+.highlight .nx
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Property */
+.highlight .py
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Tag */
+.highlight .nt
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Variable */
+.highlight .nv
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Variable Class */
+.highlight .vc
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Variable Global */
+.highlight .vg
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Variable Instance */
+.highlight .vi
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Name Builtin Pseudo */
+.highlight .bp
+{
+  background: var(--suru-plus-fitdance-1-bottom);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base Style */
+.highlight .g
+{
+  background: transparent;
+  color: transparent;
+}
+
+/*  */
+.highlight .gd
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Base Style */
+.highlight .o
+{
+  background: var(--suru-plus-altered-carbon-solid-17A);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Operator Word */
+.highlight .ow
+{
+  background: var(--suru-plus-altered-carbon-solid-17A);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base Style */
+.highlight .c
+{
+  background: var(--suru-plus-lemon);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Comment Multiline */
+.highlight .cm
+{
+  background: var(--suru-plus-fitdance-1-light);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Comment Preproc */
+.highlight .cp
+{
+  background: var(--suru-plus-lemon);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Comment Single */
+.highlight .c1
+{
+  background: var(--suru-plus-fitdance-1-light);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Comment Special */
+.highlight .cs
+{
+  background: var(--suru-plus-lemon);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Base Style */
+.highlight .k
+{
+  background: var(--suru-plus-tron-28);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Constant */
+.highlight .kc
+{
+  background: var(--suru-plus-synthwave-84-3);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Declaration */
+.highlight .kd
+{
+  background: var(--suru-plus-altered-carbon-solid-16);
+  /* background: var(--suru-plus-altered-carbon-solid-19); */
+  background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Namespace */
+.highlight .kn
+{
+  background: var(--suru-plus-altered-carbon-solid-23);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Pseudo */
+.highlight .kp
+{
+  background: var(--suru-plus-pink-2);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Reserved */
+.highlight .kr
+{
+  background: var(--suru-plus-tron-28);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyword Type */
+.highlight .kt
+{
+  background: var(--suru-plus-tokyo-hack-3);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base Style */
+.highlight .l
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Date */
+.highlight .ld
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Number */
+.highlight .m
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Number Float */
+.highlight .mf
+{
+  background: var(--suru-plus-tron-28);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Number Hex */
+.highlight .mh
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Literal Number Integer */
+.highlight .mi
+{
+  background: var(--suru-plus-pink-2);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Number Oct */
+.highlight .mo
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal Number Integer Long */
+.highlight .il
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String */
+.highlight .s
+{
+  background: var(--suru-plus-altered-carbon-solid-17B);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Backtick */
+.highlight .sb
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Char */
+.highlight .sc
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Literal String Doc */
+.highlight .sd
+{
+  background: var(--suru-plus-ubuntu);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Double */
+.highlight .s2
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Escape */
+.highlight .se
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Heredoc */
+.highlight .sh
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Interpol */
+.highlight .si
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Other */
+.highlight .sx
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Literal String Regex */
+.highlight .sr
+{
+  background: transparent;
+  color: #ff3146;
+}
+
+/* Literal String Single */
+.highlight .s1
+{
+  background: var(--suru-plus-mint);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Literal String Symbol */
+.highlight .ss
+{
+  background: var(---suru-plus-altered-carbon-solid-22);
+	background-clip: text;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base Style */
+.highlight .g
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Deleted */
+.highlight .gd
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Emph */
+.highlight .ge
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Error */
+.highlight .gr
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Heading */
+.highlight .gh
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Inserted */
+.highlight .gi
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Output */
+.highlight .go
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Prompt */
+.highlight .gp
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Strong */
+.highlight .gs
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Subheading */
+.highlight .gu
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Generic Traceback */
+.highlight .gt
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Other */
+.highlight .x
+{
+  background: transparent;
+  color: transparent;
+}
+
+/* Text Whitespace */
+.highlight .w
+{
+  background: transparent;
+  color: transparent;
+}
+
+@media only screen and (min-width: 1440px)
+{
+  .highlight
+  {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 780px)
+{
+  .highlight
+  {
+    overflow-x: scroll;
+  }
+}
