@@ -1,41 +1,42 @@
 {{range .Resources.Match "images/*"}} {{end}}
 
 {{ if .IsTranslated }}
-  <div class="topnav">
 
-        <a style="pointer-events: none; cursor: default;" href="/">{{.Site.Title}}</a>
-
-        {{- $currentPage := . -}}
+<nav class="navigator" aria-label="Main Navigation">
+  <ul>
+    {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
           {{ $menu_item_url := .URL | relLangURL -}}
           {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
-        <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-        {{- end }}
+        <li><a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+    {{- end }}
 
-        <div class="dropdown">
-          <button class="dropbtn" aria-label="themes list"><span class="suru-theme"></span></button>
-          
-          <div class="dropdown-content">
-            {{/*  {{ range .Site.Params.Themes }}
-              <a class="button" data-body-class="{{ .data }}">{{ .name }}</a>
-            {{ end }}  */}}
-            {{ range .Site.Params.Themes }}
-              <a class="button theme-switch" id="{{ .data }}">{{ .name }}</a>
-            {{ end }}
-          </div>
-        </div>
+    <li class="dropdown">
+      <!-- 🇬🇧 The “aria-expanded” needs managed with JavaScript -->
+      <!-- 🇧🇷 O elemento “aria-expanded” precisa ser gerenciado com JavaScript -->
+      <!-- 🇮🇹 L’elemento «aria-expanded» deve essere gestito con JavaScript -->
+      <!-- 🇫🇷 L'élément « aria-expanded » doit être géré avec JavaScript -->
+      <button aria-controls="themes-dropdown" aria-expanded="false" aria-label="themes list" class="dropdown__title icones" type="button">
+        <span class="suru-theme"></span>
+      </button>
+      <ul class="dropdown__menu" id="sweets-dropdown">
+        {{ range .Site.Params.Themes }}
+          <li><a class="button theme-switch" id="{{ .data }}">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
 
-      <div class="dropdown" id="language-switcher">
-        <button class="dropbtn" aria-label="language switcher"><span class="suru-languages"></span></button>
-        
-        <div class="dropdown-content">
-          {{ range .Translations -}}
-            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-          {{ end }}
-        </div>
-      </div>
+    <li class="dropdown">
+      <button aria-controls="languages-dropdown" aria-expanded="false" aria-label="languages list" class="dropdown__title icones" type="button">
+        <span class="suru-languages"></span>
+      </button>
+      <ul class="dropdown__menu" id="sweets-dropdown">
+        {{ range .Translations -}}
+          <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
+  </ul>
+</nav>
 
-      <a href="javascript: void(0)" class="icon" onclick="openNav()"><span class="suru-menu"></span></i></a>
-      <a href="javascript: void(0)" class="icon" onclick="openNavBottom()"><span class="suru-languages"></span></a>
-  </div>
 {{ end }}

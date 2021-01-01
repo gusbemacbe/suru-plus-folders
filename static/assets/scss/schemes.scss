@@ -15,20 +15,17 @@ $themes: (
     codeTabBorderBottomColour: none,
     textColour: var(--suru-plus-papirus-light-solid),
 
+    // Main Navigator
+    navBackground: var(--suru-plus-dark-4),
+    navBorderImage: var(--suru-plus-mavericks-top),
+
+    // Main Navigator – DropDown Menu
+    dropdowmMenuBackground: var(--suru-plus-dark-3),
+    dropdowmMenuHoverBackground: var(--suru-plus-mavericks-bottom),
+    dropdowmMenuHoverTextColour: var(--suru-plus-synthwave-84-solid-20),
+
     // Headings
     h4Colour: var(--suru-plus-mavericks-bottom),
-
-    // Top Navbar
-    topNavbackground: var(--suru-plus-dark-4),
-    topNavborderImage: var(--suru-plus-mavericks-top),
-
-    // Top Navbar – Dropdowm
-    dropdowmContentBackground: var(--suru-plus-dark-3),
-    dropdowmContentBackgroundHover: var(--suru-plus-mavericks-bottom),
-    dropdowmContentText: var(--suru-plus-papirus-light-solid),
-    dropdowmContentTextHover: var(--suru-plus-synthwave-84-solid-20),
-    dropbtnBackground: var(--suru-plus-mavericks-bottom),
-    dropbtnHoverBackground: var(--suru-plus-synthwave-84-solid-13),
 
     // Lists
     liBeforeColour: var(--suru-plus-mavericks-bottom),
@@ -63,21 +60,22 @@ $themes: (
     codeTabBorderBottomColour: rgba(136, 0, 136, 0.5),
     textColour: var(--suru-plus-papirus-light-solid),
 
+    // Main Navigator
+    navBackground: var(--suru-plus-synthwave-84-solid-23),
+    navBorderImage: var(--suru-plus-synthwave-84-3-top),
+    navTextColour: var(--suru-plus-synthwave-84-2),
+    navTextHoverColour: var(--suru-plus-synthwave-84-3-top),
+
+    // Main Navigator – DropDown Menu
+    dropdowmMenuBackground: var(--suru-plus-synthwave-84-solid-20),
+    dropdowmMenuBackgroundArrow: var(--suru-plus-synthwave-84-solid-20),
+    dropdowmMenuHoverBackground: var(--suru-plus-synthwave-84-2),
+    dropdowmMenuHoverTextColour: var(--suru-plus-synthwave-84-solid-20),
+    dropdowmLineHoverTextColour: var(--suru-plus-synthwave-84-3-top),
+
     // Headings
     hsColour: var(--suru-plus-synthwave-84-3-top),
     h4Colour: var(--suru-plus-synthwave-84-2),
-
-    // Top Navbar
-    topNavbackground: var(--suru-plus-synthwave-84-solid-23),
-    topNavborderImage: var(--suru-plus-synthwave-84-3-top),
-
-    // Top Navbar – Dropdowm
-    dropdowmContentBackground: var(--suru-plus-synthwave-84-solid-20),
-    dropdowmContentBackgroundHover: var(--suru-plus-synthwave-84-2),
-    dropdowmContentText: var(--suru-plus-papirus-light-solid),
-    dropdowmContentTextHover: var(--suru-plus-synthwave-84-solid-20),
-    dropbtnBackground: var(--suru-plus-synthwave-84-2),
-    dropbtnHoverBackground: var(--suru-plus-synthwave-84-3-top),
 
     // Lists
     liBeforeColour: var(--suru-plus-synthwave-84-1-top),
@@ -105,21 +103,22 @@ $themes: (
     backgroundColour: var(--suru-plus-altered-carbon-solid-43),
     textColour: var(--suru-plus-synthwave-84-solid-4),
 
+    // Main Navigator
+    navBackground: var(--suru-plus-altered-carbon-01),
+    navBorderImage: var(--suru-plus-altered-carbon-05),
+    navTextHoverColour: var(--suru-plus-synthwave-84-1-top),
+
+    // Main Navigator – DropDown Menu
+    dropdowmMenuBackground: var(--suru-plus-altered-carbon-12),
+    dropdowmMenuBackgroundArrow: #3A4141,
+    dropdowmMenuTextColour: var(--suru-plus-altered-carbon-solid-17),
+    dropdowmMenuHoverBackground: var(--suru-plus-altered-carbon-19),
+    dropdowmMenuHoverTextColour: var(--suru-plus-altered-carbon-solid-13),
+    dropdowmLineHoverTextColour: var(--suru-plus-synthwave-84-2-top),
+
     // Headings
     hsColour: var(--suru-plus-sunrise-3),
     h4Colour: var(--suru-plus-fitdance-1-top),
-
-    // Top Navbar
-    topNavbackground: var(--suru-plus-altered-carbon-01),
-    topNavborderImage: var(--suru-plus-altered-carbon-05),
-
-    // Top Navbar – Dropdowm
-    dropdowmContentBackground: var(--suru-plus-altered-carbon-12),
-    dropdowmContentBackgroundHover: var(--suru-plus-altered-carbon-19),
-    dropdowmContentText: var(--suru-plus-altered-carbon-solid-17),
-    dropdowmContentTextHover: var(--suru-plus-altered-carbon-solid-13),
-    dropbtnBackground: var(--suru-plus-fitdance-1-top),
-    dropbtnHoverBackground: var(--suru-plus-synthwave-84-1-top),
 
     // Lists
     liBeforeColour: var(--suru-plus-orange-medium-1),
@@ -147,21 +146,23 @@ $themes: (
     backgroundColour: var(--suru-plus-tron-solid-75),
     textColour: var(--suru-plus-tron-solid-11),
 
+    // Main Navigator
+    navBackground: var(--suru-plus-tron-01),
+    navBorderImage: var(--suru-plus-tron-26-top),
+    navTextColour: var(--suru-plus-tron-solid-34),
+    navTextHoverColour: var(--suru-plus-tron-solid-76),
+
+    // Main Navigator – DropDown Menu
+    dropdowmMenuBackground: var(--suru-plus-tron-01),
+    dropdowmMenuBackgroundArrow: #1E3850,
+    dropdowmMenuTextColour: var(--suru-plus-tron-solid-34),
+    dropdowmMenuHoverBackground: var(--suru-plus-tron-36),
+    dropdowmMenuHoverTextColour: var(--suru-plus-tron-solid-73),
+    dropdowmLineHoverTextColour: var(--suru-plus-tron-26),
+
     // Headings
     hsColour: var(--suru-plus-tron-solid-34),
     h4Colour: var(--suru-plus-tron-26),
-
-    // Top Navbar
-    topNavbackground: var(--suru-plus-tron-01),
-    topNavborderImage: var(--suru-plus-tron-26-top),
-
-    // Top Navbar – Dropdowm
-    dropdowmContentBackground: var(--suru-plus-tron-01),
-    dropdowmContentBackgroundHover: var(--suru-plus-tron-36),
-    dropdowmContentText: var(--suru-plus-tron-solid-34),
-    dropdowmContentTextHover: var(--suru-plus-tron-solid-73),
-    dropbtnBackground: var(--suru-plus-tron-solid-34),
-    dropbtnHoverBackground: var(--suru-plus-tron-solid-76),
 
     // Lists
     liBeforeColour: var(--suru-plus-tron-solid-77),
@@ -237,7 +238,6 @@ $themes: (
 @include themed 
 {
   // Global
-
   a 
   {
     background: themed("anchorColour");
@@ -295,68 +295,83 @@ $themes: (
     text-shadow: themed('TRONGlowLiBeforeColour');
   }
 
-  // Header and top navbar
-
-  .topnav 
+  // Main Navigator
+  .navigator
   {
-    background: themed("topNavbackground");
-    border-bottom: 4px solid transparent;
-    border-image: themed("topNavborderImage");
+    background: themed("navBackground");
+    border-image: themed("navBorderImage");
     border-image-slice: 1;
   }
 
-  .topnav a.button 
+  .navigator > ul > li a, 
+  .navigator > ul > li .dropdown__title 
   {
-    background: transparent;
-    -webkit-text-fill-color: themed("dropdowmContentText");
+    background: themed("navTextColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .topnav a.button:hover 
+  .navigator > ul > li > ul > li > a
   {
-    background: themed("dropdowmContentBackgroundHover");
-    color: themed("dropdowmContentTextHover");
-    -webkit-text-fill-color: themed("dropdowmContentTextHover");
+    background: themed("dropdowmMenuTextColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .navigator > ul > li a:hover,
+  .navigator > ul > li .dropdown__title:hover
+  {
+    background: themed("navTextHoverColour");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: themed("dropdowmLineHoverTextColour");
+    border-image-slice: 1;
+  }
+
+  // Main Navigator – DropDown Menu
+  .dropdown:after
+  {
+    border-bottom-color: themed("dropdowmMenuBackgroundArrow");
+  }
+  
+  .dropdown .dropdown__menu
+  {
+    background: themed("dropdowmMenuBackground");
+  }
+
+  .dropdown .dropdown__menu a:hover
+  {
+    background: themed("dropdowmMenuHoverBackground");
+    color: themed("dropdowmMenuHoverTextColour");
+    -webkit-text-fill-color: themed("dropdowmMenuHoverTextColour");
     text-shadow: none;
+  }
+
+  .dropdown:hover .dropdown__title,
+  .dropdown:focus-within .dropdown__title
+  {
+    border-top: 3px solid transparent;
+    border-image: themed("dropdowmLineHoverTextColour");
+    border-image-slice: 1;
   }
 
   .active 
   {
-    background: themed("activeAnchor");
-    color: themed("activeColor");
-    -webkit-transition: all 200ms ease-out;
-    -moz-transition: all 200ms ease-out;
-    -ms-transition: all 200ms ease-out;
-    -o-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-    -webkit-text-fill-color: themed("activeColor");
-    text-shadow: none;
-  }
-
-  // Header and top navbar – Dropdowm
-
-  .dropdown-content
-  {
-    background: themed("dropdowmContentBackground");
-  }
-
-  .dropdown .dropbtn 
-  {
-    background: themed("dropbtnBackground");
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .dropdown:hover .dropbtn 
-  {
-    background: themed("dropbtnHoverBackground");
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: themed("activeAnchor") !important;
+    color: themed("activeColor") !important;
+    -webkit-transition: all 200ms ease-out !important;
+    -moz-transition: all 200ms ease-out !important;
+    -ms-transition: all 200ms ease-out !important;
+    -o-transition: all 200ms ease-out !important;
+    transition: all 200ms ease-out !important;
+    -webkit-text-fill-color: themed("activeColor") !important;
+    text-shadow: none !important;
   }
 
   // Table
-
   table 
   {
     background: themed("tableBackground");

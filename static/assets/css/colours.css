@@ -455,6 +455,7 @@
   --suru-plus-sunrise-1-right:       linear-gradient(to right, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
   --suru-plus-sunrise-1-top:         linear-gradient(to top, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
   --suru-plus-synthwave-84-1-top:    linear-gradient(to top, #FFF951 0%, #FC28A8 100%);
+  --suru-plus-synthwave-84-2-top:    linear-gradient(180deg, #FD7189 0%, #FD9F76 100%);
   --suru-plus-synthwave-84-3-top:    linear-gradient(to bottom, #03edf9 25%, #fc28a7);
   --suru-plus-tron-26-top:           linear-gradient(to bottom, #E6FFFF 0%, #6FC3DF 100%);
   

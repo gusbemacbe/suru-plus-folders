@@ -17,7 +17,7 @@ body, caption, details, div, fieldset, form, caption, h1, h2, h3, h4, h5, h6, hr
 	padding: 0px;
 }
 
-body, li, p, ul
+body, li:not(::first-line), p, ul:not(::first-line)
 {
 	font-size: 20px !important;
 }
@@ -144,7 +144,7 @@ img
 	image-rendering: optimizequality;
 }
 
-li 
+li:not(::first-line)
 {
   hyphens: auto;
   -ms-hyphens: auto;
@@ -156,7 +156,7 @@ li
 	word-wrap: break-word;
 }
 
-li:before 
+li:before:not(::first-line)
 {
 	background: var(--suru-plus-fitdance-1-bottom);
 	background-clip: text;
@@ -167,12 +167,12 @@ li:before
   margin-right: 4px;
 }
 
-li > ul
+li > ul	
 {
 	padding: 0px;
 }
 
-li > ul li:before
+li > ul li:before:not(::first-line)
 {
 	background: var(--suru-plus-sunrise-1-top);
 	background-clip: text;
@@ -293,4 +293,9 @@ ul
 #wrapper 
 {
 	margin: 0 auto;
+}
+
+.test
+{
+	
 }
