@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Gradiente</title>
+  <style>
+    :root
+    {
+      --suru-plus-synthwave-84-1-top:    linear-gradient(to top, #FFF951 0%, #FC28A8 100%);
+      --suru-plus-synthwave-84-2-top:    linear-gradient(180deg, #FFF951 0%, #FC28A8 100%);
+      --suru-plus-synthwave-84-3-top:    linear-gradient(180deg, #FD7189 0%, #FD9F76 100%);
+    }
+
+    body
+    {
+      background: slategray;
+    }
+
+    .teste
+    {
+      background: var(--suru-plus-synthwave-84-1-top);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      border-top: 3px solid transparent;
+      border-image: var(--suru-plus-synthwave-84-2-top);
+      border-image-slice: 1;
+    }
+
+    .teste_2
+    {
+      background: var(--suru-plus-synthwave-84-2-top);
+      height: 3px;
+      margin-top: 10px;
+      width: 100%
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="teste"></div>
+  <div class="teste_2"></div>
+  
+</body>
+</html>
