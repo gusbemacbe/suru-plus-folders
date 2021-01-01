@@ -1,16 +1,23 @@
 {
-  "html": {
-    "snippets": {
-      "ull": "ul>li[id=${1} class=${2}]*2{ Will work with html, pug, haml and slim }",
-      "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
-      "ran": "{ Wrap plain text in curly braces }"
-    }
-  },
-  "css": {
-    "snippets": {
+  "css": 
+  {
+    "snippets": 
+    {
       "cb": "color: black",
       "bsd": "border: 1px solid ${1:red}",
+      "fsi": "font-size: ${1:normal:bigger}",
       "ls": "list-style: ${1}"
+    }
+  },
+  "html": 
+  {
+    "snippets": 
+    {
+      "link:css": "<link rel=\"stylesheet\" type=\"text/css\" href=\"${1}\">",
+      "script": "<script type=\"text/javascript\">${1}</script>",
+      "script:mod": "<script type=\"module\">${1}</script>",
+      "script:mod:src": "<script type=\"module\" src=\"${1}\"></script>",
+      "script:src": "<script type=\"text/javascript\" src=\"${1}\"></script>"
     }
   }
 }

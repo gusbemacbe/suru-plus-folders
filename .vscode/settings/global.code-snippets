@@ -1,0 +1,51 @@
+{
+  "Inserir um referenciador de hipertexto com tipo de ficheiro": 
+	{
+		"prefix": "link:css",
+		"body": 
+		[
+			"<link rel=\"stylesheet\" type=\"text/css\" href=\"$1\">"
+		],
+		"description": "Inserir um referenciador de hipertexto com tipo de ficheiro"
+	},
+
+	"Inserir um executável com tipo de ficheiro": 
+	{
+		"prefix": "script",
+		"body": 
+		[
+			"<script type=\"text/javascript\">$1</script>"
+		],
+		"description": "Inserir um executável com tipo de ficheiro"
+	},
+
+	"Inserir um executável como um módulo": 
+	{
+		"prefix": "script:mod",
+		"body": 
+		[
+			"<script type=\"module\">$1</script>"
+		],
+		"description": "Inserir um executável como um módulo"
+	},
+
+	"Inserir uma fonte de executável com tipo de ficheiro": 
+	{
+		"prefix": "script:src",
+		"body": 
+		[
+			"<script type=\"text/javascript\" src=\"$1\"></script>"
+		],
+		"description": "Inserir uma fonte de executável com tipo de ficheiro"
+	},
+
+	"Inserir uma fonte de executável como um módulo": 
+	{
+		"prefix": "script:mod:src",
+		"body": 
+		[
+			"<script type=\"module\" src=\"$1\"></script>"
+		],
+		"description": "Inserir uma fonte de executável como um móduloo"
+	}
+}

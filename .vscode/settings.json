@@ -13,6 +13,7 @@
     "LESS"
   ],
   "csscomb.preset": ".vscode/settings/csscomb.json",
+  "csscomb.supportEmbeddedStyles": true,
   "customizeUI.activityBar": "bottom",
   "customizeUI.listRowHeight": 26,
   "customizeUI.stylesheet": 
