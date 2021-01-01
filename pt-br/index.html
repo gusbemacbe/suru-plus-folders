@@ -26,68 +26,54 @@
     <title>Suru&#43;&#43; Pastas</title>
 </head> 
 
-	<body><div id="SidebarLeft" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <div style="margin-bottom: 40px;"></div>
-  <a class="active" href="https://gusbemacbe.github.io/pt-br/">Início</a>
-  <a class="" href="https://gusbemacbe.github.io/pt-br/projetos/">Projetos</a>
-  <a class="" href="https://gusbemacbe.github.io/pt-br/contato/">Contato</a>
-</div>
+	<body tabindex="-1">
 
 
-<div id="SidebarBottom" class="sidebar bottom">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNavBottom()">&times;</a>
-  
-  <a href="https://gusbemacbe.github.io/suru-plus-folders/en/">English</a>
-  <a href="https://gusbemacbe.github.io/suru-plus-folders/fr/">Français</a>
-  <a href="https://gusbemacbe.github.io/suru-plus-folders/it/">Italiano</a>
-  <a href="https://gusbemacbe.github.io/suru-plus-folders/pt/">Português Europeu</a>
-  
-</div>
 
+<nav class="navigator" aria-label="Main Navigation">
+  <ul>
+        <li><a class="active" href="https://gusbemacbe.github.io/pt-br/">Início</a></li>
+        <li><a class="" href="https://gusbemacbe.github.io/pt-br/projetos/">Projetos</a></li>
+        <li><a class="" href="https://gusbemacbe.github.io/pt-br/contato/">Contato</a></li>
 
-  <div class="topnav">
-
-        <a style="pointer-events: none; cursor: default;" href="../">Suru&#43;&#43; Pastas</a>
-        <a class="active" href="https://gusbemacbe.github.io/pt-br/">Início</a>
-        <a class="" href="https://gusbemacbe.github.io/pt-br/projetos/">Projetos</a>
-        <a class="" href="https://gusbemacbe.github.io/pt-br/contato/">Contato</a>
-
-        <div class="dropdown">
-          <button class="dropbtn" aria-label="themes list"><span class="suru-theme"></span></button>
-          
-          <div class="dropdown-content">
-            
-            
-              <a class="button theme-switch" id="theme-light">Padrão</a>
-            
-              <a class="button theme-switch" id="theme-dark">Escuro</a>
-            
-              <a class="button theme-switch" id="theme-synthwave-84">Synthwave 1984</a>
-            
-              <a class="button theme-switch" id="theme-cyberpunk">Cyberpunk</a>
-            
-              <a class="button theme-switch" id="theme-tron">TRON – O Legado</a>
-            
-          </div>
-        </div>
-
-      <div class="dropdown" id="language-switcher">
-        <button class="dropbtn" aria-label="language switcher"><span class="suru-languages"></span></button>
+    <li class="dropdown">
+      
+      
+      
+      
+      <button aria-controls="themes-dropdown" aria-expanded="false" aria-label="themes list" class="dropdown__title icones" type="button">
+        <span class="suru-theme"></span>
+      </button>
+      <ul class="dropdown__menu" id="sweets-dropdown">
         
-        <div class="dropdown-content">
-          <a href="https://gusbemacbe.github.io/suru-plus-folders/en/">English</a>
-          <a href="https://gusbemacbe.github.io/suru-plus-folders/fr/">Français</a>
-          <a href="https://gusbemacbe.github.io/suru-plus-folders/it/">Italiano</a>
-          <a href="https://gusbemacbe.github.io/suru-plus-folders/pt/">Português Europeu</a>
-          
-        </div>
-      </div>
+          <li><a class="button theme-switch" id="theme-light">Padrão</a></li>
+        
+          <li><a class="button theme-switch" id="theme-dark">Escuro</a></li>
+        
+          <li><a class="button theme-switch" id="theme-synthwave-84">Synthwave 1984</a></li>
+        
+          <li><a class="button theme-switch" id="theme-cyberpunk">Cyberpunk</a></li>
+        
+          <li><a class="button theme-switch" id="theme-tron">TRON – O Legado</a></li>
+        
+      </ul>
+    </li>
 
-      <a href="javascript: void(0)" class="icon" onclick="openNav()"><span class="suru-menu"></span></i></a>
-      <a href="javascript: void(0)" class="icon" onclick="openNavBottom()"><span class="suru-languages"></span></a>
-  </div>
+    <li class="dropdown">
+      <button aria-controls="languages-dropdown" aria-expanded="false" aria-label="languages list" class="dropdown__title icones" type="button">
+        <span class="suru-languages"></span>
+      </button>
+      <ul class="dropdown__menu" id="sweets-dropdown">
+        <li><a href="https://gusbemacbe.github.io/suru-plus-folders/en/">English</a></li>
+        <li><a href="https://gusbemacbe.github.io/suru-plus-folders/fr/">Français</a></li>
+        <li><a href="https://gusbemacbe.github.io/suru-plus-folders/it/">Italiano</a></li>
+        <li><a href="https://gusbemacbe.github.io/suru-plus-folders/pt/">Português Europeu</a></li>
+        
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
 		<div id="content">
@@ -231,7 +217,7 @@ suru-plus-folders -l --theme Suru++-Ubuntu
 <div id="footer">
 
   <h4>Suru&#43;&#43; Pastas</h4>
-  <p>© 2019-2020 Suru&#43;&#43; Pastas por Gustavo Costa e Andrea Bonanni. Todos os direitos reservados.</p>
+  <p>© 2019-2021 Suru&#43;&#43; Pastas por Gustavo Costa e Andrea Bonanni. Todos os direitos reservados.</p>
 
   <ul id="footer-menu">
       <li><a class="" href="https://gusbemacbe.github.io/pt-br/sobre/">Sobre</a></li>

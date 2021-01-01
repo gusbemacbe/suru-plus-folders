@@ -1,656 +1,490 @@
-.theme-dark
-{
-    color: var(--suru-plus-papirus-light-solid); 
-    background: var(--suru-plus-dark-4);
-}
-
-.theme-synthwave-84
-{
-    color: var(--suru-plus-papirus-light-solid); 
-    background: var(--suru-plus-synthwave-84-1);
-}
-
-.theme-cyberpunk
-{
-    color: var(--suru-plus-synthwave-84-solid-4); 
-    background: var(--suru-plus-altered-carbon-solid-43);
-}
-
-.theme-tron
-{
-    color: var(--suru-plus-tron-solid-11);
-    background: var(--suru-plus-tron-solid-75);
-    text-shadow: 0 0 5px rgba(24, 202, 230, .7);
-}
-
-.theme-dark a
-{
-    background: var(--suru-plus-mavericks-bottom);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark a:hover
-{
-    background: var(--suru-plus-sunrise-2);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark code
-{
-    border-right: none;
-    background: var(--suru-plus-fitdance-1-transparent04);
-    box-shadow: none;
-
-    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
-}
-
-.theme-dark pre > code
-{
-    background: none;
-    box-shadow: none;
-}
-
-.theme-dark h1,
-.theme-dark h2,
-.theme-dark h3
-{
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark h4
-{
-    background: var(--suru-plus-mavericks-bottom);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark li::before
-{
-    background: var(--suru-plus-mavericks-bottom);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark .topnav
-{
-    border-bottom: 4px solid transparent;
-    border-image: var(--suru-plus-mavericks-top);
-    border-image-slice: 1; 
-    background: var(--suru-plus-dark-4);
-}
-
-.theme-dark .topnav a.button
-{
-    background: transparent;
-
-    -webkit-text-fill-color: var(--suru-plus-papirus-light-solid);
-}
-
-.theme-dark .topnav a.button:hover
-{
-    color: var(--suru-plus-synthwave-84-solid-20);
-    background: var(--suru-plus-mavericks-bottom);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-20);
-}
-
-.theme-dark .active
-{
-    -webkit-transition: all 200ms ease-out;
-       -moz-transition: all 200ms ease-out;
-        -ms-transition: all 200ms ease-out;
-         -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
-
-    color: var(--suru-plus-papirus-light-solid);
-    background: var(--suru-plus-mavericks-bottom);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-papirus-light-solid);
-}
-
-.theme-dark .dropdown-content
-{
-    background: var(--suru-plus-dark-3);
-}
-
-.theme-dark .dropdown .dropbtn
-{
-    background: var(--suru-plus-mavericks-bottom);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark .dropdown:hover .dropbtn
-{
-    background: var(--suru-plus-synthwave-84-solid-13);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark table
-{
-    background: var(--suru-plus-papirus);
-}
-
-.theme-dark table thead tr
-{
-    color: var(--suru-plus-papirus-light-solid); 
-    background: var(--suru-plus-technotronic-2);
-}
-
-.theme-dark table tbody tr
-{
-    border-bottom: 1px solid var(--suru-plus-tokyo-hack-6);
-}
-
-.theme-dark tbody th
-{
-    background: var(--suru-plus-mavericks-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-dark .highlight
-{
-    background: var(--suru-plus-fitdance-2-transparent04);
-}
-
-.theme-dark #footer
-{
-    border-top: 4px solid transparent;
-    border-image: var(--suru-plus-mavericks-right);
-    border-image-slice: 1; 
-    background: var(--suru-plus-dark-4);
-}
-
-.theme-synthwave-84 a
-{
-    background: var(--suru-plus-synthwave-84-2);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 a:hover
-{
-    background: var(--suru-plus-synthwave-84-3-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 code
-{
-    border-right: 1px solid rgba(36, 27, 47, 0);
-    background: #262335;
-    box-shadow: inset 0 -5px 25px #fc28a825;
-
-    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
-}
-
-.theme-synthwave-84 pre > code
-{
-    background: none;
-    box-shadow: none;
-}
-
-.theme-synthwave-84 h1,
-.theme-synthwave-84 h2,
-.theme-synthwave-84 h3
-{
-    background: var(--suru-plus-synthwave-84-3-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 h4
-{
-    background: var(--suru-plus-synthwave-84-2);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 li::before
-{
-    background: var(--suru-plus-synthwave-84-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 .topnav
-{
-    border-bottom: 4px solid transparent;
-    border-image: var(--suru-plus-synthwave-84-3-top);
-    border-image-slice: 1; 
-    background: var(--suru-plus-synthwave-84-solid-23);
-}
-
-.theme-synthwave-84 .topnav a.button
-{
-    background: transparent;
-
-    -webkit-text-fill-color: var(--suru-plus-papirus-light-solid);
-}
-
-.theme-synthwave-84 .topnav a.button:hover
-{
-    color: var(--suru-plus-synthwave-84-solid-20);
-    background: var(--suru-plus-synthwave-84-2);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-20);
-}
-
-.theme-synthwave-84 .active
-{
-    -webkit-transition: all 200ms ease-out;
-       -moz-transition: all 200ms ease-out;
-        -ms-transition: all 200ms ease-out;
-         -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
-
-    color: var(--suru-plus-synthwave-84-solid-22);
-    background: var(--suru-plus-synthwave-84-2);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-22);
-}
-
-.theme-synthwave-84 .dropdown-content
-{
-    background: var(--suru-plus-synthwave-84-solid-20);
-}
-
-.theme-synthwave-84 .dropdown .dropbtn
-{
-    background: var(--suru-plus-synthwave-84-2);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 .dropdown:hover .dropbtn
-{
-    background: var(--suru-plus-synthwave-84-3-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 table
-{
-    background: var(--suru-plus-synthwave-84-solid-23);
-}
-
-.theme-synthwave-84 table thead tr
-{
-    color: var(--suru-plus-synthwave-84-solid-22); 
-    background: var(--suru-plus-synthwave-84-1-top);
-}
-
-.theme-synthwave-84 table tbody tr
-{
-    border-bottom: 1px solid var(--suru-plus-synthwave-84-solid-18);
-}
-
-.theme-synthwave-84 tbody th
-{
-    background: var(--suru-plus-synthwave-84-2);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-synthwave-84 #footer
-{
-    border-top: 4px solid transparent;
-    border-image: var(--suru-plus-mavericks-right);
-    border-image-slice: 1; 
-    background: var(--suru-plus-dark-4);
-}
-
-.theme-cyberpunk a
-{
-    background: var(--suru-plus-fitdance-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk a:hover
-{
-    background: var(--suru-plus-synthwave-84-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk code
-{
-    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
-}
-
-.theme-cyberpunk pre > code
-{
-    background: none;
-    box-shadow: none;
-}
-
-.theme-cyberpunk h1,
-.theme-cyberpunk h2,
-.theme-cyberpunk h3
-{
-    background: var(--suru-plus-sunrise-3);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk h4
-{
-    background: var(--suru-plus-fitdance-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk li::before
-{
-    background: var(--suru-plus-orange-medium-1);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk .topnav
-{
-    border-bottom: 4px solid transparent;
-    border-image: var(--suru-plus-altered-carbon-05);
-    border-image-slice: 1; 
-    background: var(--suru-plus-altered-carbon-01);
-}
-
-.theme-cyberpunk .topnav a.button
-{
-    background: transparent;
-
-    -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-17);
-}
-
-.theme-cyberpunk .topnav a.button:hover
-{
-    color: var(--suru-plus-altered-carbon-solid-13);
-    background: var(--suru-plus-altered-carbon-19);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-13);
-}
-
-.theme-cyberpunk .active
-{
-    -webkit-transition: all 200ms ease-out;
-       -moz-transition: all 200ms ease-out;
-        -ms-transition: all 200ms ease-out;
-         -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
-
-    color: var(--suru-plus-altered-carbon-solid-17);
-    background: var(--suru-plus-altered-carbon-10);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-17);
-}
-
-.theme-cyberpunk .dropdown-content
-{
-    background: var(--suru-plus-altered-carbon-12);
-}
-
-.theme-cyberpunk .dropdown .dropbtn
-{
-    background: var(--suru-plus-fitdance-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk .dropdown:hover .dropbtn
-{
-    background: var(--suru-plus-synthwave-84-1-top);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk table
-{
-    background: var(--suru-plus-altered-carbon-solid-41);
-}
-
-.theme-cyberpunk table thead tr
-{
-    color: var(--suru-plus-altered-carbon-solid-16); 
-    background: var(--suru-plus-altered-carbon-05);
-}
-
-.theme-cyberpunk table tbody tr
-{
-    border-bottom: 1px solid var(--suru-plus-altered-carbon-solid-16);
-}
-
-.theme-cyberpunk tbody th
-{
-    background: var(--suru-plus-altered-carbon-solid-17);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-cyberpunk #footer
-{
-    border-top: 4px solid transparent;
-    border-image: var(--suru-plus-altered-carbon-16);
-    border-image-slice: 1; 
-    background: var(--suru-plus-altered-carbon-01);
-}
-
-.theme-tron a
-{
-    background: var(--suru-plus-tron-solid-34);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron a:hover
-{
-    background: var(--suru-plus-tron-solid-76);
-    -webkit-background-clip: text;
-            background-clip: text;
-    text-shadow: 0 0 5px rgba(255, 65, 13, .7); 
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron code
-{
-    --tab-border-bottom-color: themed('codeTabBorderBottomColour');
-}
-
-.theme-tron pre > code
-{
-    background: none;
-    box-shadow: none;
-}
-
-.theme-tron h1,
-.theme-tron h2,
-.theme-tron h3
-{
-    background: var(--suru-plus-tron-solid-34);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron h4
-{
-    background: var(--suru-plus-tron-26);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron li::before
-{
-    background: var(--suru-plus-tron-solid-77);
-    -webkit-background-clip: text;
-            background-clip: text;
-    text-shadow: 0 0 2px rgba(235, 154, 95, .7); 
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron .topnav
-{
-    border-bottom: 4px solid transparent;
-    border-image: var(--suru-plus-tron-26-top);
-    border-image-slice: 1; 
-    background: var(--suru-plus-tron-01);
-}
-
-.theme-tron .topnav a.button
-{
-    background: transparent;
-
-    -webkit-text-fill-color: var(--suru-plus-tron-solid-34);
-}
-
-.theme-tron .topnav a.button:hover
-{
-    color: var(--suru-plus-tron-solid-73);
-    background: var(--suru-plus-tron-36);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-tron-solid-73);
-}
-
-.theme-tron .active
-{
-    -webkit-transition: all 200ms ease-out;
-       -moz-transition: all 200ms ease-out;
-        -ms-transition: all 200ms ease-out;
-         -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
-
-    color: var(--suru-plus-tron-solid-74);
-    background: var(--suru-plus-tron-26);
-    text-shadow: none; 
-
-    -webkit-text-fill-color: var(--suru-plus-tron-solid-74);
-}
-
-.theme-tron .dropdown-content
-{
-    background: var(--suru-plus-tron-01);
-}
-
-.theme-tron .dropdown .dropbtn
-{
-    background: var(--suru-plus-tron-solid-34);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron .dropdown:hover .dropbtn
-{
-    background: var(--suru-plus-tron-solid-76);
-    -webkit-background-clip: text;
-            background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron table
-{
-    background: var(--suru-plus-tron-solid-74);
-}
-
-.theme-tron table thead tr
-{
-    color: var(--suru-plus-tron-solid-37); 
-    background: var(--suru-plus-tron-solid-71);
-}
-
-.theme-tron table tbody tr
-{
-    border-bottom: 1px solid var(--suru-plus-tron-solid-42);
-}
-
-.theme-tron tbody th
-{
-    background: var(--suru-plus-tron-solid-76);
-    -webkit-background-clip: text;
-            background-clip: text;
-    text-shadow: 0 0 5px rgba(255, 65, 13, .7); 
-
-    -webkit-text-fill-color: transparent;
-}
-
-.theme-tron table tbody tr td:first-child
-{
-    text-shadow: 0 0 5px rgba(255, 65, 13, .7);
-}
-
-.theme-tron #footer
-{
-    border-top: 4px solid transparent;
-    border-image: var(--suru-plus-tron-26);
-    border-image-slice: 1; 
-    background: var(--suru-plus-tron-solid-74);
-}
+.theme-dark {
+  background: var(--suru-plus-dark-4);
+  color: var(--suru-plus-papirus-light-solid);
+}
+
+.theme-synthwave-84 {
+  background: var(--suru-plus-synthwave-84-1);
+  color: var(--suru-plus-papirus-light-solid);
+}
+
+.theme-cyberpunk {
+  background: var(--suru-plus-altered-carbon-solid-43);
+  color: var(--suru-plus-synthwave-84-solid-4);
+}
+
+.theme-tron {
+  background: var(--suru-plus-tron-solid-75);
+  color: var(--suru-plus-tron-solid-11);
+  text-shadow: 0 0 5px rgba(24, 202, 230, 0.7);
+}
+
+.theme-dark a {
+  background: var(--suru-plus-mavericks-bottom);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark a:hover {
+  background: var(--suru-plus-sunrise-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark code {
+  background: var(--suru-plus-fitdance-1-transparent04);
+  border-right: none;
+  box-shadow: none;
+  --tab-border-bottom-color: themed("codeTabBorderBottomColour");
+}
+.theme-dark pre > code {
+  background: none;
+  box-shadow: none;
+}
+.theme-dark h1, .theme-dark h2, .theme-dark h3 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark h4 {
+  background: var(--suru-plus-mavericks-bottom);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark li::before {
+  background: var(--suru-plus-mavericks-bottom);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark .navigator {
+  background: var(--suru-plus-dark-4);
+  border-image: var(--suru-plus-mavericks-top);
+  border-image-slice: 1;
+}
+.theme-dark .navigator > ul > li a,
+.theme-dark .navigator > ul > li .dropdown__title {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark .navigator > ul > li > ul > li > a {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark .navigator > ul > li a:hover,
+.theme-dark .navigator > ul > li .dropdown__title:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
+}
+.theme-dark .dropdown .dropdown__menu {
+  background: var(--suru-plus-dark-3);
+}
+.theme-dark .dropdown .dropdown__menu a:hover {
+  background: var(--suru-plus-mavericks-bottom);
+  color: var(--suru-plus-synthwave-84-solid-20);
+  -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-20);
+  text-shadow: none;
+}
+.theme-dark .dropdown:hover .dropdown__title,
+.theme-dark .dropdown:focus-within .dropdown__title {
+  border-top: 3px solid transparent;
+  border-image-slice: 1;
+}
+.theme-dark .active {
+  background: var(--suru-plus-mavericks-bottom) !important;
+  color: var(--suru-plus-papirus-light-solid) !important;
+  -webkit-transition: all 200ms ease-out !important;
+  -moz-transition: all 200ms ease-out !important;
+  -ms-transition: all 200ms ease-out !important;
+  -o-transition: all 200ms ease-out !important;
+  transition: all 200ms ease-out !important;
+  -webkit-text-fill-color: var(--suru-plus-papirus-light-solid) !important;
+  text-shadow: none !important;
+}
+.theme-dark table {
+  background: var(--suru-plus-papirus);
+}
+.theme-dark table thead tr {
+  background: var(--suru-plus-technotronic-2);
+  color: var(--suru-plus-papirus-light-solid);
+}
+.theme-dark table tbody tr {
+  border-bottom: 1px solid var(--suru-plus-tokyo-hack-6);
+}
+.theme-dark tbody th {
+  background: var(--suru-plus-mavericks-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-dark .highlight {
+  background: var(--suru-plus-fitdance-2-transparent04);
+}
+.theme-dark #footer {
+  background: var(--suru-plus-dark-4);
+  border-top: 4px solid transparent;
+  border-image: var(--suru-plus-mavericks-right);
+  border-image-slice: 1;
+}
+
+.theme-synthwave-84 a {
+  background: var(--suru-plus-synthwave-84-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 a:hover {
+  background: var(--suru-plus-synthwave-84-3-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 code {
+  background: #262335;
+  border-right: 1px solid rgba(36, 27, 47, 0);
+  box-shadow: inset 0 -5px 25px #fc28a825;
+  --tab-border-bottom-color: themed("codeTabBorderBottomColour");
+}
+.theme-synthwave-84 pre > code {
+  background: none;
+  box-shadow: none;
+}
+.theme-synthwave-84 h1, .theme-synthwave-84 h2, .theme-synthwave-84 h3 {
+  background: var(--suru-plus-synthwave-84-3-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 h4 {
+  background: var(--suru-plus-synthwave-84-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 li::before {
+  background: var(--suru-plus-synthwave-84-1-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 .navigator {
+  background: var(--suru-plus-synthwave-84-solid-23);
+  border-image: var(--suru-plus-synthwave-84-3-top);
+  border-image-slice: 1;
+}
+.theme-synthwave-84 .navigator > ul > li a,
+.theme-synthwave-84 .navigator > ul > li .dropdown__title {
+  background: var(--suru-plus-synthwave-84-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 .navigator > ul > li > ul > li > a {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 .navigator > ul > li a:hover,
+.theme-synthwave-84 .navigator > ul > li .dropdown__title:hover {
+  background: var(--suru-plus-synthwave-84-3-top);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: var(--suru-plus-synthwave-84-3-top);
+  border-image-slice: 1;
+}
+.theme-synthwave-84 .dropdown:after {
+  border-bottom-color: var(--suru-plus-synthwave-84-solid-20);
+}
+.theme-synthwave-84 .dropdown .dropdown__menu {
+  background: var(--suru-plus-synthwave-84-solid-20);
+}
+.theme-synthwave-84 .dropdown .dropdown__menu a:hover {
+  background: var(--suru-plus-synthwave-84-2);
+  color: var(--suru-plus-synthwave-84-solid-20);
+  -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-20);
+  text-shadow: none;
+}
+.theme-synthwave-84 .dropdown:hover .dropdown__title,
+.theme-synthwave-84 .dropdown:focus-within .dropdown__title {
+  border-top: 3px solid transparent;
+  border-image: var(--suru-plus-synthwave-84-3-top);
+  border-image-slice: 1;
+}
+.theme-synthwave-84 .active {
+  background: var(--suru-plus-synthwave-84-2) !important;
+  color: var(--suru-plus-synthwave-84-solid-22) !important;
+  -webkit-transition: all 200ms ease-out !important;
+  -moz-transition: all 200ms ease-out !important;
+  -ms-transition: all 200ms ease-out !important;
+  -o-transition: all 200ms ease-out !important;
+  transition: all 200ms ease-out !important;
+  -webkit-text-fill-color: var(--suru-plus-synthwave-84-solid-22) !important;
+  text-shadow: none !important;
+}
+.theme-synthwave-84 table {
+  background: var(--suru-plus-synthwave-84-solid-23);
+}
+.theme-synthwave-84 table thead tr {
+  background: var(--suru-plus-synthwave-84-1-top);
+  color: var(--suru-plus-synthwave-84-solid-22);
+}
+.theme-synthwave-84 table tbody tr {
+  border-bottom: 1px solid var(--suru-plus-synthwave-84-solid-18);
+}
+.theme-synthwave-84 tbody th {
+  background: var(--suru-plus-synthwave-84-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-synthwave-84 #footer {
+  background: var(--suru-plus-dark-4);
+  border-top: 4px solid transparent;
+  border-image: var(--suru-plus-mavericks-right);
+  border-image-slice: 1;
+}
+
+.theme-cyberpunk a {
+  background: var(--suru-plus-fitdance-1-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk a:hover {
+  background: var(--suru-plus-synthwave-84-1-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk code {
+  --tab-border-bottom-color: themed("codeTabBorderBottomColour");
+}
+.theme-cyberpunk pre > code {
+  background: none;
+  box-shadow: none;
+}
+.theme-cyberpunk h1, .theme-cyberpunk h2, .theme-cyberpunk h3 {
+  background: var(--suru-plus-sunrise-3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk h4 {
+  background: var(--suru-plus-fitdance-1-top);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk li::before {
+  background: var(--suru-plus-orange-medium-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk .navigator {
+  background: var(--suru-plus-altered-carbon-01);
+  border-image: var(--suru-plus-altered-carbon-05);
+  border-image-slice: 1;
+}
+.theme-cyberpunk .navigator > ul > li a,
+.theme-cyberpunk .navigator > ul > li .dropdown__title {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk .navigator > ul > li > ul > li > a {
+  background: var(--suru-plus-altered-carbon-solid-17);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk .navigator > ul > li a:hover,
+.theme-cyberpunk .navigator > ul > li .dropdown__title:hover {
+  background: var(--suru-plus-synthwave-84-1-top);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: var(--suru-plus-synthwave-84-2-top);
+  border-image-slice: 1;
+}
+.theme-cyberpunk .dropdown:after {
+  border-bottom-color: #3A4141;
+}
+.theme-cyberpunk .dropdown .dropdown__menu {
+  background: var(--suru-plus-altered-carbon-12);
+}
+.theme-cyberpunk .dropdown .dropdown__menu a:hover {
+  background: var(--suru-plus-altered-carbon-19);
+  color: var(--suru-plus-altered-carbon-solid-13);
+  -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-13);
+  text-shadow: none;
+}
+.theme-cyberpunk .dropdown:hover .dropdown__title,
+.theme-cyberpunk .dropdown:focus-within .dropdown__title {
+  border-top: 3px solid transparent;
+  border-image: var(--suru-plus-synthwave-84-2-top);
+  border-image-slice: 1;
+}
+.theme-cyberpunk .active {
+  background: var(--suru-plus-altered-carbon-10) !important;
+  color: var(--suru-plus-altered-carbon-solid-17) !important;
+  -webkit-transition: all 200ms ease-out !important;
+  -moz-transition: all 200ms ease-out !important;
+  -ms-transition: all 200ms ease-out !important;
+  -o-transition: all 200ms ease-out !important;
+  transition: all 200ms ease-out !important;
+  -webkit-text-fill-color: var(--suru-plus-altered-carbon-solid-17) !important;
+  text-shadow: none !important;
+}
+.theme-cyberpunk table {
+  background: var(--suru-plus-altered-carbon-solid-41);
+}
+.theme-cyberpunk table thead tr {
+  background: var(--suru-plus-altered-carbon-05);
+  color: var(--suru-plus-altered-carbon-solid-16);
+}
+.theme-cyberpunk table tbody tr {
+  border-bottom: 1px solid var(--suru-plus-altered-carbon-solid-16);
+}
+.theme-cyberpunk tbody th {
+  background: var(--suru-plus-altered-carbon-solid-17);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-cyberpunk #footer {
+  background: var(--suru-plus-altered-carbon-01);
+  border-top: 4px solid transparent;
+  border-image: var(--suru-plus-altered-carbon-16);
+  border-image-slice: 1;
+}
+
+.theme-tron a {
+  background: var(--suru-plus-tron-solid-34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-tron a:hover {
+  background: var(--suru-plus-tron-solid-76);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(255, 65, 13, 0.7);
+}
+.theme-tron code {
+  --tab-border-bottom-color: themed("codeTabBorderBottomColour");
+}
+.theme-tron pre > code {
+  background: none;
+  box-shadow: none;
+}
+.theme-tron h1, .theme-tron h2, .theme-tron h3 {
+  background: var(--suru-plus-tron-solid-34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-tron h4 {
+  background: var(--suru-plus-tron-26);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-tron li::before {
+  background: var(--suru-plus-tron-solid-77);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 2px rgba(235, 154, 95, 0.7);
+}
+.theme-tron .navigator {
+  background: var(--suru-plus-tron-01);
+  border-image: var(--suru-plus-tron-26-top);
+  border-image-slice: 1;
+}
+.theme-tron .navigator > ul > li a,
+.theme-tron .navigator > ul > li .dropdown__title {
+  background: var(--suru-plus-tron-solid-34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-tron .navigator > ul > li > ul > li > a {
+  background: var(--suru-plus-tron-solid-34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.theme-tron .navigator > ul > li a:hover,
+.theme-tron .navigator > ul > li .dropdown__title:hover {
+  background: var(--suru-plus-tron-solid-76);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: var(--suru-plus-tron-26);
+  border-image-slice: 1;
+}
+.theme-tron .dropdown:after {
+  border-bottom-color: #1E3850;
+}
+.theme-tron .dropdown .dropdown__menu {
+  background: var(--suru-plus-tron-01);
+}
+.theme-tron .dropdown .dropdown__menu a:hover {
+  background: var(--suru-plus-tron-36);
+  color: var(--suru-plus-tron-solid-73);
+  -webkit-text-fill-color: var(--suru-plus-tron-solid-73);
+  text-shadow: none;
+}
+.theme-tron .dropdown:hover .dropdown__title,
+.theme-tron .dropdown:focus-within .dropdown__title {
+  border-top: 3px solid transparent;
+  border-image: var(--suru-plus-tron-26);
+  border-image-slice: 1;
+}
+.theme-tron .active {
+  background: var(--suru-plus-tron-26) !important;
+  color: var(--suru-plus-tron-solid-74) !important;
+  -webkit-transition: all 200ms ease-out !important;
+  -moz-transition: all 200ms ease-out !important;
+  -ms-transition: all 200ms ease-out !important;
+  -o-transition: all 200ms ease-out !important;
+  transition: all 200ms ease-out !important;
+  -webkit-text-fill-color: var(--suru-plus-tron-solid-74) !important;
+  text-shadow: none !important;
+}
+.theme-tron table {
+  background: var(--suru-plus-tron-solid-74);
+}
+.theme-tron table thead tr {
+  background: var(--suru-plus-tron-solid-71);
+  color: var(--suru-plus-tron-solid-37);
+}
+.theme-tron table tbody tr {
+  border-bottom: 1px solid var(--suru-plus-tron-solid-42);
+}
+.theme-tron tbody th {
+  background: var(--suru-plus-tron-solid-76);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(255, 65, 13, 0.7);
+}
+.theme-tron table tbody tr td:first-child {
+  text-shadow: 0 0 5px rgba(255, 65, 13, 0.7);
+}
+.theme-tron #footer {
+  background: var(--suru-plus-tron-solid-74);
+  border-top: 4px solid transparent;
+  border-image: var(--suru-plus-tron-26);
+  border-image-slice: 1;
+}
+
+/*# sourceMappingURL=schemes.css.map */

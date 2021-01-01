@@ -68,6 +68,10 @@
 	--suru-plus-altered-carbon-solid-15: #85A6A6;
 	--suru-plus-altered-carbon-solid-16: #1CCB83;
 	--suru-plus-altered-carbon-solid-17: #45A4B3;
+	--suru-plus-altered-carbon-solid-17A: #F29BB0;
+	--suru-plus-altered-carbon-solid-17B: #D74F78;
+	--suru-plus-altered-carbon-solid-17C: #EBE367;
+	--suru-plus-altered-carbon-solid-17D: #AF2C29;
 	--suru-plus-altered-carbon-solid-18: #868A8A;
 	--suru-plus-altered-carbon-solid-19: #689090;
 	--suru-plus-altered-carbon-solid-20: #74796D;
@@ -94,6 +98,7 @@
 	--suru-plus-altered-carbon-solid-41: #001C23;
 	--suru-plus-altered-carbon-solid-42: #051417;
 	--suru-plus-altered-carbon-solid-43: #0E0E0F;
+  ;
   
   /** TRON Legacy **/
   --suru-plus-tron-solid-01: #fef9f4;
@@ -455,6 +460,7 @@
   --suru-plus-sunrise-1-right:       linear-gradient(to right, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
   --suru-plus-sunrise-1-top:         linear-gradient(to top, #FF0056, #FF3146, #FF4C34, #FF6421, #FF7901);
   --suru-plus-synthwave-84-1-top:    linear-gradient(to top, #FFF951 0%, #FC28A8 100%);
+  --suru-plus-synthwave-84-2-top:    linear-gradient(180deg, #FD7189 0%, #FD9F76 100%);
   --suru-plus-synthwave-84-3-top:    linear-gradient(to bottom, #03edf9 25%, #fc28a7);
   --suru-plus-tron-26-top:           linear-gradient(to bottom, #E6FFFF 0%, #6FC3DF 100%);
   

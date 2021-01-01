@@ -9,30 +9,15 @@ Original theme - Suru++ Synthax
 .highlight
 {
  background-color: rgb(38, 35, 53);
- border-radius: 10px; 
  color: white;
  margin-bottom: 10px;
- margin-top: 10px;  
+ margin-top: 10px;
  padding: 5px;
-
- background-clip: padding-box;
- border: solid 5px transparent;
- box-sizing: border-box;
- position: relative;
-}
-
-.highlight:before 
-{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -5px;
-  border-radius: inherit;
-  background: linear-gradient(to bottom, #FFF951 25%, #FC28A8);
+ 
+ border: 5px solid transparent;
+ border-radius: 10px !important; 
+ border-image-source: var(--suru-plus-synthwave-84-1-top);
+ border-image-slice: 1;
 }
 
 /* Other */ 
@@ -119,7 +104,7 @@ Original theme - Suru++ Synthax
 }
 .highlight .language-css .kc
 { 
-  color: color: #fff5f6;
+  color: #fff5f6;
   text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c72, 0 0 5px #fc1f2c72, 0 0 25px #fc1f2c72;
 }
 
@@ -663,4 +648,21 @@ Original theme - Suru++ Synthax
 li .highlight
 { 
   text-indent: 0;
+}
+
+@media only screen and (min-width: 1440px)
+{
+  .highlight 
+  {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 780px)
+{
+  .highlight 
+  {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
 }
