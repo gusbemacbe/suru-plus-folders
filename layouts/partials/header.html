@@ -2,6 +2,8 @@
 
 {{ if .IsTranslated }}
 
+{{/*  Desktop  */}}
+
 <nav class="navigator" aria-label="Main Navigation">
   <ul>
     {{- $currentPage := . -}}
@@ -39,4 +41,35 @@
   </ul>
 </nav>
 
+<nav class="sidenav" id="mainSideNav">
+  <button id="closenav" class="closebtn" onclick="closeNav()" aria-label="Close Navigation Menu">Hey</button>
+  {{- $currentPage := . -}}
+        {{ range .Site.Menus.main -}}
+          {{ $menu_item_url := .URL | relLangURL -}}
+          {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+        <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+  {{- end }}
+</nav>
+
+<nav class="sidenav" id="SideNavThemes">
+  <button id="closenav" class="closebtn" onclick="closeNavThemes()" aria-label="Close Navigation Menu">Hey</button>
+  {{ range .Site.Params.Themes }}
+    <a class="button theme-switch" id="{{ .data }}">{{ .name }}</a>
+  {{ end }}
+</nav>
+
+<nav class="sidenav" id="SideNavLanguages">
+  <button id="closenav" class="closebtn" onclick="closeNavLanguages()" aria-label="Close Navigation Menu">Hey</button>
+  {{ range .Translations -}}
+    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+  {{ end }}
+</nav>
+
+<nav class="navigator-mobile">
+  <button id="main" onclick="openNav()" aria-label="Navigation Menu" aria-expanded="false">&#9776;</button>
+  <div>
+    <button id="main" onclick="openNavThemes()" aria-label="Navigation Menu" aria-expanded="false"><span class="suru-theme"></span></button>
+    <button id="main" onclick="openNavLanguages()" aria-label="Navigation Menu" aria-expanded="false"><span class="suru-languages"></span></button>
+  </div>
+</nav>
 {{ end }}

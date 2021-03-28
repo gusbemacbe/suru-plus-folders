@@ -77,8 +77,9 @@ params:
     - css/schemes.css
     - css/media-query.css
   custom_js:
-    - javascript/header.js
-    - javascript/sidebars.js
+    # - javascript/header.js
+    # - javascript/sidebars.js
+    - javascript/navigator-mobile.js
     - javascript/themes.js
   custom_js_table: javascript/table-of-themes.js
   custom_js_languages: javascript/languages-switcher.js
