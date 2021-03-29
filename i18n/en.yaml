@@ -20,3 +20,45 @@
   translation: "Theme <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> created by <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
 - id: made
   translation: "Made with <span role=\"img\" aria-label=\"Heart\">❤</span> and <span role=\"img\" aria-label=\"Coffee\">☕</span> in <span role=\"img\" aria-label=\"Brazil\">🇧🇷</span> :-)"
+
+# Index page
+
+## Tiles
+- id: advice
+  translation: "Important advice!"
+- id: changing
+  translation: "Changing the colour of folders"
+- id: description
+  translation: "Description"
+- id: installation
+  translation: "Installation"
+- id: installing
+  translation: "Installing"
+- id: indep_distro
+  translation: "Independent distribution"
+- id: uninstalling
+  translation: "Uninstalling"
+
+## Sentences
+- id: index_1
+  translation: "The file `suru-plus-folders` is a bash script that allows changing the colour of folders in [Suru++ 25 icons](https://github.com/gusbemacbe/suru-plus) and [Suru++ Ubuntu icons](https://github.com/Bonandry/suru-plus-ubuntu) themes, based on the forks of icons of folders of Papirus."
+- id: index_2
+  translation: "At the moment `suru-plus-folders` doesn't have a GUI, but it is a fully functional command-line application. Before seeing the examples of use, please install firstly:"
+- id: index_3
+  translation: "Use the script to install the latest version directly from this repository (independently on your distro):"
+- id: index_4
+  translation: "To install `suru-plus-folders` on **BSD systems** using the following command:"
+- id: index_5
+  translation: "Some examples of use:"
+- id: index_6
+  translation: "Showing the current colour and available colours for Suru++ 25 or Suru++ Ubuntu:"
+- id: index_7
+  translation: "Changing colour of folders to brown for Suru++ 25 or Suru++ Ubuntu:"
+- id: index_8
+  translation: "Revert to default color of folders for places of Suru++ 25 or Suru++ Ubuntu:"
+- id: index_9
+  translation: "Restore the last used color from a config file:"
+- id: index_10
+  translation: "This is extremely useful for restoring colour after each icons theme upgrade (official installers of [Suru++](https://github.com/gusbemacbe/suru-plus) and some third-party packages do this automatically)."
+- id: index_11
+  translation: "**NOTE:** To change the colour of an individual folder you can use [Folder Color](http://foldercolor.tuxfamily.org) or [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color)."

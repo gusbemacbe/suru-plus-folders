@@ -20,3 +20,45 @@
   translation: "Thème <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> créé par <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
 - id: made
   translation: "Fait avec <span role=\"img\" aria-label=\"Cœur\">❤</span> et <span role=\"img\" aria-label=\"Café\">☕</span> au <span role=\"img\" aria-label=\"Brésil\">🇧🇷</span> :-)"
+
+# Pagine d'accueil
+
+## Titres
+- id: advice
+  translation: "Avis important !"
+- id: changing
+  translation: "Changer la couleur des dossiers"
+- id: description
+  translation: "Description"
+- id: installation
+  translation: "Installation"
+- id: installing
+  translation: "Installer"
+- id: indep_distro
+  translation: "Distribution indépendante"
+- id: uninstalling
+  translation: "Désintaller"
+
+## Phrases
+- id: index_1
+  translation: "Le fichier `suru-plus-folders` est un `script bash` qui permet de changer la couleur des dossiers chez les thèmes des icônes [Suru++ 25](https://github.com/gusbemacbe/suru-plus) et [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu), basé sur des clones d'icônes de dossiers de Papirus."
+- id: index_2
+  translation: "À l'heure actuelle, `suru-plus-folders` n'a pas d'interface graphique, mais c'est une application de ligne de commande entièrement fonctionnelle. Avant de voir les exemples d'utilisation, installez d'abord :"
+- id: index_3
+  translation: "Utilisez le *script* pour installer la dernière version directement à partir de ce répositoire (indépendamment de votre distribution) :"
+- id: index_4
+  translation: "Pour installer `suru-plus-folders` sur **les systèmes de BSD**, en utilisant la commande suivante :"
+- id: index_5
+  translation: "Quelques exemples d'utilisation :"
+- id: index_6
+  translation: "Afficher de la couleur actuelle et des couleurs disponibles pour Suru++ 25 ou Suru++ Ubuntu :"
+- id: index_7
+  translation: "Changer la colour des dossiers en `brown` (brun) pour Suru++ 25 ou Suru++ Ubuntu :"
+- id: index_8
+  translation: "Revenir à la couleur originelle des dossiers pour Suru++ 25 ou Suru++ Ubuntu :"
+- id: index_9
+  translation: "Restaurer la dernière couleur utilisée à partir d'un fichier de configuration:"
+- id: index_10
+  translation: "Ceci est extrêmement utile pour restaurer la couleur après chaque mise à niveau du thème des icônes (les installateurs officiels de [Suru++](https://github.com/gusbemacbe/suru-plus) et certains paquets tiers le font automatiquement)."
+- id: index_11
+  translation: "**REMARQUE :** Pour changer la couleur d'un dossier individuel, vous pouvez utiliser [Folder Color](http://foldercolor.tuxfamily.org) ou [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color)."

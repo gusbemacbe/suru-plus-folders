@@ -20,3 +20,45 @@
   translation: "Tema <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> criado por <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
 - id: made
   translation: "Feito com <span role=\"img\" aria-label=\"coração\">❤</span> e <span role=\"img\" aria-label=\"café\">☕</span> no <span role=\"img\" aria-label=\"Brasil\">🇧🇷</span> :-)"
+
+# Página inicial
+
+## Títulos
+- id: description
+  translation: "Descrição"
+- id: "installation"
+  translation: "Instalação"
+- id: indep_distro
+  translation: "Distribuição agnóstica"
+- id: installing
+  translation: "Instalando"
+- id: uninstalling
+  translation: "Desinstalando"
+- id: changing
+  translation: "Mudando a cor de pastas:"
+- id: advice
+  translation: "Aviso importante!"
+
+## Frases
+- id: index_1
+  translation: "O arquivo `suru-plus-folders`  é um executável bash que permite que você mude a cor dos pastas nos temas de ícone [Suru++ 25](https://github.com/gusbemacbe/suru-plus) e [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu), baseado no `fork` de ícones de pastas do tema de ícones Papirus."
+- id: index_2
+  translation: "Neste momento, `suru-plus-folders` não tem uma GUI, mas é um aplicativo de linha de comando totalmente funcional. Antes de ver os exemplos de uso, por favor, instale primeiramente:"
+- id: index_3
+  translation: "Use o `script` para instalar a versão mais recente diretamente do repósitorio (independentemente da sua distribuição):"
+- id: index_4
+  translation: "Para instalar `suru-plus-folders` nos **sistemas BSD**, usando o comando seguinte:"
+- id: index_5
+  translation: "Alguns exemplos de uso:"
+- id: index_6
+  translation: "Mostrar a cor atual e as cores disponíveis para Suru++ 25 ou Suru++ Ubuntu:"
+- id: index_7
+  translation: "Mudando a cor de pastas para `brown` (marrom) para Suru++ 25 ou Suru++ Ubuntu:"
+- id: index_8
+  translation: "Revertir para a cor padrão de pastas para os ícones de `places` do Suru++ 25 ou Suru++ Ubuntu:"
+- id: index_9
+  translation: "Restaurar a última cor usada de um arquivo de configuração:"
+- id: index_10
+  translation: "Isto vale a pena restaurar a cor após cada `upgrade` de tema de ícones (instaladores oficias de [Suru++](https://github.com/gusbemacbe/suru-plus) e alguns pacotes terceirizados fazem isto automaticamente)."
+- id: index_11
+  translation: "**OBSERVAÇÃO:** Para mudar a cor de uma pasta individual, você pode usar [Folder Color](http://foldercolor.tuxfamily.org) ou [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color)."

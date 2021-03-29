@@ -20,3 +20,45 @@
   translation: "tema <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> creato da <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
 - id: made
   translation: "Fatto con <span role=\"img\" aria-label=\"Cuore\">❤</span> e <span role=\"img\" aria-label=\"Caffè\">☕</span> in <span role=\"img\" aria-label=\"Brasile\">🇧🇷</span> :-)"
+
+# Pagina home
+
+## Titoli
+- id: description
+  translation: "Descrizione"
+- id: "installation"
+  translation: "Installazione"
+- id: indep_distro
+  translation: "Distribuzione indipendente"
+- id: installing
+  translation: "Installando"
+- id: uninstalling
+  translation: "Disinstallando"
+- id: changing
+  translation: "Cambiare il colore delle cartelle:"
+- id: advice
+  translation: "Informazioni importanti!"
+
+## Frasi
+- id: index_1
+  translation: "Il file `suru-plus-folders` è uno *script di bash* che permette di cambiare il colore delle cartelle sui temi di icone [Suru++ 25](https://github.com/gusbemacbe/suru-plus) e [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu), basato sui cloni delle icone di cartelle di Papirus."
+- id: index_2
+  translation: "Al momento, `suru-plus-folders` non ha una GUI, ma è un'applicazione da riga di comando completamente funzionante. Prima di vedere gli esempi di utilizzo, installare innanzitutto:"
+- id: index_3
+  translation: "Utilizza lo *script* per installare l'ultima versione direttamente da questo *repository* (indipendentemente dalla tua distribuzione):"
+- id: index_4
+  translation: "Per installare `suru-plus-folders` sui **sistemi BSD**, utilizzando il seguente comando:"
+- id: index_5
+  translation: "Alcuni esempi di utilizzo:"
+- id: index_6
+  translation: "Mostrando il colore attuale ed i colori disponibili per Suru++ 25 o Suru++ Ubuntu:"
+- id: index_7
+  translation: "Cambiare il colore delle cartelle in `brown` (marrone) per Suru++ 25 o Suru++ Ubuntu:"
+- id: index_8
+  translation: "Ripristina il colore predefinito delle cartelle per Suru++ 25 o Suru++ Ubuntu:"
+- id: index_9
+  translation: "Ripristina l'ultimo colore utilizzato da un file di configurazione:"
+- id: index_10
+  translation: "Questo è estremamente utile per ripristinare il colore dopo ogni aggiornamento del tema delle icone (installer ufficiali di [Suru++](https://github.com/gusbemacbe/suru-plus) ed alcuni pacchetti di terze parti lo fanno automaticamente)."
+- id: index_11
+  translation: "**ATTENTZIONE:** Per cambiare il colore di una singola cartella, puoi usare [Folder Color](http://foldercolor.tuxfamily.org) o [Dolphin Folder Color](https://github.com/audoban/dolphin-cartella-colore)."

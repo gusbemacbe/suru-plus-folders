@@ -1,73 +1,66 @@
-# Description
+# {{ T "description" }}
 
-The file `suru-plus-folders` is a bash script that allows changing the color of folders in [Suru++ 25 icons](https://github.com/gusbemacbe/suru-plus) and [Suru++ Ubuntu icons](https://github.com/Bonandry/suru-plus-ubuntu) themes, based on the forks of icons of folders of Papirus.
+{{ T "index_1" }}
 
-At the moment `suru-plus-folders` doesn't have a GUI, but it is a fully functional command-line application. Before seeing the examples of use, please install firstly:
+{{ T "index_2" }}
 
-# Installation
 
-## Independent distribution
+# {{ T "installation" }}
 
-Use the script to install the latest version directly from this repository (independently on your distro):
+## {{ T "indep_distro" }}
 
-### Installing
+{{ T "index_3" }}
+
+### {{ T "installing" }}
 
 ```bash
 wget -qO- https://git.io/fhQdI | sh
 ```
 
-To install `suru-plus-folders` on **BSD systems** using the following command:
+{{ T "index_4" }}
 
 ```bash
 wget -qO- https://git.io/fhQdI | env PREFIX=/usr/local sh
 ```
 
-### Uninstalling
+### {{ T "uninstalling" }}
 
 ```bash
 wget -qO- https://git.io/fhQdI | env uninstall=true sh
 ```
 
-## Arch-based distributions
+# {{ T "changings" }}
 
-Soon
+{{ T "index_5" }}
 
-## Debian-based distributions
-
-Soon
-
-# Changing the colour of folders
-
-Some examples of use:
-
-- Showing the current color and available colors for Suru++ 25 or Suru++ Ubuntu:
+- {{ T "index_6" }}
   ```sh
   # Suru++ 25
   suru-plus-folders -l --theme Suru++
   # Suru++ Ubuntu
   suru-plus-folders -l --theme Suru++-Ubuntu
   ```
-- Changing colour of folders to brown for Suru++ 25 or Suru++ Ubuntu:
+- {{ T "index_7" }}
   ```sh
   # Suru++ 25
   suru-plus-folders -C brown --theme Suru++
   # Suru++ Ubuntu
   suru-plus-folders -l --theme Suru++-Ubuntu
   ```
-- Revert to default color of folders for places of Suru++ 25 or Suru++ Ubuntu:
+- {{ T "index_8" }}
   ```sh
   # Suru++ 25
   suru-plus-folders -D --theme Suru++
   # Suru++ Ubuntu
   suru-plus-folders -l --theme Suru++-Ubuntu
   ```
-- Restore the last used color from a config file:
+- {{ T "index_9" }}
   ```sh
   suru-plus-folders -Ru
   ```
 
-## Important advice!
+## {{ T "advice" }}
 
-This is extremely useful for restoring colour after each icons theme upgrade (official installers of [Suru++](https://github.com/gusbemacbe/suru-plus) and some third-party packages do this automatically).
+{{ T "index_10" }}
 
-**NOTE:** To change the colour of an individual folder you can use [Folder Color](http://foldercolor.tuxfamily.org) or [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color).
+{{ T "index_11" }}

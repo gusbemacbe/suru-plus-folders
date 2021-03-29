@@ -230,9 +230,9 @@ languages:
         name: "Tron: Legacy"
         weight: 5
 
-  pt:
+  pt-PT:
     languageName: Português Europeu
-    contentDir: "content/pt"
+    contentDir: "content/pt-pt"
     weight: 3
     description: Lista de tabelas de ícones de temas Suru++, Adwaita++ e Yaru++.
     home: Início
