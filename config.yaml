@@ -134,6 +134,102 @@ languages:
           name: Colophon
           weight: 4
 
+  de:
+    languageName: Deutsch
+    contentDir: "content/es"
+    weight: 3
+    description: Liste der Tabellen der Adwaita++, Suru++ und Yaru++ thematische Ikonen.
+    home: Início
+    title: Suru++ Ordner
+    menu:
+      main:
+        - url: /
+          name: Start
+          weight: 1
+        - url: /projekte/
+          name: Projekte
+          weight: 2
+        - url: /kontakt/
+          name: Kontakt
+          weight: 3
+      footer:
+        - url: /wer-sind-wir/
+          name: Wer sind wir
+          weight: 1
+        - url: /lizenz/
+          name: Lizenz
+          weight: 2
+        - url: /privatsphare/
+          name: Privatsphäre
+          weight: 3
+        - url: /absprache/
+          name: Absprache
+          weight: 4
+    themes:
+      - data: theme-light
+        name: Standard
+        weight: 1
+      - data: theme-dark
+        name: Dunkel
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: TRON Legacy
+        weight: 5
+
+  es:
+    languageName: Español
+    contentDir: "content/es"
+    weight: 3
+    description: Lista de tablas de iconos temáticas Suru++, Adwaita++ y Yaru++.
+    home: Início
+    title: Suru++ Carpetas
+    menu:
+      main:
+        - url: /
+          name: Início
+          weight: 1
+        - url: /proyectos/
+          name: Proyectos
+          weight: 2
+        - url: /contacto/
+          name: Contacto
+          weight: 3
+      footer:
+        - url: /sobre/
+          name: Sobre
+          weight: 1
+        - url: /licencia/
+          name: Licencia
+          weight: 2
+        - url: /intimidad/
+          name: Intimidad
+          weight: 3
+        - url: /colusion/
+          name: Colusión
+          weight: 4
+    themes:
+      - data: theme-light
+        name: Estádnar
+        weight: 1
+      - data: theme-dark
+        name: Oscuro
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: TRON – El legado
+        weight: 5
+
   fr:
     languageName: Français
     contentDir: "content/fr"

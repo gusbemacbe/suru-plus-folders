@@ -1,0 +1,64 @@
+# Menu
+- id: close
+  translation: "Schließen"
+
+# Table
+- id: preTtitle
+  translation: "Verfügbaren Farben in "
+- id: theme_name
+  translation: "Name"
+- id: theme_preview
+  translation: "Vorschau"
+
+# Footer
+
+- id: footer_copyright
+  translation: "© 2019-{{ .currentYear }} Suru++ von Gustavo Costa und Andrea Bonanni. Alle Rechte vorbehalten."
+- id: powered
+  translation: "Bereitgestellt von"
+- id: original_author
+  translation: "Theme <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> erstellt von <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
+- id: made
+  translation: "Gemacht mit <span role=\"img\" aria-label=\"Herz\">❤</span> e <span role=\"img\" aria-label=\"Kaffee\">☕</span> in <span role=\"img\" aria-label=\"Brasilien\">🇧🇷</span> :-)"
+
+# Pago Home
+
+## Titel
+- id: description
+  translation: "Beschreibung"
+- id: "installation"
+  translation: "Installation"
+- id: indep_distro
+  translation: "Selbsttätige Distributione"
+- id: installing
+  translation: "Zum Installieren"
+- id: uninstalling
+  translation: "Zum Deinstallieren"
+- id: changing
+  translation: "Der Farbe von Ordnern ändern"
+- id: advice
+  translation: "Wichtiger Vorschlag!"
+
+## Frasi
+- id: index_1
+  translation: "Die Datei `suru-plus-folders` ist ein Bash-Skript, das es erlaubt, die Farbe von Ordnern zu ändern, in der Icon-Themas [Suru++ 25](https://github.com/gusbemacbe/suru-plus) und [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu), basierend auf den Klonen von Icons von Ordnern von Papirus."
+- id: index_2
+  translation: "Im Moment hat `suru-plus-folders` keine GUI, aber es ist eine voll funktionsfähige Befehlszeile-App. Bevor Sie die Verwendungsbeispiele sehen, installieren Sie bitte zuerst:"
+- id: index_3
+  translation: "Verwenden Sie das Skript, um die neueste Version direkt aus diesem Repository zu installieren (selbsttätig von Ihrer Distribution):"
+- id: index_4
+  translation: "Um `suru-plus-folders` auf den **BSD-Systemen** mit dem folgenden Befehl zu installieren:"
+- id: index_5
+  translation: "Einige Verwendungsbeispiele:"
+- id: index_6
+  translation: "Die aktuelle Farbe und die verfügbaren Farben für Suru++ 25 oder Suru++ Ubuntu anzeigen:"
+- id: index_7
+  translation: "Der Farbe von Ordnern auf `brown` (Braun) für Suru++ 25 oder Suru++ Ubuntu ändern:"
+- id: index_8
+  translation: "Der Standardfarbe von Ordnern für Suru++ 25 oder Suru++ Ubuntu wiederherstellen:"
+- id: index_9
+  translation: "Der vorige verwendeten Farbe aus einer Konfigurationsdatei wiederherstellen:"
+- id: index_10
+  translation: "Dies ist sehr nützlich für der Farbe zu widerherstellen nach jeder Aktualisierung des Icon-Themas (offizielle Installeren von [Suru++](https://github.com/gusbemacbe/suru-plus) und einige Drittanbieter-Pakete machen dies automatisch)."
+- id: index_11
+  translation: "**VORSCHLAG:** Um die Farbe eines individuellen Ordners zu ändern, können Sie [Folder Color](http://foldercolor.tuxfamily.org) oder [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color) verwenden."

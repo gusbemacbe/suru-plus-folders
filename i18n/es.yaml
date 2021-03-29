@@ -1,0 +1,64 @@
+# Menu
+- id: close
+  translation: "Cerrar"
+
+# Table
+- id: preTtitle
+  translation: "Colores disponibles en "
+- id: theme_name
+  translation: "Nombre"
+- id: theme_preview
+  translation: "Vista antecipada"
+
+# Footer
+
+- id: footer_copyright
+  translation: "© 2019-{{ .currentYear }} Suru ++ Folders de Gustavo Costa y Andrea Bonanni. Reservados todos los derechos."
+- id: powered
+  translation: "Energizado por"
+- id: original_author
+  translation: "tema <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> criado por <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
+- id: made
+  translation: "Hecho en <span role=\"img\" aria-label=\"Corazón\">❤</span> e <span role=\"img\" aria-label=\"Café\">☕</span> in <span role=\"img\" aria-label=\"Brasil\">🇧🇷</span> :-)"
+
+# Pagina home
+
+## Titoli
+- id: description
+  translation: "Descripción"
+- id: "installation"
+  translation: "Instalación"
+- id: indep_distro
+  translation: "Distribución independiente"
+- id: installing
+  translation: "Instalar"
+- id: uninstalling
+  translation: "Desinstalar"
+- id: changing
+  translation: "Cambia el color de las carpetas:"
+- id: advice
+  translation: "¡Información importante!"
+
+## Frasi
+- id: index_1
+  translation: "El archivo `suru-plus-folders` es un *script bash* que permite cambiar el color de las carpetas del [tema de iconos de Suru++ 25](https://github.com/gusbemacbe/suru-plus), basado en los clones de iconos de carpetas de Papirus."
+- id: index_2
+  translation: "Por el momento `suru-plus-folders` no tiene una GUI, pero es una aplicación de línea de comandos completamente funcional. Antes de ver los ejemplos de uso, instale primero:"
+- id: index_3
+  translation: "Utilice el *script* para instalar la última versión directamente de este repositorio (independientemente de su distribución):"
+- id: index_4
+  translation: "Para instalar `suru-plus-folders` en los **sistemas de BSD**, utilizando el siguiente comando:"
+- id: index_5
+  translation: "Algunos ejemplos de utilización:"
+- id: index_6
+  translation: "Mostrando el color actual y colores disponibles para Suru++:"
+- id: index_7
+  translation: "Cambiar el color de las carpetas a `brown` (marrón) para Suru++:"
+- id: index_8
+  translation: "Revertir al color original de las carpetas de Suru++:"
+- id: index_9
+  translation: "Restaurar el último color utilizado de un archivo de configuración:"
+- id: index_10
+  translation: "Esto es extremadamente útil para restaurar el color después de cada actualización de temas de iconos (los instaladores oficiales de [Suru++ 25](https://github.com/gusbemacbe/suru-plus), [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu) y algunos paquetes de terceros lo hacen automáticamente)."
+- id: index_11
+  translation: "**OBSERVACIÓN:** Para cambiar el color de una carpeta individual, puede utilizar [Folder Color](http://foldercolor.tuxfamily.org) o [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color)."
