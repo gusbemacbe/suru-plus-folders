@@ -21,7 +21,8 @@ button.dropdown__title.icones
   display: grid;
   padding: 0 1rem;
   place-items: center;
-  position: sticky;
+  position:         sticky;
+  position: -webkit-sticky;
   top: 0;
 }
 
@@ -219,17 +220,30 @@ button.dropdown__title.icones
 .navigator-mobile
 {
   display: none;
+
+  align-items: center;
+  background: var(--suru-plus-papirus);
+  border-bottom: 4px solid transparent;
+  border-image-slice: 1;
+  border-image: var(--suru-plus-fitdance-1-bottom);
+  color: var(--suru-plus-papirus-light-solid);
+  font-size: 24px;
+  height: 64px;
+  justify-content: space-between;
+  padding: 7px 1rem 0 1rem;
+  position: sticky;
+  top: 0;
 }
 
 .navigator-mobile:focus,
 .sidenav:focus
-{ 
-  outline: 3px solid orangered; 
+{
+  outline: 3px solid orangered;
   outline-offset: 1px;
 }
 
 .navigator-mobile button,
-.sidenav button 
+.sidenav button
 {
   background: none;
   border: 0;
@@ -239,16 +253,19 @@ button.dropdown__title.icones
   overflow: visible;
   padding: 0;
   -webkit-appearance: button;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
 }
 
-#main
+.sidenav-opener
 {
   cursor: pointer;
-  font-size: 30px; 
+  font-size: 30px;
   transition: margin-left 0.5s;
+}
+
+.sidenav-opener.is-open
+{
+  margin-left: 250px;
 }
 
 .sidenav
@@ -264,6 +281,28 @@ button.dropdown__title.icones
   transition: 0.5s;
   padding-top: 60px;
   visibility: hidden;
+}
+
+.sidenav.is-open
+{
+  width: 250px;
+  visibility: visible;
+}
+
+.sidenav.is-open> *
+{
+  position: relative;
+}
+
+.sidenav.is-open::before
+{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .sidenav a,
@@ -287,9 +326,9 @@ button.dropdown__title.icones
 .sidenav .closebtn
 {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 6px;
+  right: 10px;
+  font-size: 24px;
   margin-left: 50px;
 }
 
@@ -315,16 +354,6 @@ button.dropdown__title.icones
 
   .navigator-mobile
   {
-    align-items: center;
-    background: var(--suru-plus-papirus);
-    border-bottom: 4px solid transparent;
-    border-image-slice: 1;
-    border-image: var(--suru-plus-fitdance-1-bottom);
     display: flex;
-    height: 64px;
-    justify-content: space-between;
-    padding: 7px 1rem 0 1rem;
-    position: sticky;
-    top: 0;
   }
 }

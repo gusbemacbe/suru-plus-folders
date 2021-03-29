@@ -1,3 +1,7 @@
 {{- range .Site.Params.custom_js }}
 <script src="{{ relURL (printf "%s%s" "assets/" .) }}"></script>
 {{- end }}
+
+{{- range .Site.Params.custom_js_module }}
+<script type="module" src="{{ relURL (printf "%s%s" "assets/" .) }}"></script>
+{{- end }}

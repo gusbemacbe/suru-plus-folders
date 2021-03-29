@@ -41,35 +41,71 @@
   </ul>
 </nav>
 
-<nav class="sidenav" id="mainSideNav">
-  <button id="closenav" class="closebtn" onclick="closeNav()" aria-label="Close Navigation Menu">Hey</button>
+{{/*  Mobile  */}}
+
+<nav class="sidenav" id="main-nav" aria-label="main navigation">
+  <button
+      id="main-closing"
+      class="closebtn"
+      aria-label="Close Navigation Menu"
+  >
+      {{ T "close" }}
+  </button>
   {{- $currentPage := . -}}
-        {{ range .Site.Menus.main -}}
-          {{ $menu_item_url := .URL | relLangURL -}}
-          {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
-        <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+    {{ range .Site.Menus.main -}}
+      {{ $menu_item_url := .URL | relLangURL -}}
+      {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+      <a class="{{ if eq $menu_item_url $page_url }}active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
   {{- end }}
 </nav>
 
-<nav class="sidenav" id="SideNavThemes">
-  <button id="closenav" class="closebtn" onclick="closeNavThemes()" aria-label="Close Navigation Menu">Hey</button>
+<nav class="sidenav" id="themes-nav" aria-label="theme switcher">
+  <button
+      id="themes-closing"
+      class="closebtn"
+      aria-label="Close Navigation Menu"
+  >
+      {{ T "close" }}
+  </button>
+
   {{ range .Site.Params.Themes }}
     <a class="button theme-switch" id="{{ .data }}">{{ .name }}</a>
   {{ end }}
 </nav>
 
-<nav class="sidenav" id="SideNavLanguages">
-  <button id="closenav" class="closebtn" onclick="closeNavLanguages()" aria-label="Close Navigation Menu">Hey</button>
+<nav
+  class="sidenav"
+  id="languages-nav"
+  aria-label="languages navigation"
+>
+  <button
+      id="languages-closing"
+      class="closebtn"
+      aria-label="Close Navigation Menu"
+  >
+      {{ T "close" }}
+  </button>
   {{ range .Translations -}}
     <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
   {{ end }}
 </nav>
 
-<nav class="navigator-mobile">
-  <button id="main" onclick="openNav()" aria-label="Navigation Menu" aria-expanded="false">&#9776;</button>
+<header class="navigator-mobile">
+  <button
+      class="sidenav-opener"
+      id="main-opener"
+      aria-label="Navigation Menu"
+  >
+      ☰
+  </button>
   <div>
-    <button id="main" onclick="openNavThemes()" aria-label="Navigation Menu" aria-expanded="false"><span class="suru-theme"></span></button>
-    <button id="main" onclick="openNavLanguages()" aria-label="Navigation Menu" aria-expanded="false"><span class="suru-languages"></span></button>
+      <button id="themes-opener" aria-label="Navigation Menu">
+          <span class="suru-theme"></span>
+      </button>
+      <button id="languages-opener" aria-label="Navigation Menu">
+          <span class="suru-languages"></span>
+      </button>
   </div>
-</nav>
+</header>
+
 {{ end }}

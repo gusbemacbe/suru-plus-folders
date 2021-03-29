@@ -1,3 +1,7 @@
+# Menus
+- id: close
+  translation: "Close"
+
 # Table
 - id: preTtitle
   translation: "Avaliable Colours in "

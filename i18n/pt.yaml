@@ -1,3 +1,7 @@
+# Menus
+- id: close
+  translation: "Fechar"
+
 # Tabela
 - id: preTtitle
   translation: "Cores disponíveis em "

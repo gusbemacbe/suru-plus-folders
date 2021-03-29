@@ -629,18 +629,24 @@ li .highlight
   color: transparent;
 }
 
+li .highlight
+{ 
+  text-indent: 0;
+}
+
 @media only screen and (min-width: 1440px)
 {
-  .highlight
+  .highlight 
   {
-    width: 50%;
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 780px)
 {
-  .highlight
+  .highlight 
   {
-    overflow-x: scroll;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
   }
 }
