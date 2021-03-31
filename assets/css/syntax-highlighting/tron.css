@@ -1,0 +1,651 @@
+/*
+
+TRON Legacy Syntax (c) Gustavo Costa <gusbemacbe@gmail.com>
+Original theme - Suru++ Synthax
+
+*/
+
+/* Background */ 
+.highlight
+{
+ background-color: #202831;
+ color: white;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ padding: 5px;
+ 
+ border: 2px solid #aec2e0;
+ border-radius: 10px !important; 
+
+ text-shadow: none;
+}
+
+/* Other */ 
+.highlight .x
+{
+}
+
+/* Error */ 
+.highlight .err
+{
+ background-color: #1e0010; 
+ color: #960050;
+}
+
+/* LineTableTD */ 
+.highlight .lntd
+{
+ border: 0; 
+ margin: 0;
+ padding: 0; vertical-align: top;
+}
+
+/* LineTable */ 
+.highlight .lntable
+{
+ border: 0; border-spacing: 0;
+ display: block; 
+ margin: 0;
+ overflow: auto;
+ padding: 0;
+ width: auto;
+}
+
+/* LineHighlight */ 
+.highlight .hl
+{
+ background-color: #ffffcc; 
+ display: block;
+ width: 100%;
+}
+
+/* LineNumbersTable */ 
+.highlight .lnt
+{
+ color: #7f7f7f; 
+ margin-right: .4em;
+ padding: 0 .4em 0 .4em;
+}
+
+/* LineNumbers */ 
+.highlight .ln
+{
+ color: #7f7f7f; 
+ margin-right: .4em;
+ padding: 0 .4em 0 .4em;
+}
+
+/* Keyword */ 
+.highlight .k
+{ 
+  color: #748aa6;
+}
+
+.highlight .language-css .k
+{ 
+  color: #f79d1e;
+}
+
+.highlight .language-js .k, 
+.highlight .language-ruby .k
+{ 
+  color: #748aa6;
+}
+
+.highlight .language-python .k
+{
+  color: #267fb5;
+}
+
+
+/* KeywordConstant */ 
+.highlight .kc
+{ 
+  color: #ffb20d;
+}
+.highlight .language-css .kc
+{ 
+  color: #d0dfe6;
+}
+
+/* KeywordDeclaration */ 
+.highlight .kd
+{ 
+  color: #267fb5;
+}
+
+/* KeywordNamespace */ 
+.highlight .kn
+{ 
+  color: #267fb5;
+}
+
+/* KeywordPseudo */ 
+.highlight .kp
+{ 
+  color: #66d9ef;
+}
+
+.highlight .language-css .kp
+{ 
+  color: #f79d1e;
+}
+
+.highlight .language-ruby .kp
+{ 
+  color: #267fb5;
+}
+
+/* KeywordReserved */ 
+.highlight .kr
+{ 
+  color: #66d9ef;
+}
+
+/* KeywordType */ 
+.highlight .kt
+{ 
+  color: #267fb5;
+}
+
+/* Name */ 
+.highlight .n
+{
+  color: #95cc5e;
+}
+
+.highlight .language-css .n
+{
+  color: #d0dfe6;
+}
+
+.highlight .language-python .n,
+.highlight .language-ruby .n
+{
+  color: #95cc5e;
+  font-style: italic;
+}
+
+/* NameAttribute */ 
+.highlight .na
+{ 
+  color: #d0dfe6;
+}
+
+/* NameBuiltin */ 
+.highlight .nb
+{
+  color: #d0dfe6;
+}
+
+.highlight .nb
+{
+  color: #ffb20d;
+}
+
+/* NameBuiltinPseudo */ 
+.highlight .bp
+{
+}
+
+/* NameClass */ 
+.highlight .nc
+{ 
+  color: #ffb20d;
+}
+
+.highlight .language-css .nc
+{
+  color: #ffb20d;
+}
+
+/* NameConstant */ 
+.highlight .no
+{ 
+  color: #66d9ef;
+}
+
+/* NameDecorator */ 
+.highlight .nd
+{ 
+  color: #a6e22e;
+}
+
+/* NameEntity */ 
+.highlight .ni
+{
+}
+
+/* NameException */ 
+.highlight .ne
+{ 
+  color: #a6e22e;
+}
+
+/* NameFunction */ 
+.highlight .nf
+{ 
+  color: #ffb20d;
+}
+
+.highlight .language-css .nf
+{ 
+  color: #267fb5;
+}
+
+/* NameFunctionMagic */ 
+.highlight .fm
+{
+}
+
+/* NameLabel */ .highlight .nl
+{
+}
+
+/* NameNamespace */ 
+.highlight .nn
+{
+  color: #267fb5;
+}
+
+/* NameOther */ 
+.highlight .nx
+{ 
+  color: #ffb20d;
+}
+
+/* NameProperty */ 
+.highlight .py
+{
+}
+
+/* NameTag */ 
+.highlight .nt
+{ 
+  color: #f92672;
+}
+
+/* NameVariable */ 
+.highlight .nv
+{
+}
+
+/* NameVariableClass */ 
+.highlight .vc
+{
+}
+
+/* NameVariableGlobal */ 
+.highlight .vg
+{
+}
+
+/* NameVariableInstance */ 
+.highlight .vi
+{
+}
+
+/* NameVariableMagic */ 
+.highlight .vm
+{
+}
+
+/* Literal */ 
+.highlight .l
+{ 
+  color: #c7f026;
+}
+
+/* LiteralDate */ 
+.highlight .ld
+{ 
+  color: #748aa6;
+}
+
+/* LiteralString */ 
+.highlight .s
+{ 
+  color: #ff410d;
+}
+
+/* LiteralStringAffix */ 
+.highlight .sa
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringBacktick */ 
+.highlight .sb
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringChar */ 
+.highlight .sc
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringDelimiter */ 
+.highlight .dl
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringDoc */ 
+.highlight .sd
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringDouble */ 
+.highlight .s2
+{ 
+  color: #748aa6;
+}
+
+.highlight .language-python .s2
+{ 
+  color: #ff410d;
+  font-style: italic;
+}
+
+/* LiteralStringEscape */ 
+.highlight .se
+{ 
+  color: #c7f026;
+}
+
+/* LiteralStringHeredoc */ 
+.highlight .sh
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringInterpol */ 
+.highlight .si
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringOther */ 
+.highlight .sx
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringRegex */ 
+.highlight .sr
+{ 
+  color: #748aa6;
+}
+
+/* LiteralStringSingle */ 
+.highlight .s1
+{ 
+  color: #ff410d;
+}
+
+/* LiteralStringSymbol */ 
+.highlight .ss
+{ 
+  color: #748aa6;
+}
+
+/* LiteralNumber */ 
+.highlight .m
+{ 
+  color: #c7f026;
+}
+
+/* LiteralNumberBin */ 
+.highlight .mb
+{ 
+  color: #c7f026;
+}
+
+/* LiteralNumberFloat */ 
+.highlight .mf
+{ 
+  color: #c7f026;
+}
+
+/* LiteralNumberHex */ 
+.highlight .mh
+{ 
+  color: #c7f026;
+}
+
+/* LiteralNumberInteger */ 
+.highlight .mi, .highlight .language-ruby .mi
+{ 
+  color: #c7f026;
+}
+
+.highlight .language-css .mi
+{ 
+  color: #d0dfe6;
+}
+
+.highlight .language-python .mi
+{ 
+  color: #d0dfe6;
+}
+
+/* LiteralNumberIntegerLong */ 
+.highlight .il
+{ 
+  color: #c7f026;
+}
+
+/* LiteralNumberOct */ 
+.highlight .mo
+{ 
+  color: #c7f026;
+}
+
+/* Operator */ 
+.highlight .o
+{ 
+  color: #bbbbbb;
+}
+
+.highlight .language-css .o
+{ 
+  color: #d0dfe6;
+}
+
+.highlight .language-bash .o
+{ 
+  color: #ff410d;
+}
+
+.highlight .language-js .o
+{ 
+  color: #748aa6;
+}
+
+.highlight .language-java .o
+{ 
+  color: #ffb20d;
+}
+
+.highlight .language-ruby .o
+{ 
+  color: rgba(255, 255, 255, 0.93);
+}
+
+/* OperatorWord */ 
+.highlight .ow
+{ 
+  color: #aec2e0;
+}
+
+/* Punctuation */ 
+.highlight .p
+{
+  color: #748aa6;
+}
+
+/* Comment */ 
+.highlight .c
+{ 
+  color: #324357;
+}
+
+/* CommentHashbang */ 
+.highlight .ch
+{ 
+  color: #324357;
+}
+
+/* CommentMultiline */ 
+.highlight .cm
+{ 
+  color: #324357;
+}
+
+/* CommentSingle */ 
+.highlight .c1
+{ 
+  color: #324357;
+}
+
+.highlight .language-bash .c1, 
+.highlight .language-sh .c1
+{ 
+  text-shadow: none !important;
+}
+
+/* CommentSpecial */ 
+.highlight .cs
+{ 
+  color: #324357;
+}
+
+/* CommentPreproc */ 
+.highlight .cp
+{ 
+  color: #324357;
+}
+
+/* CommentPreprocFile */ 
+.highlight .cpf
+{ 
+  color: #324357;
+}
+
+/* Generic */ 
+.highlight .g
+{
+}
+
+/* GenericDeleted */ 
+.highlight .gd
+{ 
+  color: #f92672;
+}
+
+/* GenericEmph */ 
+.highlight .ge
+{ 
+  font-style: italic;
+}
+
+/* GenericError */ 
+.highlight .gr
+{
+}
+
+/* GenericHeading */ 
+.highlight .gh
+{
+}
+
+/* GenericInserted */ 
+.highlight .gi
+{ 
+  color: #a6e22e;
+}
+
+/* GenericOutput */ 
+.highlight .go
+{
+}
+
+/* GenericPrompt */ 
+.highlight .gp
+{
+}
+
+/* GenericStrong */ 
+.highlight .gs
+{ 
+  font-weight: bold;
+}
+
+/* GenericSubheading */ 
+.highlight .gu
+{ 
+  color: #75715e;
+}
+
+/* GenericTraceback */ 
+.highlight .gt
+{
+}
+
+/* GenericUnderline */ 
+.highlight .gl
+{
+}
+
+/* TextWhitespace */ 
+.highlight .w
+{
+}
+
+.highlight pre
+{ 
+  background: transparent !important;
+}
+
+.highlight pre code
+{
+  color: orchid;
+}
+
+.highlight pre code.language-css,
+.highlight pre code.language-js,
+.highlight pre code.language-python,
+.highlight pre code.language-ruby
+{ 
+  color: gold;
+}
+
+.highlight pre code.language-bash, .highlight pre code.language-sh
+{
+  color: #aec2e0;
+}
+
+li .highlight
+{ 
+  text-indent: 0;
+}
+
+@media only screen and (min-width: 1440px)
+{
+  .highlight 
+  {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 780px)
+{
+  .highlight 
+  {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
+}

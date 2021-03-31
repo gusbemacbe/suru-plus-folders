@@ -12,17 +12,27 @@
   </sitemap>
   
   <sitemap>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/de/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/es/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
     <loc>https://gusbemacbe.github.io/suru-plus-folders/it/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://gusbemacbe.github.io/suru-plus-folders/pt/sitemap.xml</loc>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/pt-br/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://gusbemacbe.github.io/suru-plus-folders/pt-br/sitemap.xml</loc>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/pt-pt/sitemap.xml</loc>
     
   </sitemap>
   

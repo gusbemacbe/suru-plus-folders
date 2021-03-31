@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gusbemacbe.github.io/suru-plus-folders/it/</loc>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/es/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://gusbemacbe.github.io/suru-plus-folders/es/"
+                hreflang="it"
+                href="https://gusbemacbe.github.io/suru-plus-folders/it/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -35,8 +35,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it"
-                href="https://gusbemacbe.github.io/suru-plus-folders/it/"
+                hreflang="es"
+                href="https://gusbemacbe.github.io/suru-plus-folders/es/"
                 />
   </url>
 </urlset>

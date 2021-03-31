@@ -18,6 +18,7 @@ $themes: (
     // Main Navigator
     navBackground: var(--suru-plus-dark-4),
     navBorderImage: var(--suru-plus-mavericks-top),
+    navTextColour: var(--suru-plus-fitdance-1-bottom),
 
     // Main Navigator – DropDown Menu
     dropdowmMenuBackground: var(--suru-plus-dark-3),
@@ -101,11 +102,16 @@ $themes: (
     anchorColour: var(--suru-plus-fitdance-1-top),
     anchorColourHover: var(--suru-plus-synthwave-84-1-top),
     backgroundColour: var(--suru-plus-altered-carbon-solid-43),
+    codeBackground: var(--suru-plus-altered-carbon-17),
+    codeBorderRight: none,
+    codeBoxShadow: none,
+    codeTabBorderBottomColour: none,
     textColour: var(--suru-plus-synthwave-84-solid-4),
 
     // Main Navigator
     navBackground: var(--suru-plus-altered-carbon-01),
     navBorderImage: var(--suru-plus-altered-carbon-05),
+    navTextColour: var(--suru-plus-fitdance-1-bottom),
     navTextHoverColour: var(--suru-plus-synthwave-84-1-top),
 
     // Main Navigator – DropDown Menu
@@ -144,6 +150,10 @@ $themes: (
     anchorColour: var(--suru-plus-tron-solid-34),
     anchorColourHover: var(--suru-plus-tron-solid-76),
     backgroundColour: var(--suru-plus-tron-solid-75),
+    codeBackground: var(--suru-plus-tron-solid-71),
+    codeBorderRight: none,
+    codeBoxShadow: none,
+    codeTabBorderBottomColour: none,
     textColour: var(--suru-plus-tron-solid-11),
 
     // Main Navigator
@@ -230,7 +240,7 @@ $themes: (
 
 @include themed 
 {
-  background: themed("backgroundColour");
+  background: themed("backgroundColour") !important;
   color: themed("textColour");
   text-shadow: themed('TRONGlowTextGlobal');
 }
@@ -296,10 +306,11 @@ $themes: (
   }
 
   // Main Navigator
-  .navigator
+  .navigator, 
+  .navigator-mobile
   {
-    background: themed("navBackground");
-    border-image: themed("navBorderImage");
+    background: themed("navBackground") !important;
+    border-image: themed("navBorderImage") !important;
     border-image-slice: 1;
   }
 
@@ -358,6 +369,14 @@ $themes: (
     border-image-slice: 1;
   }
 
+  .navigator-mobile button
+  {
+    background: themed("navTextColour");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .active 
   {
     background: themed("activeAnchor") !important;
@@ -410,7 +429,6 @@ $themes: (
 
 
   // Footer
-
   #footer 
   {
     background: themed("footerBackground");

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suru&#43;&#43; Carpetas</title>
+    <link>https://gusbemacbe.github.io/suru-plus-folders/es/</link>
+    <description>Recent content on Suru&#43;&#43; Carpetas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2019-{{ now.Format &#34;2006&#34; }}, All Rights Reserved</copyright><atom:link href="https://gusbemacbe.github.io/suru-plus-folders/es/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
