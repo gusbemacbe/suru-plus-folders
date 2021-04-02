@@ -1,0 +1,64 @@
+# menu
+- id: close
+  translation: "Sluiten"
+
+# Tafel
+- id: preTtitle
+  translation: "Beschikbare kleuren in "
+- id: theme_name
+  translation: "Naam"
+- id: theme_preview
+  translation: "Voorbeld"
+
+# Voettekst
+
+- id: footer_copyright
+  translation: "© 2019-{{ .currentYear }} Suru++ Folders van Gustavo Costa en Andrea Bonanni. Alle rechten voorbehouden."
+- id: powered
+  translation: "Aangedreven door"
+- id: original_author
+  translation: "het thema <a href=\"https://github.com/J-Siu/hugo-theme-sk1/\">SK1</a> gemaakt door <a href=\"https://github.com/J-Siu/\">J-Siu</a>."
+- id: made
+  translation: "Gemaakt met <span role=\"img\" aria-label=\"hart\">❤</span> en <span role=\"img\" aria-label=\"koffie\">☕</span> in <span role=\"img\" aria-label=\"Braziliê\">🇧🇷</span> :-)"
+
+# Indexpagina
+
+## Titels
+- id: description
+  translation: "Beschrijving"
+- id: "installation"
+  translation: "Installatie"
+- id: indep_distro
+  translation: "Onafhankelijke distributie"
+- id: installing
+  translation: "Installeren"
+- id: uninstalling
+  translation: "Uninstalling"
+- id: changing
+  translation: "De kleur van mappen wijzigen"
+- id: advice
+  translation: "Belangrijk advies!"
+
+## Zinnen
+- id: index_1
+  translation: "Het bestand `suru-plus-folders` is een bash-script waarmee de kleur van mappen kan worden gewijzigd in het iconenthema's [Suru++ 25](https://github.com/gusbemacbe/suru-plus) en [Suru++ Ubuntu](https://github.com/Bonandry/suru-plus-ubuntu), gebaseerd op de konen van iconen van mappen van Papirus."
+- id: index_2
+  translation: "Op dit moment heeft `suru-plus-folders` geen GUI, maar het is een volledig functionele opdrachtregel-app. Voordat u de voorbeelden van gebruik ziet, installeert u eerst:"
+- id: index_3
+  translation: "Gebruik het script om de laatste versie rechtstreeks vanuit deze repository te installeren (onafhankelijk op uw distributie):"
+- id: index_4
+  translation: "Om te installeren `suru-plus-folders` op **BSD-systemen** met een volgende opdracht:"
+- id: index_5
+  translation: "Sommige voorbeelden van gebruik:"
+- id: index_6
+  translation: "De actuele kleur en beschikbare kleuren voor Suru++ 25 of Suru++ Ubuntu tonen:"
+- id: index_7
+  translation: "De kleur van mappen wijzigen in `brown` (bruin) voor Suru++ 25 of Suru++ Ubuntu:"
+- id: index_8
+  translation: "Naar de standaardkleur van mappen voor Suru++ 25 of Suru++ Ubuntu terugkeren:"
+- id: index_9
+  translation: "De laatste gebruikte kleur vanuit een configuratiebestand herstellen:"
+- id: index_10
+  translation: "Dit is uiterst nuttig voor de standaardkleur te herstellen na elke upgrade van het iconenthema (officiële installatieprogramma's van [Suru++](https://github.com/gusbemacbe/suru-plus) en sommige pakketten van derden doen dit automatisch)."
+- id: index_11
+  translation: "**AANDACHT:** Als u de kleur van een individuele map wilt wijzigen, kunt u [Folder Color](http://foldercolor.tuxfamily.org) of [Dolphin Folder Color](https://github.com/audoban/dolphin-folder-color) gebruiken."

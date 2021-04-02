@@ -106,7 +106,7 @@ li .highlight
 /* Name Entity */
 .highlight .ni
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -160,7 +160,7 @@ li .highlight
 /* Name Property */
 .highlight .py
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -369,7 +369,7 @@ li .highlight
 /* Base Style */
 .highlight .l
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -378,7 +378,7 @@ li .highlight
 /* Literal Date */
 .highlight .ld
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -387,7 +387,7 @@ li .highlight
 /* Literal Number */
 .highlight .m
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -421,7 +421,7 @@ li .highlight
 /* Literal Number Oct */
 .highlight .mo
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -430,7 +430,7 @@ li .highlight
 /* Literal Number Integer Long */
 .highlight .il
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -448,7 +448,7 @@ li .highlight
 /* Literal String Backtick */
 .highlight .sb
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -473,7 +473,7 @@ li .highlight
 /* Literal String Double */
 .highlight .s2
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -482,7 +482,7 @@ li .highlight
 /* Literal String Escape */
 .highlight .se
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -491,7 +491,7 @@ li .highlight
 /* Literal String Heredoc */
 .highlight .sh
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -500,7 +500,7 @@ li .highlight
 /* Literal String Interpol */
 .highlight .si
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -532,7 +532,7 @@ li .highlight
 /* Literal String Symbol */
 .highlight .ss
 {
-  background: var(---suru-plus-altered-carbon-solid-22);
+  background: var(--suru-plus-altered-carbon-solid-22);
 	background-clip: text;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

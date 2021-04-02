@@ -136,8 +136,8 @@ languages:
 
   de:
     languageName: Deutsch
-    contentDir: "content/es"
-    weight: 3
+    contentDir: "content/de"
+    weight: 2
     description: Liste der Tabellen der Adwaita++, Suru++ und Yaru++ thematische Ikonen.
     home: Início
     title: Suru++ Ordner
@@ -233,7 +233,7 @@ languages:
   fr:
     languageName: Français
     contentDir: "content/fr"
-    weight: 2
+    weight: 4
     description:  Liste des tables d’icônes Suru++, Adwaita++ et Yaru++.
     home: Accueil
     title: Suru++ Dossiers
@@ -281,7 +281,7 @@ languages:
   it:
     languageName: Italiano
     contentDir: "content/it"
-    weight: 3
+    weight: 5
     description: Elenco delle tabelle di icone dei temi Suru++, Adwaita++ e Yaru++.
     home: Inizio
     title: Suru++ Cartelle
@@ -326,10 +326,58 @@ languages:
         name: "Tron: Legacy"
         weight: 5
 
+  nl:
+    languageName: Nederlands
+    contentDir: "content/nl"
+    weight: 6
+    description: Lijst van tabellen met themapictogrammen Adwaita++, Suru++ en Yaru++.
+    home: Huis
+    title: Suru++ Mappen
+    menu:
+      main:
+        - url: /
+          name: Huis
+          weight: 1
+        - url: /projecten/
+          name: Projecten
+          weight: 2
+        - url: /contact/
+          name: Contact
+          weight: 3
+      footer:
+        - url: /Aan/
+          name: Aan
+          weight: 1
+        - url: /licentie/
+          name: Licentie
+          weight: 2
+        - url: /privacy/
+          name: Privacy
+          weight: 3
+        - url: /colofon/
+          name: Colofon
+          weight: 4
+    themes:
+      - data: theme-light
+        name: Standaard
+        weight: 1
+      - data: theme-dark
+        name: Donker
+        weight: 2
+      - data: theme-synthwave-84
+        name: Synthwave 1984
+        weight: 3
+      - data: theme-cyberpunk
+        name: Cyberpunk
+        weight: 4
+      - data: theme-tron
+        name: TRON Legacy
+        weight: 5
+
   pt-PT:
     languageName: Português Europeu
     contentDir: "content/pt-pt"
-    weight: 3
+    weight: 7
     description: Lista de tabelas de ícones de temas Suru++, Adwaita++ e Yaru++.
     home: Início
     title: Suru++ Diretórios
@@ -377,7 +425,7 @@ languages:
   pt-BR:
     languageName: Português Brasileiro
     contentDir: "content/pt-br"
-    weight: 3
+    weight: 8
     description: Lista de tabelas de ícones de temas Suru++, Adwaita++ e Yaru++.
     home: Início
     title: Suru++ Pastas
