@@ -48,6 +48,7 @@ const colors =
   'pink',
   'purple',
   'red',
+  'synthwave',
   'teal',
   'vermillion',
   'violet',
@@ -62,7 +63,8 @@ const styles =
 [
   { name: 'adwaita-plus', title: ' ' + preTtitle + 'Adwaita++' },
   { name: 'suru-plus', title: ' ' + preTtitle + 'Suru++' },
-  { name: 'suru-plus-ubuntu', title: ' ' + preTtitle + 'Ubuntu++' }
+  { name: 'suru-plus-ubuntu', title: ' ' + preTtitle + 'Ubuntu++' },
+  { name: 'yaru-plus', title: ' ' + preTtitle + 'Yaru++' }
 ];
 
 function getCategoriesCopy() 
@@ -136,6 +138,14 @@ function getCategoriesBasedOnStyleName(styleName)
 
       return fakeCategories;
     },
+    'yaru-plus': () => 
+    {
+      const fakeCategories = getCategoriesCopy();
+      fakeCategories.splice(fakeCategories.indexOf('desktop'), 1);
+      fakeCategories.splice(fakeCategories.indexOf('icons'), 1);
+
+      return fakeCategories;
+    }
   };
 
   const hasTheStyleCategoriesBeenFound = styleCategories[styleName];
@@ -167,6 +177,7 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('fitdance'), 1);
       fakeColors.splice(fakeColors.indexOf('magenta'), 1);
       fakeColors.splice(fakeColors.indexOf('pink'), 1);
+      fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
       fakeColors.splice(fakeColors.indexOf('teal'), 1);
       fakeColors.splice(fakeColors.indexOf('vermillion'), 1);
       fakeColors.splice(fakeColors.indexOf('violet'), 1);
@@ -180,6 +191,7 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('aubergine'), 1);
       fakeColors.splice(fakeColors.indexOf('darkblue'), 1);
       fakeColors.splice(fakeColors.indexOf('purple'), 1);
+      fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
       fakeColors.splice(fakeColors.indexOf('yaru'), 1);
 
       return fakeColors;
@@ -204,6 +216,7 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('manjaro'), 1);
       fakeColors.splice(fakeColors.indexOf('mint'), 1);
       fakeColors.splice(fakeColors.indexOf('pink'), 1);
+      fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
       fakeColors.splice(fakeColors.indexOf('teal'), 1);
       fakeColors.splice(fakeColors.indexOf('violet'), 1);
       fakeColors.splice(fakeColors.indexOf('white'), 1);
@@ -211,6 +224,29 @@ function getColorsBasedOnStyleName(styleName)
 
       return fakeColors;
     },
+    'yaru-plus': () => 
+    {
+      const fakeColors = getColorsCopy();
+      fakeColors.splice(fakeColors.indexOf('90ssummer'), 1);
+      fakeColors.splice(fakeColors.indexOf('aurora'), 1);
+      fakeColors.splice(fakeColors.indexOf('berriez'), 1);
+      fakeColors.splice(fakeColors.indexOf('black'), 1);
+      fakeColors.splice(fakeColors.indexOf('bluegrey'), 1);
+      fakeColors.splice(fakeColors.indexOf('brown'), 1);
+      fakeColors.splice(fakeColors.indexOf('cyan'), 1);
+      fakeColors.splice(fakeColors.indexOf('cyberneon'), 1);
+      fakeColors.splice(fakeColors.indexOf('discodingo'), 1);
+      fakeColors.splice(fakeColors.indexOf('fitdance'), 1);
+      fakeColors.splice(fakeColors.indexOf('grey'), 1);
+      fakeColors.splice(fakeColors.indexOf('indigo'), 1);
+      fakeColors.splice(fakeColors.indexOf('magenta'), 1);
+      fakeColors.splice(fakeColors.indexOf('pink'), 1);
+      fakeColors.splice(fakeColors.indexOf('teal'), 1);
+      fakeColors.splice(fakeColors.indexOf('violet'), 1);
+      fakeColors.splice(fakeColors.indexOf('white'), 1);
+
+      return fakeColors;
+    }
   };
 
   const hasTheStyleColorBeenFound = styleColors[styleName];
