@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://gusbemacbe.github.io/suru-plus-folders/pt/</loc>
+    <loc>https://gusbemacbe.github.io/suru-plus-folders/nl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://gusbemacbe.github.io/suru-plus-folders/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://gusbemacbe.github.io/suru-plus-folders/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://gusbemacbe.github.io/suru-plus-folders/es/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -21,14 +30,18 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="pt-pt"
+                href="https://gusbemacbe.github.io/suru-plus-folders/pt-pt/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="pt-br"
                 href="https://gusbemacbe.github.io/suru-plus-folders/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="pt"
-                href="https://gusbemacbe.github.io/suru-plus-folders/pt/"
+                hreflang="nl"
+                href="https://gusbemacbe.github.io/suru-plus-folders/nl/"
                 />
   </url>
-  
 </urlset>

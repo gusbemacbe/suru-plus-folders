@@ -10,18 +10,23 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://gusbemacbe.github.io/suru-plus-folders/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="es"
                 href="https://gusbemacbe.github.io/suru-plus-folders/es/"
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="https://gusbemacbe.github.io/suru-plus-folders/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="it"
                 href="https://gusbemacbe.github.io/suru-plus-folders/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://gusbemacbe.github.io/suru-plus-folders/nl/"
                 />
     <xhtml:link
                 rel="alternate"
