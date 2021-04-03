@@ -7,7 +7,7 @@ if [[ "" !=  "$PID" ]]; then
   killall -9 hugo
 fi
 
-hugo server --config 'config.yaml' -l 'layouts' -b localhost -p 1989 --gc
+hugo server --config 'config_prod.yaml' -l 'layouts' -b localhost -p 1984 --gc
 
 # hugo server --config 'config.yaml' -l 'layouts' -b glocalhost -p 1989 -F --gc
 # hugo server --config 'config.yaml' -l 'layouts' -F --gc --renderToDisk

@@ -9,91 +9,34 @@
         <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
     </noscript>
     <script>
-      ;(function () 
+      const lang = navigator.language || navigator.userLanguage;
+      const url = '{{ site.BaseURL | relURL }}'
+      
+      function detectLang(lang) 
       {
-        // Only do i18n at root, 
-        // otherwise, redirect immediately
 
-        if (window.location.pathname !== '/') 
-        {
-          window.location.replace('{{ .Permalink }}')
-          return
-        }
+        // Let's lowerCase that string to normalize it, so we can compare it with others
+        lang = lang.toLowerCase()
+        const firstHalf = lang.split('-')[0]
 
-        var getFirstBrowserLanguage = function () 
-        {
-          var nav = window.navigator,
-          browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
-          i,
-          language
+        // A new supported language ? Just add it here.
+        const supportedLanguages = ['en', 'de', 'es', 'fr', 'it', 'nl', 'pt-br', 'pt-pt']
 
-          if (Array.isArray(nav.languages)) 
-          {
-            for (i = 0; i < nav.languages.length; i++) 
-            {
-              language = nav.languages[i]
-              if (language && language.length) 
-              {
-                return language
-              }
-            }
-          }
+        // If supportedLanguages contains your language, select it
+        const finalLang = supportedLanguages.includes(lang) ? lang
+          // Else, check just for the first half
+          : supportedLanguages.includes(firstHalf) ? firstHalf
+          // Otherwise, fallback to English
+          : 'en'
 
-          // support for other well known properties in browsers
-          for (i = 0; i < browserLanguagePropertyKeys.length; i++) 
-          {
-            language = nav[browserLanguagePropertyKeys[i]]
-            if (language && language.length) 
-            {
-              return language
-            }
-          }
-          return 'en'
-        }
+        // Set the URL (uncomment that, that's for the snippet)
+        window.location.href = url + finalLang
 
-        var preferLang = getFirstBrowserLanguage()
+        // Return the final lang
+        return finalLang
+      }
 
-        if (preferLang.indexOf('pt') !== -1) 
-        {
-          window.location.replace('/pt-pt/')
-        } 
-
-        else if (preferLang.indexOf('pt-br') !== -1) 
-        {
-          window.location.replace('/pt-br/')
-        } 
-
-        else if (preferLang.indexOf('de') !== -1) 
-        {
-          window.location.replace('/de/')
-        } 
-
-        else if (preferLang.indexOf('es') !== -1) 
-        {
-          window.location.replace('/es/')
-        } 
-
-        else if (preferLang.indexOf('fr') !== -1) 
-        {
-          window.location.replace('/fr/')
-        } 
-
-        else if (preferLang.indexOf('it') !== -1) 
-        {
-          window.location.replace('/it/')
-        } 
-
-        else if (preferLang.indexOf('nl') !== -1) 
-        {
-          window.location.replace('/nl/')
-        } 
-        
-        else 
-        {
-          // fallback to English
-          window.location.replace('/en/')
-        }
-      })()
+      detectLang(lang);
     </script>
 </head>
   <body>

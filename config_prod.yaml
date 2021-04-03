@@ -1,4 +1,4 @@
-baseURL: 'https://gusbemacbe.github.io/suru-plus-folders/'
+baseURL: '/'
 languageCode: en
 
 canonifyURLs: true
@@ -65,7 +65,7 @@ publishDir: "/home/gusbemacbe/GitHub/Gustavo/suru-plus-folders-gh-pages/"
 theme: ''
 
 params:
-  address: 'https://gusbemacbe.github.io/suru-plus-folders/'
+  address: '/'
   custom_css:
     - css/colours.css
     - css/fonts.css
