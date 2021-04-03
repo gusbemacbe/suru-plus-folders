@@ -2,169 +2,37 @@
 <html>
 <head>
     <title>https://gusbemacbe.github.io/suru-plus-folders/en/</title>
-    <link rel="canonical"="https://gusbemacbe.github.io/suru-plus-folders/en/"/>
+    <link rel="canonical" href="https://gusbemacbe.github.io/suru-plus-folders/en/"/>
     <meta name="robots" content="noindex">
     <meta charset="utf-8"/>
     <noscript>
         <meta http-equiv="refresh" content="0; url=https://gusbemacbe.github.io/suru-plus-folders/en/"/>
     </noscript>
-    <!-- <script>
-      ;(function () 
-      {
-        
-        
-
-        if (window.location.pathname !== '/') 
-        {
-          window.location.replace('https:\/\/gusbemacbe.github.io\/suru-plus-folders\/en\/')
-          return
-        }
-
-        var getFirstBrowserLanguage = function () 
-        {
-          var nav = window.navigator,
-          browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
-          i,
-          language
-
-          if (Array.isArray(nav.languages)) 
-          {
-            for (i = 0; i < nav.languages.length; i++) 
-            {
-              language = nav.languages[i]
-              if (language && language.length) 
-              {
-                return language
-              }
-            }
-          }
-
-          
-          for (i = 0; i < browserLanguagePropertyKeys.length; i++) 
-          {
-            language = nav[browserLanguagePropertyKeys[i]]
-            if (language && language.length) 
-            {
-              return language
-            }
-          }
-          return 'en'
-        }
-
-        var preferLang = getFirstBrowserLanguage()
-
-        if (preferLang.indexOf('pt') !== -1) 
-        {
-          window.location.replace('/pt-pt/')
-        } 
-
-        else if (preferLang.indexOf('pt-br') !== -1) 
-        {
-          window.location.replace('/pt-br/')
-        } 
-
-        else if (preferLang.indexOf('de') !== -1) 
-        {
-          window.location.replace('/de/')
-        } 
-
-        else if (preferLang.indexOf('es') !== -1) 
-        {
-          window.location.replace('/es/')
-        } 
-
-        else if (preferLang.indexOf('fr') !== -1) 
-        {
-          window.location.replace('/fr/')
-        } 
-
-        else if (preferLang.indexOf('it') !== -1) 
-        {
-          window.location.replace('/it/')
-        } 
-
-        else if (preferLang.indexOf('nl') !== -1) 
-        {
-          window.location.replace('/nl/')
-        } 
-        
-        else 
-        {
-          
-          window.location.replace('/en/')
-        }
-      })()
-    </script> -->
-
-    <!-- <script type="text/javascript">
+    <script>
       const lang = navigator.language || navigator.userLanguage;
-
-      if (lang.indexOf("de") == 0)
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/de/';
-      }
-
-      else if (lang.indexOf("es") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/es/';
-      }
-
-      else if (lang.indexOf("fr") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/fr/';
-      }
-
-      else if (lang.indexOf("it") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/it/';
-      }
-
-      else if (lang.indexOf("nl") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/nl/';
-      }
-
-      else if (lang.indexOf("pt-PT") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/pt-pt/';
-      }
-
-      else if (lang.indexOf("pt-BR") == 0) 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/pt-br/';
-      }
-
-      else 
-      {
-              window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/en/';
-      }
-    </script> -->
-
-    <script type="text/javascript">
-      const lang = navigator.language || navigator.userLanguage;
-      const url = 'https://gusbemacbe.github.io/suru-plus-folders/'
+      const url = 'https:\/\/gusbemacbe.github.io\/suru-plus-folders\/'
       
       function detectLang(lang) 
       {
 
-        // Let's lowerCase that string to normalize it, so we can compare it with others
+        
         lang = lang.toLowerCase()
         const firstHalf = lang.split('-')[0]
 
-        // A new supported language ? Just add it here.
+        
         const supportedLanguages = ['en', 'de', 'es', 'fr', 'it', 'nl', 'pt-br', 'pt-pt']
 
-        // If supportedLanguages contains your language, select it
+        
         const finalLang = supportedLanguages.includes(lang) ? lang
-          // Else, check just for the first half
+          
           : supportedLanguages.includes(firstHalf) ? firstHalf
-          // Otherwise, fallback to English
+          
           : 'en'
 
-        // Set the URL (uncomment that, that's for the snippet)
+        
         window.location.href = url + finalLang
 
-        // Return the final lang
+        
         return finalLang
       }
 
