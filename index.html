@@ -8,7 +8,7 @@
     <noscript>
         <meta http-equiv="refresh" content="0; url=https://gusbemacbe.github.io/suru-plus-folders/en/"/>
     </noscript>
-    <script>
+    <!-- <script>
       ;(function () 
       {
         
@@ -94,6 +94,52 @@
           window.location.replace('/en/')
         }
       })()
+    </script> -->
+
+    <script type="text/javascript">
+      $(document).ready(function () 
+      {
+          var userLang = navigator.language || navigator.userLanguage;
+
+          if (userLang.startsWith("de")) de
+          {
+                  window.location.href = '/de/';
+          }
+
+          else if (userLang.startsWith("es")) 
+          {
+                  window.location.href = '/es/';
+          }
+
+          else if (userLang.startsWith("fr")) 
+          {
+                  window.location.href = '/fr/';
+          }
+
+          else if (userLang.startsWith("it")) 
+          {
+                  window.location.href = '/it/';
+          }
+
+          else if (userLang.startsWith("nl")) 
+          {
+                  window.location.href = '/nl/';
+          }
+
+          else if (userLang.startsWith("pt-PT")) 
+          {
+                  window.location.href = '/pt-pt/';
+          }
+
+          else if (userLang.startsWith("pt-BR")) 
+          {
+                  window.location.href = '/pt-br/';
+          }
+
+          else {
+                  window.location.href = '/en/';
+          }
+      });
     </script>
 </head>
   <body>
