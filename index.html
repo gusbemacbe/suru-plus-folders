@@ -96,7 +96,7 @@
       })()
     </script> -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       const lang = navigator.language || navigator.userLanguage;
 
       if (lang.indexOf("de") == 0)
@@ -137,6 +137,29 @@
       else 
       {
               window.location.href = 'https://gusbemacbe.github.io/suru-plus-folders/en/';
+      }
+    </script> -->
+
+    <script type="text/javascript">
+      const lang = navigator.language || navigator.userLanguage;
+      const url = 'https://gusbemacbe.github.io/suru-plus-folders/'
+      
+      function detection(lang) 
+      {
+
+        lang = lang.toLowerCase() // Let's lowerCase that string to normalize it, so we can compare it with others
+
+        // A new supported language ? Just add it here.
+        const supportedLanguages = ['en', 'de', 'es', 'fr', 'it', 'nl', 'pt-br', 'pt-pt']
+
+        // If supportedLanguages contains your language, select it, with a fallback to English
+        const finalLang = supportedLanguages.includes(lang) ? lang : 'en'
+
+        // Set the URL
+        window.location.href = url + finalLang
+
+        // Return the final lang
+        return finalLang
       }
     </script>
 </head>
