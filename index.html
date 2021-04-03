@@ -144,25 +144,31 @@
       const lang = navigator.language || navigator.userLanguage;
       const url = 'https://gusbemacbe.github.io/suru-plus-folders/'
       
-      function detection(lang) 
+      function detectLang(lang) 
       {
 
-        lang = lang.toLowerCase() // Let's lowerCase that string to normalize it, so we can compare it with others
+        // Let's lowerCase that string to normalize it, so we can compare it with others
+        lang = lang.toLowerCase()
+        const firstHalf = lang.split('-')[0]
 
         // A new supported language ? Just add it here.
         const supportedLanguages = ['en', 'de', 'es', 'fr', 'it', 'nl', 'pt-br', 'pt-pt']
 
-        // If supportedLanguages contains your language, select it, with a fallback to English
-        const finalLang = supportedLanguages.includes(lang) ? lang : 'en'
+        // If supportedLanguages contains your language, select it
+        const finalLang = supportedLanguages.includes(lang) ? lang
+          // Else, check just for the first half
+          : supportedLanguages.includes(firstHalf) ? firstHalf
+          // Otherwise, fallback to English
+          : 'en'
 
-        // Set the URL
-        window.location.href = url + finalLang
+        // Set the URL (uncomment that, that's for the snippet)
+        // window.location.href = url + finalLang
 
         // Return the final lang
         return finalLang
       }
 
-      detection(lang);
+      detectLang(lang);
     </script>
 </head>
   <body>
