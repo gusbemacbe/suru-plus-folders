@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>https://gusbemacbe.github.io/suru-plus-folders/en/</title>
-    <link rel="canonical" href="https://gusbemacbe.github.io/suru-plus-folders/en/"/>
+    <link rel="canonical"="https://gusbemacbe.github.io/suru-plus-folders/en/"/>
     <meta name="robots" content="noindex">
     <meta charset="utf-8"/>
     <noscript>
@@ -97,49 +97,47 @@
     </script> -->
 
     <script type="text/javascript">
-      $(document).ready(function () 
+      const lang = navigator.language || navigator.userLanguage;
+
+      if (lang.indexOf("de") == 0)
       {
-          var userLang = navigator.language || navigator.userLanguage;
+              window.location = '/de/';
+      }
 
-          if (userLang.startsWith("de")) de
-          {
-                  window.location.href = '/de/';
-          }
+      else if (lang.indexOf("es") == 0) 
+      {
+              window.location = '/es/';
+      }
 
-          else if (userLang.startsWith("es")) 
-          {
-                  window.location.href = '/es/';
-          }
+      else if (lang.indexOf("fr") == 0) 
+      {
+              window.location = '/fr/';
+      }
 
-          else if (userLang.startsWith("fr")) 
-          {
-                  window.location.href = '/fr/';
-          }
+      else if (lang.indexOf("it") == 0) 
+      {
+              window.location = '/it/';
+      }
 
-          else if (userLang.startsWith("it")) 
-          {
-                  window.location.href = '/it/';
-          }
+      else if (lang.indexOf("nl") == 0) 
+      {
+              window.location = '/nl/';
+      }
 
-          else if (userLang.startsWith("nl")) 
-          {
-                  window.location.href = '/nl/';
-          }
+      else if (lang.indexOf("pt-PT") == 0) 
+      {
+              window.location = '/pt-pt/';
+      }
 
-          else if (userLang.startsWith("pt-PT")) 
-          {
-                  window.location.href = '/pt-pt/';
-          }
+      else if (lang.indexOf("pt-BR") == 0) 
+      {
+              window.location = '/pt-br/';
+      }
 
-          else if (userLang.startsWith("pt-BR")) 
-          {
-                  window.location.href = '/pt-br/';
-          }
-
-          else {
-                  window.location.href = '/en/';
-          }
-      });
+      else 
+      {
+              window.location = '/en/';
+      }
     </script>
 </head>
   <body>
