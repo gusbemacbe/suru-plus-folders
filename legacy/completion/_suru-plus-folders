@@ -5,7 +5,7 @@
 # @link: https://github.com/gusbemacbe/suru-plus-folders
 
 _get_colors() {
-	local -a colors=(90ssummer adwaita aubergine aurora berriez black blue bluegrey bordeaux brown canonical cyan cyberneon cyberpunk darkblue discodingo fitdance green grey indigo magenta manjaro mint orange pink purple red synthwave teal vermillion violet void white yaru yellow)
+	local -a colors=(90ssummer adwaita aubergine aurora black berriez blue bluegrey bordeaux brown canonical cyan cyberneon darkblue discodingo fitdance green grey indigo magenta manjaro mint orange pink purple red teal vermillion violet white yaru yellow)
 	_wanted colors exlp 'color' compadd -- "${colors[@]}"
 	return 0
 }
@@ -44,8 +44,7 @@ _arguments -C \
 	'(-D --default)'{-D,--default}'[back to the default color]' \
 	'(-R --restore)'{-R,--restore}'[restore the last used color from the config file]' \
 	'(-l --list)'{-l,--list}'[show available colors]' \
-	'(-o --once)'{-o,--once}'[do not save the changes to the config file]' \
 	'(-t --theme)'{-t,--theme}'[make changes to the specified theme]:icon-theme:_get_themes' \
-	'(-u --update-caches)'{-u,--update-caches}'[update icon caches]'
+	'(-u --update-cache)'{-u,--update-cache}'[update icon cache]'
 
 # vim: ft=zsh sw=4 ts=4
