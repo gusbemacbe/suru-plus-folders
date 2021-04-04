@@ -99,7 +99,7 @@ _is_user_dir() {
 }
 
 _is_writable() {
-	if [ -w "$THEME_DIR/48x48/places/folder.svg" ]; then
+	if [ -w "$THEME_DIR/places/scalable/folder.svg" ]; then
 		return 0
 	fi
 
