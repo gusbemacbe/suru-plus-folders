@@ -5,7 +5,7 @@
 # @link: https://github.com/gusbemacbe/suru-plus-folders
 
 _get_colors() {
-	local -a colors=(90ssummer adwaita aubergine aurora black berriez blue bluegrey bordeaux brown canonical cyan cyberneon darkblue discodingo fitdance green grey indigo magenta manjaro mint orange pink purple red teal vermillion violet white yaru yellow)
+	local -a colors=(90ssummer adwaita aubergine aurora berriez black blue bluegrey bordeaux brown canonical cyan cyberneon cyberpunk darkblue discodingo fitdance green grey indigo magenta manjaro mint orange pink purple red synthwave teal vermillion violet void white yaru yellow)
 	_wanted colors exlp 'color' compadd -- "${colors[@]}"
 	return 0
 }

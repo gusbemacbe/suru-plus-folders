@@ -122,7 +122,7 @@ _is_valid_color() {
 declare_colors() {
 	local color=''
 	local -a colors=()
-	local -a valid_colors=("90ssummer" "adwaita" "aubergine" "aurora" "black" "berriez" "blue" "bluegrey" "bordeaux" "brown" "canonical" "cyan" "cyberneon" "darkblue" "discodingo" "fitdance" "green" "grey" "indigo" "magenta" "manjaro" "mint" "orange" "pink" "purple" "red" "teal" "vermillion" "violet" "white" "yaru" "yellow")
+	local -a valid_colors=("90ssummer" "adwaita" "aubergine" "aurora" "berriez" "black" "blue" "bluegrey" "bordeaux" "brown" "canonical" "cyan" "cyberneon" "cyberpunk" "darkblue" "discodingo" "fitdance" "green" "grey" "indigo" "magenta" "manjaro" "mint" "orange" "pink" "purple" "red" "synthwave" "teal" "vermillion" "violet" "void" "white" "yaru" "yellow")
 
 	for color in "${valid_colors[@]}"; do
 		if [ -e "$THEME_DIR/places/scalable/folder-$color.svg" ]; then
