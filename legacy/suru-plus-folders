@@ -2,6 +2,7 @@
 
 # Suru++ Folders
 # This script allows changing the color of folders in Papirus icon theme
+
 # CREDIT AND LICENCE
 #
 # @author: Sergei Eremenko (https://github.com/SmartFinn)
@@ -11,6 +12,7 @@
 # CORE MODIFICATIONS
 # @modifier: Gustavo Costa (https://github.com/gusbemacbe)
 # @link: https://github.com/gusbemacbe/suru-plus-folders
+
 if test -z "$BASH_VERSION"; then
 	printf "Error: this script only works in bash.\n" >&2
 	exit 1
@@ -28,52 +30,51 @@ set -o errexit \
 
 readonly THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 readonly PROGNAME="$(basename "${BASH_SOURCE[0]}")"
-readonly VERSION="1.8.0"
+readonly VERSION="1.0.0"
 readonly -a ARGS=("$@")
 
 msg() {
-	printf "%s: %b\n" "$PROGNAME" "$*"
+	printf "%s: %b\n" "$PROGNAME" "$*" >&2
 }
 
 verbose() {
-	[ -t 4 ] || return 0
-	msg "$@" >&4
+	[ "$VERBOSE" -eq 1 ] || return 0
+	msg "$@"
 }
 
 err() {
-	msg "Error:" "$*" >&2
+	msg "Error:" "$@"
 }
 
 _exit() {
-	msg "$*" "Exiting ..."
+	msg "$@" "Exiting ..."
 	exit 0
 }
 
 fatal() {
-	err "$*"
+	err "$@"
 	exit 1
 }
 
 usage() {
-	cat <<- EOF
-	USAGE
-	  $ $PROGNAME [options] -t <theme> {-C --color} <color>
-	  $ $PROGNAME [options] -t <theme> {-D --default}
-	  $ $PROGNAME [options] -t <theme> {-R --restore}
+	cat >&2 <<- EOF
+	usage:
+	 $PROGNAME [options] -t <theme> {-C --color} <color>
+	 $PROGNAME [options] -t <theme> {-D --default}
+	 $PROGNAME [options] -t <theme> {-R --restore}
 
-	OPERATIONS
-	  -C --color <color>  change color of folders
-	  -D --default        back to the default color
-	  -R --restore        restore the last used color from the config file
+	OPERATIONS:
+	 -C --color <color>  change color of folders
+	 -D --default        back to the default color
+	 -R --restore        restore the last used color from the config file
 
-	OPTIONS
-	  -l --list           show available colors
-	  -o --once           do not save the changes to the config file
-	  -t --theme <theme>  make changes to the specified theme (Default: Suru++)
-	  -u --update-caches  update icon caches for Suru++ and siblings
-	  -V --version        print $PROGNAME version and exit
-	  -v --verbose        be verbose
-	  -h --help           show this help
+	OPTIONS:
+	 -l --list           show available colors
+	 -t --theme <theme>  make changes to the specified theme instead of Suru++
+	 -u --update-cache   update icon cache for the icon theme
+	 -V --version        print $PROGNAME version and exit
+	 -v --verbose        be verbose
+	 -h --help           show this help
 	EOF
 
 	exit "${1:-0}"
@@ -88,18 +89,10 @@ _is_root_user() {
 }
 
 _is_user_dir() {
-	[ -n "$USER_HOME" ] || return 1
+	[ -n "$HOME" ] || return 1
 
 	# if $THEME_DIR is placed in home dir
-	if [ -z "${THEME_DIR##"$USER_HOME"/*}" ]; then
-		return 0
-	fi
-
-	return 1
-}
-
-_is_writable() {
-	if [ -w "$THEME_DIR/48x48/places/folder.svg" ]; then
+	if [ -z "${THEME_DIR##"$HOME"/*}" ]; then
 		return 0
 	fi
 
@@ -119,7 +112,8 @@ _is_valid_color() {
 	return 1
 }
 
-declare_colors() {
+declare_colors() 
+{
 	local color=''
 	local -a colors=()
 	local -a valid_colors=("90ssummer" "adwaita" "aubergine" "aurora" "black" "berriez" "blue" "bluegrey" "bordeaux" "brown" "canonical" "cyan" "cyberneon" "darkblue" "discodingo" "fitdance" "green" "grey" "indigo" "magenta" "manjaro" "mint" "orange" "pink" "purple" "red" "teal" "vermillion" "violet" "white" "yaru" "yellow")
@@ -148,8 +142,8 @@ get_theme_dir() {
 	local data_dir icons_dir
 	local -a data_dirs=()
 	local -a icons_dirs=(
-		"$USER_HOME/.icons"
-		"${XDG_DATA_HOME:-$USER_HOME/.local/share}/icons"
+		"$HOME/.icons"
+		"${XDG_DATA_HOME:-$HOME/.local/share}/icons"
 	)
 
 	# Get data directories from XDG_DATA_DIRS variable and
@@ -171,14 +165,15 @@ get_theme_dir() {
 	return 1
 }
 
-get_real_user() {
-	# return name of the user that runs the script
+get_user() {
 	local user=''
 
 	if [ -n "$PKEXEC_UID" ]; then
 		user="$(id -nu "$PKEXEC_UID")"
 	elif [ -n "$SUDO_USER" ]; then
 		user="$SUDO_USER"
+	elif [ -n "$LOGNAME" ]; then
+		user="$LOGNAME"
 	else
 		user="$(id -nu)"
 	fi
@@ -187,7 +182,9 @@ get_real_user() {
 }
 
 get_user_home() {
-	local user="$1"
+	local user
+
+	user="$(get_user)"
 
 	getent passwd "$user" | awk -F: '{print $(NF-1)}'
 }
@@ -198,7 +195,7 @@ config() {
 	local config_file
 
 	if _is_user_dir; then
-		config_dir="${XDG_CONFIG_HOME:-$USER_HOME/.config}/$PROGNAME"
+		config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/$PROGNAME"
 	else
 		config_dir="/var/lib/$PROGNAME"
 	fi
@@ -234,7 +231,6 @@ config() {
 				fi
 				;;
 			-s|--set) shift;
-				[ "$ONCE" -eq "1" ] && break
 				[ -d "$config_dir"  ] || mkdir -p "$config_dir"
 				[ -f "$config_file" ] || touch "$config_file"
 
@@ -269,9 +265,8 @@ change_color() {
 				file_name="${file_path##*/}"
 				symlink_path="${file_path/-$color/}"  # remove color suffix
 
-				ln -sf "$file_name" "$symlink_path" || {
-					fatal "Fail to create '$symlink_path' symlink"
-				}
+				ln -sf "$file_name" "$symlink_path" \
+					|| fatal "Fail to create '$symlink_path' symlink"
 			done
 		done
 	done
@@ -295,13 +290,13 @@ list_colors() {
 }
 
 do_change_color() {
-	_is_valid_color "$SELECTED_COLOR" || {
-		fatal "Unable to find '$SELECTED_COLOR' color in '$THEME_NAME'"
-	}
+	_is_valid_color "$SELECTED_COLOR" \
+		|| fatal "Unable to find '$SELECTED_COLOR' color in '$THEME_NAME'"
 
 	verify_privileges
 
-	msg "Changing color of folders to '$SELECTED_COLOR' for '$THEME_NAME' ..."
+	msg "Changing color of folders to '$SELECTED_COLOR'" \
+		"for '$THEME_NAME' ..."
 	change_color "$SELECTED_COLOR"
 	config --new --set "theme=$THEME_NAME" "color=$SELECTED_COLOR"
 	update_icon_cache
@@ -326,13 +321,11 @@ do_restore_color() {
 		_exit "Unable to find config file."
 	fi
 
-	THEME_DIR="$(get_theme_dir)" || {
-		_exit "Unable to find '$THEME_NAME' icon theme."
-	}
+	THEME_DIR="$(get_theme_dir)" \
+		|| _exit "Unable to find '$THEME_NAME' icon theme."
 
-	_is_valid_color "$saved_color" || {
-		_exit "Unable to find '$saved_color' color in '$THEME_NAME'."
-	}
+	_is_valid_color "$saved_color" \
+		|| _exit "Unable to find '$saved_color' color in '$THEME_NAME'."
 
 	verify_privileges
 
@@ -341,15 +334,17 @@ do_restore_color() {
 }
 
 delete_icon_caches() {
-	local icon_cache real_user='' real_home=''
+	local icon_cache user='' user_home=''
 
-	real_user="$(get_real_user)"
-	real_home="$(get_user_home "$real_user")"
+	user="$(get_user)"
+	user_home="$(get_user_home)"
 
 	declare -a icon_caches=(
 		# KDE 5 icon caches
-		"$real_home/.cache/icon-cache.kcache"
-		"/var/tmp/kdecache-$real_user/icon-cache.kcache"
+		"$user_home/.cache/icon-cache.kcache"
+		"/var/tmp/kdecache-$user/icon-cache.kcache"
+		# KDE 4 icon caches
+		"$user_home/.kde4/cache-$(hostname)/icon-cache.kcache"
 	)
 
 	verbose "Deleting icon caches ..."
@@ -366,28 +361,14 @@ update_icon_cache() {
 	gtk-update-icon-cache -qf "$THEME_DIR" || true
 }
 
-update_icon_caches() {
-	local theme=''
-
-	delete_icon_caches
-
-	for theme in "${!DEFAULT_COLORS[@]}"; do
-		[ -f "$THEME_DIR/../$theme/index.theme" ] || continue
-		verbose "Rebuilding icon cache for '$theme' ..."
-		gtk-update-icon-cache -qf "$THEME_DIR/../$theme" || true
-	done
-}
-
 verify_privileges() {
 	_is_root_user && return 0
 	_is_user_dir  && return 0
-	_is_writable  && return 0
 
 	verbose "This operation requires root privileges."
 
 	if command -v sudo > /dev/null; then
-		exec sudo USER_HOME="$USER_HOME" XDG_DATA_DIRS="$XDG_DATA_DIRS" \
-			"$THIS_SCRIPT" "${ARGS[@]}"
+		exec sudo XDG_DATA_DIRS="$XDG_DATA_DIRS" "$THIS_SCRIPT" "${ARGS[@]}"
 	else
 		fatal "You need to be root to run this command."
 	fi
@@ -397,17 +378,11 @@ parse_args() {
 	local arg='' opt=''
 	local -a args=()
 
-	# Show help if no argument is passed
-	if [ -z "$1" ]; then
-		usage 2
-	fi
-
 	# Translate --gnu-long-options to -g (short options)
 	for arg; do
 		case "$arg" in
 			--help)           args+=( -h ) ;;
 			--list)           args+=( -l ) ;;
-			--once)           args+=( -o ) ;;
 			--theme)          args+=( -t ) ;;
 			--update-caches)  args+=( -u ) ;;
 			--verbose)        args+=( -v ) ;;
@@ -417,7 +392,7 @@ parse_args() {
 			--version)        args+=( -V ) ;;
 			--[0-9a-Z]*)
 				err "illegal option -- '$arg'"
-				usage 2
+				usage 128
 				;;
 			*) args+=("$arg")
 		esac
@@ -426,7 +401,7 @@ parse_args() {
 	# Reset the positional parameters to the short options
 	set -- "${args[@]}"
 
-	while getopts ":C:DRlot:uvVh" opt; do
+	while getopts ":C:DRlt:uvVh" opt; do
 		case "$opt" in
 			C ) OPERATIONS+=("change-color")
 				SELECTED_COLOR="$OPTARG"
@@ -434,19 +409,18 @@ parse_args() {
 			D ) OPERATIONS+=("revert-default") ;;
 			R ) OPERATIONS+=("restore-color") ;;
 			l ) OPERATIONS+=("list-colors") ;;
-			o ) ONCE=1 ;;
 			t ) THEME_NAME="$OPTARG" ;;
-			u ) OPERATIONS+=("update-icon-caches") ;;
+			u ) OPERATIONS+=("update-icon-cache") ;;
 			v ) VERBOSE=1 ;;
 			V ) printf "%s %s\n" "$PROGNAME" "$VERSION"
 				exit 0
 				;;
 			h ) usage 0 ;;
 			: ) err "option requires an argument -- '-$OPTARG'"
-				usage 2
+				usage 128
 				;;
 			\?) err "illegal option -- '-$OPTARG'"
-				usage 2
+				usage 128
 				;;
 		esac
 	done
@@ -456,7 +430,7 @@ parse_args() {
 	# Return an error if any positional parameters are found
 	if [ -n "$1" ]; then
 		err "illegal parameter -- '$1'"
-		usage 2
+		usage 128
 	fi
 }
 
@@ -464,7 +438,6 @@ main() {
 	# default values of options
 	declare THEME_NAME="${THEME_NAME:-Suru++}"
 	declare -i VERBOSE="${VERBOSE:-0}"
-	declare -i ONCE="${ONCE:-0}"
 	declare -A DEFAULT_COLORS=(
 		['Adwaita++']='adwaita'
 		['Suru++ 25']='blue'
@@ -486,27 +459,8 @@ main() {
 
 	parse_args "${ARGS[@]}"
 
-	if [ "$VERBOSE" -eq "1" ]; then
-		# open a file descriptor for verbose messages
-		exec 4>&1
-		# close the file descriptor before exiting
-		trap 'exec 4>&-' EXIT HUP INT TERM
-	fi
-
-	# set USER_HOME variable instead HOME to prevent changing user's icons
-	# when running with sudo
-	[ -n "$USER_HOME" ] || USER_HOME="$(get_user_home "$(id -nu)")"
-
-	if [ -f "$THEME_NAME/index.theme" ]; then
-		# THEME_NAME is a path to an icon theme
-		THEME_DIR="$(readlink -f "$THEME_NAME")"
-		THEME_NAME="$(basename "$THEME_DIR")"
-		verbose "The path to '$THEME_DIR' theme is specified."
-	else
-		THEME_DIR="$(get_theme_dir)" || {
-			fatal "Fail to find '$THEME_NAME' icon theme."
-		}
-	fi
+	THEME_DIR="$(get_theme_dir)" \
+		|| fatal "Fail to find '$THEME_NAME' icon theme."
 
 	for operation in "${OPERATIONS[@]}"; do
 		case "$operation" in
@@ -527,18 +481,16 @@ main() {
 
 				EOF
 				;;
-			update-icon-caches)
+			update-icon-cache)
 				verify_privileges
-				update_icon_caches
+				update_icon_cache
 				;;
 		esac
 	done
 
 	verbose "Done!"
-
-	exit 0
 }
 
 main
 
-exit 1
+exit 0

@@ -11,4 +11,4 @@
   <a href="https://gusbemacbe.github.io/suru-plus-folders/nl">   <img src="images/nl.svg?sanitize=true"    alt="Nederlands"           /></a>
   <a href="https://gusbemacbe.github.io/suru-plus-folders/pt-br"><img src="images/pt-br.svg?sanitize=true" alt="Português brasileiro" /></a>
   <a href="https://gusbemacbe.github.io/suru-plus-folders/pt-pt"><img src="images/pt-pt.svg?sanitize=true" alt="Português europeu"    /></a>
-  </p>
+</p>
