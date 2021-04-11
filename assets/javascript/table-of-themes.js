@@ -50,8 +50,10 @@ const colors =
   'red',
   'synthwave',
   'teal',
+  'tron',
   'vermillion',
   'violet',
+  'void',
   'white',
   'yaru',
   'yellow',
@@ -177,7 +179,6 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('fitdance'), 1);
       fakeColors.splice(fakeColors.indexOf('magenta'), 1);
       fakeColors.splice(fakeColors.indexOf('pink'), 1);
-      fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
       fakeColors.splice(fakeColors.indexOf('teal'), 1);
       fakeColors.splice(fakeColors.indexOf('vermillion'), 1);
       fakeColors.splice(fakeColors.indexOf('violet'), 1);
@@ -192,6 +193,8 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('darkblue'), 1);
       fakeColors.splice(fakeColors.indexOf('purple'), 1);
       fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
+      fakeColors.splice(fakeColors.indexOf('tron'), 1);
+      fakeColors.splice(fakeColors.indexOf('void'), 1);
       fakeColors.splice(fakeColors.indexOf('yaru'), 1);
 
       return fakeColors;
@@ -218,7 +221,9 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('pink'), 1);
       fakeColors.splice(fakeColors.indexOf('synthwave'), 1);
       fakeColors.splice(fakeColors.indexOf('teal'), 1);
+      fakeColors.splice(fakeColors.indexOf('tron'), 1);
       fakeColors.splice(fakeColors.indexOf('violet'), 1);
+      fakeColors.splice(fakeColors.indexOf('void'), 1);
       fakeColors.splice(fakeColors.indexOf('white'), 1);
       fakeColors.splice(fakeColors.indexOf('yaru'), 1);
 
@@ -242,7 +247,9 @@ function getColorsBasedOnStyleName(styleName)
       fakeColors.splice(fakeColors.indexOf('magenta'), 1);
       fakeColors.splice(fakeColors.indexOf('pink'), 1);
       fakeColors.splice(fakeColors.indexOf('teal'), 1);
+      fakeColors.splice(fakeColors.indexOf('tron'), 1);
       fakeColors.splice(fakeColors.indexOf('violet'), 1);
+      fakeColors.splice(fakeColors.indexOf('void'), 1);
       fakeColors.splice(fakeColors.indexOf('white'), 1);
 
       return fakeColors;
