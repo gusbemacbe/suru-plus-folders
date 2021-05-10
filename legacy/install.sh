@@ -4,7 +4,7 @@ set -e
 
 # these variables can be overwritten
 : "${PREFIX:=/usr}"
-: "${TAG:=master}"
+: "${TAG:=main}"
 : "${uninstall:=false}"
 
 bin_name="suru-plus-folders"
